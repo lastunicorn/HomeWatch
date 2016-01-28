@@ -8,8 +8,6 @@
 const int ledPin = 8;
 const int piezoPin = 9;
 
-boolean sdCardAvailable = false;
-
 Alarm alarm;
 SmsSender smsSender;
 
@@ -23,26 +21,11 @@ void setup() {
 
   smsSender.connect();
 
-  // ----------------------
-  // SD Card initialization
+  
 
-  Serial.println("Initializing SD card...");
-
-  if (!SD.begin(4))
-  {
-    Serial.println("initialization failed!");
-  }
-  else
-  {
-    Serial.println("SD card successfully initialized.");
-    sdCardAvailable = true;
-  }
-
-  // ----------------------
-
-  writeLog("=======================================================");
-  writeLog("Arduino started");
-  writeLog("=======================================================");
+  logger.write("=======================================================");
+  logger.write("Arduino started");
+  logger.write("=======================================================");
 }
 
 void loop() {

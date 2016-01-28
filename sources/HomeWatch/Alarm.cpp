@@ -2,8 +2,6 @@
 #include "Alarm.h"
 
 String formatTimeAsString(unsigned long milliseconds);
-void writeLog(String text);
-void writeLog(unsigned long value);
 
 Alarm::Alarm()
 {
@@ -24,16 +22,16 @@ boolean Alarm::isTriggered()
     s += "sensor triggered: ";
     s += sensorValue;
     s += " - time from last alarm: ";
-    s += ::formatTimeAsString(elapsedTime);
+    s += formatTimeAsString(elapsedTime);
 
-    writeLog(s);
+    logger.write(s);
 
     if (now > alarmDelay)
     {
       if (elapsedTime > alarmInterval)
       {
-        writeLog("!!! alarm, alarm, alarm !!!");
-        writeLog(1);
+        logger.write("!!! alarm, alarm, alarm !!!");
+        logger.write(1);
         lastAlarmTime = now;
 
         return true;

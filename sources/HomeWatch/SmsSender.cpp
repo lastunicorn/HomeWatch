@@ -1,8 +1,6 @@
 #include "Arduino.h"
 #include "SmsSender.h"
 
-void writeLog(String text);
-
 SmsSender::SmsSender()
 {
   pinMode(pinError, OUTPUT);
@@ -13,7 +11,7 @@ void SmsSender::connect()
 {
   while (!isConnected)
   {
-    writeLog("--> Connecting...");
+    logger.write("--> Connecting...");
     digitalWrite(pinError, LOW);
     digitalWrite(pinReady, LOW);
 
@@ -21,7 +19,7 @@ void SmsSender::connect()
 
     if (pin == NULL || pin == "")
     {
-      writeLog("Try to connect without pin.");
+      logger.write("Try to connect without pin.");
       gsmConnectCode = gsmAccess.begin();
     }
     else
@@ -35,7 +33,7 @@ void SmsSender::connect()
 
     String s = "Connect code: ";
     s += gsmConnectCode;
-    writeLog(s);
+    logger.write(s);
 
     if (gsmConnectCode == GSM_READY)
     {
@@ -46,7 +44,7 @@ void SmsSender::connect()
     else
     {
       digitalWrite(pinError, HIGH);
-      writeLog("Not connected");
+      logger.write("Not connected");
       delay(10000);
     }
   }

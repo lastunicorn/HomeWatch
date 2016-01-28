@@ -1,7 +1,24 @@
 #include "Arduino.h"
 #include "Logger.h"
+#include <SD.h>
 
 String formatTimeAsString(unsigned long milliseconds);
+
+Logger::Logger()
+{
+  Serial.println("Initializing SD card...");
+
+  if (!SD.begin(4))
+  {
+    Serial.println("initialization failed!");
+    sdCardAvailable = false;
+  }
+  else
+  {
+    Serial.println("SD card successfully initialized.");
+    sdCardAvailable = true;
+  }
+}
 
 void Logger::add(String text)
 {
@@ -46,4 +63,10 @@ void Logger::write(String text)
   {
     Serial.println("Could not write in log file.");
   }
+}
+
+void Logger::write(unsigned long value)
+{
+  String str(value);
+  write(str);
 }
