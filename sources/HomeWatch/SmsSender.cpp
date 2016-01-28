@@ -1,5 +1,8 @@
 #include "Arduino.h"
 #include "SmsSender.h"
+#include "Logger.h"
+
+extern Logger logger;
 
 SmsSender::SmsSender()
 {
@@ -17,7 +20,7 @@ void SmsSender::connect()
 
     int gsmConnectCode ;
 
-    if (pin == NULL || pin == "")
+    if (pin == NULL || strlen(pin) == 0)
     {
       logger.write("Try to connect without pin.");
       gsmConnectCode = gsmAccess.begin();
@@ -26,7 +29,7 @@ void SmsSender::connect()
     {
       String s = "Try to connect using pin = ";
       s += pin;
-      writeLog(s);
+      logger.write(s);
 
       gsmConnectCode = gsmAccess.begin(pin);
     }
@@ -38,7 +41,7 @@ void SmsSender::connect()
     if (gsmConnectCode == GSM_READY)
     {
       digitalWrite(pinReady, HIGH);
-      writeLog("Connected");
+      logger.write("Connected");
       isConnected = true;
     }
     else
@@ -49,7 +52,7 @@ void SmsSender::connect()
     }
   }
 
-  writeLog("<--");
+  logger.write("<--");
 }
 
 void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200]) {

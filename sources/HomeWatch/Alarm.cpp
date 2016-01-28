@@ -1,7 +1,9 @@
 #include "Arduino.h"
 #include "Alarm.h"
+#include "Logger.h"
 
 String formatTimeAsString(unsigned long milliseconds);
+extern Logger logger;
 
 Alarm::Alarm()
 {

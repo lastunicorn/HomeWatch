@@ -21,8 +21,6 @@ void setup() {
 
   smsSender.connect();
 
-  
-
   logger.write("=======================================================");
   logger.write("Arduino started");
   logger.write("=======================================================");
