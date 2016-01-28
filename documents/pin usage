@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+
+arduino gsm shield 2
+
+2 TX - software serial communication with the M10
+3 RX - software serial communication with the M10
+7 PWRKEY
+
+--------------------------------------------------------------------------------
+
+arduino ethernet shield 2
+
+11 - SPI bus
+12 - SPI bus
+13 - SPI bus
+ 4 - select SDCard
+10 - select W5500
+
+deselect sd card:
+ - pin 4 - OUTPUT
+ - write HEIGHT
+ 
+deselect w5500 card:
+ - pin 10 - OUTPUT
+ - write HEIGHT
+ 
+--------------------------------------------------------------------------------
+
+A0 - INPUT - pir sensor
+ 8 - OUTPUT - alarm led
+ 9 - OUTPUT - alarm piezo
+10 - OUTPUT - gsm error
+11 - OUTPUT - gsm ready
