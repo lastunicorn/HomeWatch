@@ -4,7 +4,7 @@ arduino gsm shield 2
 
 2 TX - software serial communication with the M10
 3 RX - software serial communication with the M10
-7 PWRKEY
+7 PWRKEY - Modem Reset
 
 --------------------------------------------------------------------------------
 
