@@ -1,16 +1,4 @@
-#include "Arduino.h"
-#include "Alarm.h"
-#include "Logger.h"
-
-String formatTimeAsString(unsigned long milliseconds);
-extern Logger logger;
-
-Alarm::Alarm()
-{
-  pinMode(sensorPin, INPUT);
-}
-
-boolean Alarm::isTriggered()
+boolean isAlarmTriggered()
 {
   sensorValue = analogRead(sensorPin);
 
@@ -26,14 +14,14 @@ boolean Alarm::isTriggered()
     s += " - time from last alarm: ";
     s += formatTimeAsString(elapsedTime);
 
-    logger.write(s);
+    loggerWrite(s);
 
     if (now > alarmDelay)
     {
       if (elapsedTime > alarmInterval)
       {
-        logger.write("!!! alarm, alarm, alarm !!!");
-        logger.write(1);
+        loggerWrite("!!! alarm, alarm, alarm !!!");
+        loggerWrite(1);
         lastAlarmTime = now;
 
         return true;
