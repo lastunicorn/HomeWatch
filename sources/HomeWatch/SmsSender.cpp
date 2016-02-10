@@ -2,37 +2,27 @@
 #include "SmsSender.h"
 #include "Logger.h"
 
+void makeFakeSound();
 extern Logger logger;
 
-SmsSender::SmsSender()
+SmsSender::SmsSender(boolean isReal)
 {
+  this->isReal = isReal;
+  
   pinMode(pinError, OUTPUT);
   pinMode(pinReady, OUTPUT);
 }
 
 void SmsSender::connect()
 {
+  if (isReal == false)
+    makeFakeSound();
+
   while (!isConnected)
   {
-    logger.write("--> Connecting...");
-    digitalWrite(pinError, LOW);
-    digitalWrite(pinReady, LOW);
+    changeStateToConnecting();
 
-    int gsmConnectCode ;
-
-    if (pin == NULL || strlen(pin) == 0)
-    {
-      logger.write("Try to connect without pin.");
-      gsmConnectCode = gsmAccess.begin();
-    }
-    else
-    {
-      String s = "Try to connect using pin = ";
-      s += pin;
-      logger.write(s);
-
-      gsmConnectCode = gsmAccess.begin(pin);
-    }
+    int gsmConnectCode = tryToConnectGsm();
 
     String s = "Connect code: ";
     s += gsmConnectCode;
@@ -40,14 +30,11 @@ void SmsSender::connect()
 
     if (gsmConnectCode == GSM_READY)
     {
-      digitalWrite(pinReady, HIGH);
-      logger.write("Connected");
-      isConnected = true;
+      changeStateToConnected();
     }
     else
     {
-      digitalWrite(pinError, HIGH);
-      logger.write("Not connected");
+      changeStateToNotConnected();
       delay(10000);
     }
   }
@@ -55,19 +42,63 @@ void SmsSender::connect()
   logger.write("<--");
 }
 
+void SmsSender::changeStateToConnecting()
+{
+  logger.write("--> Connecting...");
+  digitalWrite(pinError, LOW);
+  digitalWrite(pinReady, LOW);
+}
+
+void SmsSender::changeStateToConnected()
+{
+  digitalWrite(pinReady, HIGH);
+  logger.write("Connected");
+  isConnected = true;
+}
+
+void SmsSender::changeStateToNotConnected()
+{
+  digitalWrite(pinError, HIGH);
+  logger.write("Not connected");
+}
+
+int SmsSender::tryToConnectGsm()
+{
+  if (isReal == false)
+    return GSM_READY;
+
+  if (simPin == NULL || strlen(simPin) == 0)
+  {
+    logger.write("Try to connect without pin.");
+    return gsmAccess.begin();
+  }
+  else
+  {
+    String s = "Try to connect using pin = ";
+    s += simPin;
+    logger.write(s);
+
+    return gsmAccess.begin(simPin);
+  }
+}
+
 void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200]) {
 
-  Serial.print("Sending message to mobile number: ");
-  Serial.println(remoteNumber);
+  String s = "Sending message to mobile number: ";
+  s += remoteNumber;
+  logger.write(s);
+
+  if (isReal == false)
+    return;
 
   // sms text
-  Serial.println("Message:");
-  Serial.println(txtMsg);
+  logger.write("Message:");
+  logger.write(txtMsg);
 
   // send the message
   sms.beginSMS(remoteNumber);
   sms.print(txtMsg);
   sms.endSMS();
 
-  Serial.println("SMS successfully sent");
+  logger.write("SMS successfully sent");
 }

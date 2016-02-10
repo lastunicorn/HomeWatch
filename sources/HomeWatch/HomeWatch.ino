@@ -1,6 +1,6 @@
 #include <GSM.h>
-#include <SPI.h>
-#include <SD.h>
+//#include <SPI.h>
+//#include <SD.h>
 #include "SmsSender.h"
 #include "Alarm.h"
 #include "Logger.h"
@@ -27,9 +27,9 @@ void setup() {
 }
 
 void loop() {
-  boolean isTriggered = alarm.isTriggered();
+  alarm.refresh();
 
-  if (isTriggered)
+  if (alarm.isTriggered)
     triggerAlarm();
 
   delay(500);
@@ -41,17 +41,15 @@ void triggerAlarm()
   digitalWrite(ledPin, HIGH);
 
   // make sound
-  tone(piezoPin, 200, 500);
-  delay(500);
-  tone(piezoPin, 100, 500);
-  delay(500);
-  tone(piezoPin, 200, 500);
-  delay(500);
-  tone(piezoPin, 100, 500);
-  delay(500);
+  makeAlarmSound();
 
   // send sms
-  smsSender.sendSMS("0723002252", "alarm acasa");
+  if (alarm.isDoorTriggered)
+    smsSender.sendSMS("0723002252", "alarm acasa - door");
+  else  if (alarm.isMotionTriggered)
+    smsSender.sendSMS("0723002252", "alarm acasa - motion");
+  else
+    smsSender.sendSMS("0723002252", "alarm acasa");
 
   // led off
   digitalWrite(ledPin, LOW);
