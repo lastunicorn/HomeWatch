@@ -1,9 +1,11 @@
 #include "Arduino.h"
 #include "SmsSender.h"
 #include "Logger.h"
+#include "Sounds.h"
 
 void makeFakeSound();
 extern Logger logger;
+extern Sounds sounds;
 
 SmsSender::SmsSender(boolean isReal)
 {
@@ -16,7 +18,7 @@ SmsSender::SmsSender(boolean isReal)
 void SmsSender::connect()
 {
   if (isReal == false)
-    makeFakeSound();
+    sounds.makeFakeSound();
 
   while (!isConnected)
   {

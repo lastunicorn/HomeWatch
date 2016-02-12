@@ -1,14 +1,15 @@
 #include "Arduino.h"
 #include "Alarm.h"
 #include "Logger.h"
+#include "Sounds.h"
 
 void makeStartingSound();
 String formatTimeAsString(unsigned long milliseconds);
 extern Logger logger;
+extern Sounds sounds;
 
 Alarm::Alarm()
 {
-  pinMode(sensorPin, INPUT);
   mySwitch.enableReceive(0);
 }
 
@@ -17,10 +18,10 @@ void Alarm::refresh()
   resetTriggerFlags();
 
   lastNow = millis();
-  unsigned long timeFromLastStart = lastNow - startTime;
+  unsigned long timeFromLastStart = lastNow - lastStartTime;
 
   if (on == true && timeFromLastStart <= startDelay)
-    makeStartingSound();
+    sounds.makeStartingSound();
 
   if (mySwitch.available())
   {
@@ -29,29 +30,17 @@ void Alarm::refresh()
 
     unsigned long timeFromLastAlarm = lastNow - lastAlarmTime;
 
-    String s;
+    logSensorValue(timeFromLastAlarm);
 
-    s += "sensor triggered: ";
-    s += sensorValue;
-    s += " - time from last alarm: ";
-    s += formatTimeAsString(timeFromLastAlarm);
-
-    logger.write(s);
-
-    // Remote On button was pressed.
-    if (sensorValue == onId1 || sensorValue == onId2)
+    if (isOnButtonPressed())
     {
-      logger.write("Turning alarm on.");
-      on = true;
-      startTime = lastNow;
+      start();
       return;
     }
 
-    // Remote Off button was pressed.
-    if (sensorValue == offId1 || sensorValue == offId2)
+    if (isOffButtonPressed())
     {
-      logger.write("Turning alarm off.");
-      on = false;
+      stop();
       return;
     }
 
@@ -61,26 +50,24 @@ void Alarm::refresh()
       return;
     }
 
-    if (sensorValue == doorSensorId || sensorValue == motionSensorId)
+    if (sensorValue != doorSensorId && sensorValue != motionSensorId)
     {
-      if (timeFromLastStart <= startDelay)
-      {
-        logger.write("Not triggered because of start delay.");
-        return;
-      }
-
-      if (timeFromLastAlarm <= alarmRepeatInterval)
-      {
-        logger.write("Not triggered because of alarm repeat interval.");
-        return;
-      }
-
-      triggerAlarm();
-
+      logger.write("Not triggered because unknown signal.");
+    }
+    
+    if (timeFromLastStart <= startDelay)
+    {
+      logger.write("Not triggered because of start delay.");
       return;
     }
 
-    logger.write("Not triggered because unknown signal.");
+    if (timeFromLastAlarm <= alarmRepeatInterval)
+    {
+      logger.write("Not triggered because of alarm repeat interval.");
+      return;
+    }
+
+    triggerAlarm();
   }
 }
 
@@ -89,6 +76,41 @@ void Alarm::resetTriggerFlags()
   isTriggered = false;
   isDoorTriggered = false;
   isMotionTriggered = false;
+}
+
+void Alarm::logSensorValue(unsigned long timeFromLastAlarm)
+{
+  String s;
+
+  s += "sensor triggered: ";
+  s += sensorValue;
+  s += " - time from last alarm: ";
+  s += formatTimeAsString(timeFromLastAlarm);
+
+  logger.write(s);
+}
+
+boolean Alarm::isOnButtonPressed()
+{
+  return sensorValue == onId1 || sensorValue == onId2;
+}
+
+boolean Alarm::isOffButtonPressed()
+{
+  return sensorValue == offId1 || sensorValue == offId2;
+}
+
+void Alarm::start()
+{
+  logger.write("Turning alarm on.");
+  on = true;
+  lastStartTime = lastNow;
+}
+
+void Alarm::stop()
+{
+  logger.write("Turning alarm off.");
+  on = false;
 }
 
 void Alarm::triggerAlarm()

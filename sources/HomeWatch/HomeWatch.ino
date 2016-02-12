@@ -4,20 +4,21 @@
 #include "SmsSender.h"
 #include "Alarm.h"
 #include "Logger.h"
+#include "Sounds.h"
 
-const int ledPin = 8;
-const int piezoPin = 9;
+const int alarmLedPin = 8;
 
 Alarm alarm;
 SmsSender smsSender;
+Sounds sounds;
 
 Logger logger;
 
 void setup() {
   Serial.begin(9600);
 
-  pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, LOW);
+  pinMode(alarmLedPin, OUTPUT);
+  digitalWrite(alarmLedPin, LOW);
 
   smsSender.connect();
 
@@ -38,10 +39,10 @@ void loop() {
 void triggerAlarm()
 {
   // led on
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(alarmLedPin, HIGH);
 
   // make sound
-  makeAlarmSound();
+  sounds.makeAlarmSound();
 
   // send sms
   if (alarm.isDoorTriggered)
@@ -52,5 +53,5 @@ void triggerAlarm()
     smsSender.sendSMS("0723002252", "alarm acasa");
 
   // led off
-  digitalWrite(ledPin, LOW);
+  digitalWrite(alarmLedPin, LOW);
 }
