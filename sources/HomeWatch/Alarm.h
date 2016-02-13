@@ -16,6 +16,7 @@ class Alarm
 
   private:
     unsigned long lastStartTime = 0;
+    unsigned long lastStopTime = 0;
     unsigned long lastAlarmTime = 0;
     unsigned long lastNow = 0;
 

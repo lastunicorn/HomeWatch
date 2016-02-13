@@ -10,15 +10,22 @@ extern Sounds sounds;
 SmsSender::SmsSender(boolean isReal)
 {
   this->isReal = isReal;
-  
+
   pinMode(pinError, OUTPUT);
   pinMode(pinReady, OUTPUT);
 }
 
 void SmsSender::connect()
 {
-  if (isReal == false)
+  if (isReal)
+  {
+    logger.write("GSM - Starting the GSM module...");
+  }
+  else
+  {
+    logger.write("GSM - Fakeing the GSM module...");
     sounds.makeFakeSound();
+  }
 
   while (!isConnected)
   {
@@ -26,7 +33,7 @@ void SmsSender::connect()
 
     int gsmConnectCode = tryToConnectGsm();
 
-    String s = "Connect code: ";
+    String s = "GSM - Connect code: ";
     s += gsmConnectCode;
     logger.write(s);
 
@@ -40,13 +47,11 @@ void SmsSender::connect()
       delay(10000);
     }
   }
-
-  logger.write("<--");
 }
 
 void SmsSender::changeStateToConnecting()
 {
-  logger.write("--> Connecting...");
+  logger.write("GSM - Connecting...");
   digitalWrite(pinError, LOW);
   digitalWrite(pinReady, LOW);
 }
@@ -54,14 +59,14 @@ void SmsSender::changeStateToConnecting()
 void SmsSender::changeStateToConnected()
 {
   digitalWrite(pinReady, HIGH);
-  logger.write("Connected");
+  logger.write("GSM - Connected");
   isConnected = true;
 }
 
 void SmsSender::changeStateToNotConnected()
 {
   digitalWrite(pinError, HIGH);
-  logger.write("Not connected");
+  logger.write("GSM - Not connected");
 }
 
 int SmsSender::tryToConnectGsm()
@@ -71,12 +76,12 @@ int SmsSender::tryToConnectGsm()
 
   if (simPin == NULL || strlen(simPin) == 0)
   {
-    logger.write("Try to connect without pin.");
+    logger.write("GSM - Try to connect without pin.");
     return gsmAccess.begin();
   }
   else
   {
-    String s = "Try to connect using pin = ";
+    String s = "GSM - Try to connect using pin = ";
     s += simPin;
     logger.write(s);
 
@@ -84,17 +89,23 @@ int SmsSender::tryToConnectGsm()
   }
 }
 
-void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200]) {
+void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
+{
+  if (isReal == false)
+  {
+    String s = "GSM - Fake send sms to number: ";
+    s += remoteNumber;
+    logger.write(s);
+    
+    return;
+  }
 
-  String s = "Sending message to mobile number: ";
+  String s = "GSM - Sending message to mobile number: ";
   s += remoteNumber;
   logger.write(s);
 
-  if (isReal == false)
-    return;
-
   // sms text
-  logger.write("Message:");
+  logger.write("GSM - Message:");
   logger.write(txtMsg);
 
   // send the message
@@ -102,5 +113,5 @@ void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200]) {
   sms.print(txtMsg);
   sms.endSMS();
 
-  logger.write("SMS successfully sent");
+  logger.write("GSM - SMS successfully sent");
 }

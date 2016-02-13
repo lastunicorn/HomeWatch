@@ -40,7 +40,9 @@ void Alarm::refresh()
 
     if (isOffButtonPressed())
     {
-      stop();
+      if (lastNow - lastStopTime >= 2000)
+        stop();
+
       return;
     }
 
@@ -54,7 +56,7 @@ void Alarm::refresh()
     {
       logger.write("Not triggered because unknown signal.");
     }
-    
+
     if (timeFromLastStart <= startDelay)
     {
       logger.write("Not triggered because of start delay.");
@@ -111,6 +113,8 @@ void Alarm::stop()
 {
   logger.write("Turning alarm off.");
   on = false;
+  lastStopTime = lastNow;
+  sounds.makeOffSound();
 }
 
 void Alarm::triggerAlarm()

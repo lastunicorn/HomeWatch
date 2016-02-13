@@ -1,23 +1,12 @@
 #include "Arduino.h"
 #include "Logger.h"
-//#include <SD.h>
+#include <SD.h>
 
 String formatTimeAsString(unsigned long milliseconds);
 
 Logger::Logger()
 {
-//  Serial.println("Initializing SD card...");
-//
-//  if (!SD.begin(4))
-//  {
-//    Serial.println("initialization failed!");
-//    sdCardAvailable = false;
-//  }
-//  else
-//  {
-//    Serial.println("SD card successfully initialized.");
-//    sdCardAvailable = true;
-//  }
+  //initializeSdCard();
 }
 
 void Logger::add(String text)
@@ -31,38 +20,15 @@ void Logger::flush()
   buffer = String();
 }
 
-void Logger::write(String text)
+void Logger::write(String message)
 {
   String timeFormated = formatTimeAsString(millis());
 
-  char str[timeFormated.length() + 1];
-  timeFormated.toCharArray(str, timeFormated.length() + 1);
+  String text = timeFormated + " - " + message;
 
-  Serial.print(str);
-  Serial.print(" - ");
-  Serial.println(text);
+  logToSerial(text);
+  logToSdCard(text);
 
-//  if (!sdCardAvailable)
-//    return;
-//
-//  File myFile;
-//
-//  // Open the file
-//  myFile = SD.open("Home.log", FILE_WRITE);
-//
-//  if (myFile) {
-//
-//    myFile.print(str);
-//    myFile.print(" - ");
-//    myFile.println(text);
-//
-//    // close the file:
-//    myFile.close();
-//  }
-//  else
-//  {
-//    Serial.println("Could not write in log file.");
-//  }
 }
 
 void Logger::write(unsigned long value)
@@ -70,3 +36,53 @@ void Logger::write(unsigned long value)
   String str(value);
   write(str);
 }
+
+
+void Logger::initializeSdCard()
+{
+  Serial.println("Initializing SD card...");
+
+  if (!SD.begin(4))
+  {
+    Serial.println("initialization failed!");
+    sdCardAvailable = false;
+  }
+  else
+  {
+    Serial.println("SD card successfully initialized.");
+    sdCardAvailable = true;
+  }
+}
+
+void Logger::logToSerial(String text)
+{
+  //  char str[timeFormated.length() + 1];
+  //  timeFormated.toCharArray(str, timeFormated.length() + 1);
+  //
+  //  Serial.print(str);
+  //  Serial.print(" - ");
+  //  Serial.println(text);
+
+  Serial.println(text);
+}
+
+void Logger::logToSdCard(String text)
+{
+  if (!sdCardAvailable)
+    return;
+
+  File myFile;
+
+  // Open the file
+  myFile = SD.open("Home.log", FILE_WRITE);
+
+  if (myFile) {
+    myFile.println(text);
+    myFile.close();
+  }
+  else
+  {
+    Serial.println("Could not write in log file.");
+  }
+}
+

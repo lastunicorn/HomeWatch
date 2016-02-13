@@ -31,3 +31,11 @@ void Sounds::makeFakeSound()
   tone(alarmPiezoPin, 50, 1000);
   delay(1000);
 }
+
+void Sounds::makeOffSound()
+{
+  tone(alarmPiezoPin, 300, 100);
+  delay(100);
+  tone(alarmPiezoPin, 100, 200);
+  delay(200);
+}

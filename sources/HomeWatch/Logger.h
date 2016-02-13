@@ -8,11 +8,16 @@ class Logger
     bool sdCardAvailable = false;
 
   public:
-  Logger();
+    Logger();
     void add(String text);
     void flush();
-    void write(String text);
+    void write(String message);
     void write(unsigned long value);
+
+  private:
+    void initializeSdCard();
+    void logToSerial(String text);
+    void logToSdCard(String text);
 };
 
 #endif

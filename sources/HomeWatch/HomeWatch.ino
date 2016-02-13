@@ -17,14 +17,17 @@ Logger logger;
 void setup() {
   Serial.begin(9600);
 
+  logger.write("=======================================================");
+  logger.write("Home Watch - Powered by Arduino");
+  logger.write("Copyright © Dust in the Wind");
+  logger.write("=======================================================");
+
   pinMode(alarmLedPin, OUTPUT);
   digitalWrite(alarmLedPin, LOW);
 
   smsSender.connect();
 
-  logger.write("=======================================================");
   logger.write("Arduino started");
-  logger.write("=======================================================");
 }
 
 void loop() {
@@ -33,7 +36,7 @@ void loop() {
   if (alarm.isTriggered)
     triggerAlarm();
 
-  delay(500);
+  delay(100);
 }
 
 void triggerAlarm()

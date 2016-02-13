@@ -11,6 +11,7 @@ class Sounds
     void makeAlarmSound();
     void makeStartingSound();
     void makeFakeSound();
+    void makeOffSound();
 };
 
 #endif
