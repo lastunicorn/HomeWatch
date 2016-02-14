@@ -3,39 +3,40 @@
 
 Sounds::Sounds()
 {
-  pinMode(alarmPiezoPin, OUTPUT);
+  pinMode(piezoPin, OUTPUT);
 }
 
 void Sounds::makeAlarmSound()
 {
-  tone(alarmPiezoPin, 200, 500);
+  tone(piezoPin, 200, 500);
   delay(500);
-  tone(alarmPiezoPin, 100, 500);
+  tone(piezoPin, 100, 500);
   delay(500);
-  tone(alarmPiezoPin, 200, 500);
+  tone(piezoPin, 200, 500);
   delay(500);
-  tone(alarmPiezoPin, 100, 500);
+  tone(piezoPin, 100, 500);
   delay(500);
 }
 
 void Sounds::makeStartingSound()
 {
-  tone(alarmPiezoPin, 200, 150);
+  tone(piezoPin, 200, 150);
   delay(150);
-  tone(alarmPiezoPin, 150, 100);
+  tone(piezoPin, 150, 100);
   delay(500);
 }
 
 void Sounds::makeFakeSound()
 {
-  tone(alarmPiezoPin, 50, 1000);
+  tone(piezoPin, 50, 1000);
   delay(1000);
 }
 
 void Sounds::makeOffSound()
 {
-  tone(alarmPiezoPin, 300, 100);
+  tone(piezoPin, 300, 100);
   delay(100);
-  tone(alarmPiezoPin, 100, 200);
+  tone(piezoPin, 100, 200);
   delay(200);
 }
+

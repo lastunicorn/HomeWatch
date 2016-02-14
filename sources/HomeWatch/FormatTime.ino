@@ -34,7 +34,7 @@ String formatTimeAsString(unsigned long milliseconds)
     s += "0";
   s += value;
 
-  s += " (";
+  s += " (";  
   s += milliseconds;
   s += ")";
 

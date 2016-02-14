@@ -56,13 +56,6 @@ void Logger::initializeSdCard()
 
 void Logger::logToSerial(String text)
 {
-  //  char str[timeFormated.length() + 1];
-  //  timeFormated.toCharArray(str, timeFormated.length() + 1);
-  //
-  //  Serial.print(str);
-  //  Serial.print(" - ");
-  //  Serial.println(text);
-
   Serial.println(text);
 }
 

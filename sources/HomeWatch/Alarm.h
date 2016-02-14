@@ -7,7 +7,7 @@ class Alarm
 {
   public:
     boolean on = false;
-    unsigned long alarmRepeatInterval = 30000;
+    unsigned long repeatInterval = 30000;
     unsigned long startDelay = 60000;
     RCSwitch mySwitch;
     boolean isTriggered = false;
@@ -15,10 +15,10 @@ class Alarm
     boolean isMotionTriggered = false;
 
   private:
+    unsigned long lastNow = 0;
     unsigned long lastStartTime = 0;
     unsigned long lastStopTime = 0;
     unsigned long lastAlarmTime = 0;
-    unsigned long lastNow = 0;
 
     unsigned long doorSensorId = ***REMOVED***;
     unsigned long motionSensorId = ***REMOVED***;
@@ -35,12 +35,16 @@ class Alarm
 
   private:
     void resetTriggerFlags();
-    void triggerAlarm();
-    void start();
-    void stop();
-    void logSensorValue(unsigned long timeFromLastAlarm);
+    void logSensorValue();
+    
     boolean isOnButtonPressed();
+    void handleOnButtonPressed();
+    
     boolean isOffButtonPressed();
+    void handleOffButtonPressed();
+    
+    boolean isKnownSensor();
+    void handleSensorTriggered();
 };
 
 #endif

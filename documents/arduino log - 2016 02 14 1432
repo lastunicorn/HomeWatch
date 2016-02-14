@@ -1,0 +1,2340 @@
+00:00:00.000 (0) - =======================================================
+00:00:00.012 (12) - Home Watch - Powered by Arduino
+00:00:00.066 (66) - Copyright © Dust in the Wind
+00:00:00.119 (119) - =======================================================
+00:00:00.200 (200) - GSM - Starting the GSM module...
+00:00:00.258 (258) - GSM - Connecting...
+00:00:00.302 (302) - GSM - Try to connect without pin.
+AT%13%00:00:00.000 (0) - =======================================================
+00:00:00.012 (12) - Home Watch - Powered by Arduino
+00:00:00.067 (67) - Copyright �� Dust in the Wind
+00:00:00.119 (119) - =======================================================
+00:00:00.201 (201) - GSM - Starting the GSM module...
+00:00:00.258 (258) - GSM - Connecting...
+00:00:00.302 (302) - GSM - Try to connect without pin.
+AT%13%
+0 9>AT%13%%13%%10%OK%13%%10%
+AT+CGREG?%13%
+9 40>AT+CGREG?%13%%13%%10%+CGREG: 0,1%13%%10%%13%%10%OK%13%%10%
+AT+IFC=1,1%13%
+40 57>AT+IFC=1,1%13%%13%%10%OK%13%%10%
+AT+CMGF=1%13%
+57 75>%19%%17%AT+CMGF=1%13%%13%%10%OK%13%%10%
+AT+CLIP=1%13%
+75 91>AT+CLIP=1%13%%13%%10%OK%13%%10%
+ATE0%13%
+91 102>ATE0%13%%13%%10%OK%13%%10%
+AT+COLP=1%13%
+102 108>%13%%10%OK%13%%10%
+00:00:21.349 (21349) - GSM - Connect code: 3
+00:00:21.359 (21359) - GSM - Connected
+00:00:21.401 (21401) - Arduino started
+00:00:47.049 (47049) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:47.048 (47048)
+00:00:47.081 (47081) - Turning alarm on.
+00:00:47.877 (47877) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:47.224 (47224)
+00:00:47.908 (47908) - Turning alarm on.
+00:00:55.460 (55460) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:54.808 (54808)
+00:00:55.492 (55492) - Turning alarm off.
+00:00:55.939 (55939) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:55.938 (55938)
+00:02:50.196 (170196) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:50.195 (170195)
+00:02:50.229 (170229) - Not triggered because alarm is off.
+00:02:50.394 (170394) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:50.393 (170393)
+00:02:50.428 (170428) - Not triggered because alarm is off.
+00:02:50.592 (170592) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:50.591 (170591)
+00:02:50.626 (170626) - Not triggered because alarm is off.
+00:02:50.789 (170789) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:50.788 (170788)
+00:02:50.823 (170823) - Not triggered because alarm is off.
+00:02:50.987 (170987) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:50.986 (170986)
+00:02:51.021 (171021) - Not triggered because alarm is off.
+00:03:50.397 (230397) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:50.396 (230396)
+00:03:50.431 (230431) - Not triggered because alarm is off.
+00:03:50.596 (230596) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:50.595 (230595)
+00:03:50.629 (230629) - Not triggered because alarm is off.
+00:03:50.794 (230794) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:50.793 (230793)
+00:03:50.827 (230827) - Not triggered because alarm is off.
+00:03:50.991 (230991) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:50.990 (230990)
+00:03:51.024 (231024) - Not triggered because alarm is off.
+00:03:51.189 (231189) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:51.188 (231188)
+00:03:51.222 (231222) - Not triggered because alarm is off.
+00:03:56.388 (236388) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:56.387 (236387)
+00:03:56.421 (236421) - Not triggered because alarm is off.
+00:03:56.585 (236585) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:56.584 (236584)
+00:03:56.619 (236619) - Not triggered because alarm is off.
+00:03:56.783 (236783) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:56.782 (236782)
+00:03:56.817 (236817) - Not triggered because alarm is off.
+00:03:56.981 (236981) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:56.980 (236980)
+00:03:57.015 (237015) - Not triggered because alarm is off.
+00:03:57.178 (237178) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:57.177 (237177)
+00:03:57.212 (237212) - Not triggered because alarm is off.
+00:05:11.693 (311693) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:11.692 (311692)
+00:05:11.726 (311726) - Not triggered because alarm is off.
+00:05:11.890 (311890) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:11.889 (311889)
+00:05:11.923 (311923) - Not triggered because alarm is off.
+00:05:12.088 (312088) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:12.087 (312087)
+00:05:12.122 (312122) - Not triggered because alarm is off.
+00:05:12.286 (312286) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:12.285 (312285)
+00:05:12.320 (312320) - Not triggered because alarm is off.
+00:05:21.485 (321485) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:21.484 (321484)
+00:05:21.519 (321519) - Not triggered because alarm is off.
+00:05:21.683 (321683) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:21.682 (321682)
+00:05:21.717 (321717) - Not triggered because alarm is off.
+00:05:21.881 (321881) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:21.880 (321880)
+00:05:21.914 (321914) - Not triggered because alarm is off.
+00:05:22.079 (322079) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:22.078 (322078)
+00:05:22.112 (322112) - Not triggered because alarm is off.
+00:05:27.478 (327478) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:27.477 (327477)
+00:05:27.511 (327511) - Not triggered because alarm is off.
+00:05:27.675 (327675) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:27.674 (327674)
+00:05:27.709 (327709) - Not triggered because alarm is off.
+00:05:27.873 (327873) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:27.872 (327872)
+00:05:27.907 (327907) - Not triggered because alarm is off.
+00:05:28.071 (328071) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:28.070 (328070)
+00:05:28.104 (328104) - Not triggered because alarm is off.
+00:05:28.269 (328269) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:28.268 (328268)
+00:05:28.302 (328302) - Not triggered because alarm is off.
+00:05:33.568 (333568) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:33.566 (333566)
+00:05:33.601 (333601) - Not triggered because alarm is off.
+00:05:33.765 (333765) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:33.764 (333764)
+00:05:33.799 (333799) - Not triggered because alarm is off.
+00:05:33.964 (333964) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:33.962 (333962)
+00:05:33.997 (333997) - Not triggered because alarm is off.
+00:05:34.161 (334161) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:34.160 (334160)
+00:05:34.194 (334194) - Not triggered because alarm is off.
+00:05:34.359 (334359) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:34.358 (334358)
+00:05:34.392 (334392) - Not triggered because alarm is off.
+00:07:22.579 (442579) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:22.578 (442578)
+00:07:22.613 (442613) - Not triggered because alarm is off.
+00:07:22.777 (442777) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:22.776 (442776)
+00:07:22.811 (442811) - Not triggered because alarm is off.
+00:07:22.976 (442976) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:22.975 (442975)
+00:07:23.009 (443009) - Not triggered because alarm is off.
+00:07:23.173 (443173) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:23.172 (443172)
+00:07:23.206 (443206) - Not triggered because alarm is off.
+00:07:28.572 (448572) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:28.571 (448571)
+00:07:28.606 (448606) - Not triggered because alarm is off.
+00:07:28.770 (448770) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:28.769 (448769)
+00:07:28.803 (448803) - Not triggered because alarm is off.
+00:07:28.967 (448967) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:28.966 (448966)
+00:07:29.001 (449001) - Not triggered because alarm is off.
+00:07:29.166 (449166) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:29.164 (449164)
+00:07:29.199 (449199) - Not triggered because alarm is off.
+00:08:04.871 (484871) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:04.870 (484870)
+00:08:04.904 (484904) - Not triggered because alarm is off.
+00:08:05.068 (485068) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:05.067 (485067)
+00:08:05.102 (485102) - Not triggered because alarm is off.
+00:08:05.266 (485266) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:05.265 (485265)
+00:08:05.300 (485300) - Not triggered because alarm is off.
+00:08:05.464 (485464) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:05.463 (485463)
+00:08:05.497 (485497) - Not triggered because alarm is off.
+00:08:05.661 (485661) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:05.660 (485660)
+00:08:05.695 (485695) - Not triggered because alarm is off.
+00:08:16.362 (496362) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:16.361 (496361)
+00:08:16.395 (496395) - Not triggered because alarm is off.
+00:08:16.560 (496560) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:16.559 (496559)
+00:08:16.592 (496592) - Not triggered because alarm is off.
+00:08:16.757 (496757) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:16.756 (496756)
+00:08:16.790 (496790) - Not triggered because alarm is off.
+00:08:16.955 (496955) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:16.954 (496954)
+00:08:16.988 (496988) - Not triggered because alarm is off.
+00:08:39.858 (519858) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:39.857 (519857)
+00:08:39.890 (519890) - Not triggered because alarm is off.
+00:08:40.055 (520055) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:40.054 (520054)
+00:08:40.088 (520088) - Not triggered because alarm is off.
+00:08:40.253 (520253) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:40.252 (520252)
+00:08:40.286 (520286) - Not triggered because alarm is off.
+00:08:40.451 (520451) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:40.450 (520450)
+00:08:40.484 (520484) - Not triggered because alarm is off.
+00:08:46.350 (526350) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:46.349 (526349)
+00:08:46.383 (526383) - Not triggered because alarm is off.
+00:08:46.547 (526547) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:46.546 (526546)
+00:08:46.580 (526580) - Not triggered because alarm is off.
+00:08:46.745 (526745) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:46.744 (526744)
+00:08:46.779 (526779) - Not triggered because alarm is off.
+00:08:46.943 (526943) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:46.942 (526942)
+00:08:46.977 (526977) - Not triggered because alarm is off.
+00:08:47.140 (527140) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:47.139 (527139)
+00:08:47.174 (527174) - Not triggered because alarm is off.
+00:08:52.639 (532639) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:52.638 (532638)
+00:08:52.673 (532673) - Not triggered because alarm is off.
+00:08:52.837 (532837) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:52.836 (532836)
+00:08:52.871 (532871) - Not triggered because alarm is off.
+00:08:53.135 (533135) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:53.134 (533134)
+00:08:53.169 (533169) - Not triggered because alarm is off.
+00:08:53.332 (533332) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:53.331 (533331)
+00:08:53.366 (533366) - Not triggered because alarm is off.
+00:08:58.831 (538831) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:58.830 (538830)
+00:08:58.865 (538865) - Not triggered because alarm is off.
+00:08:59.029 (539029) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:59.028 (539028)
+00:08:59.063 (539063) - Not triggered because alarm is off.
+00:08:59.228 (539228) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:59.227 (539227)
+00:08:59.260 (539260) - Not triggered because alarm is off.
+00:08:59.425 (539425) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:59.424 (539424)
+00:08:59.458 (539458) - Not triggered because alarm is off.
+00:08:59.623 (539623) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:59.622 (539622)
+00:08:59.656 (539656) - Not triggered because alarm is off.
+00:09:14.924 (554924) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:14.923 (554923)
+00:09:14.957 (554957) - Not triggered because alarm is off.
+00:09:15.121 (555121) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:15.120 (555120)
+00:09:15.155 (555155) - Not triggered because alarm is off.
+00:09:15.319 (555319) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:15.318 (555318)
+00:09:15.353 (555353) - Not triggered because alarm is off.
+00:09:15.517 (555517) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:15.516 (555516)
+00:09:15.550 (555550) - Not triggered because alarm is off.
+00:09:29.518 (569518) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:29.517 (569517)
+00:09:29.551 (569551) - Not triggered because alarm is off.
+00:09:29.715 (569715) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:29.714 (569714)
+00:09:29.749 (569749) - Not triggered because alarm is off.
+00:09:29.913 (569913) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:29.912 (569912)
+00:09:29.947 (569947) - Not triggered because alarm is off.
+00:09:30.110 (570110) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:30.109 (570109)
+00:09:30.144 (570144) - Not triggered because alarm is off.
+00:09:30.309 (570309) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:30.308 (570308)
+00:09:30.342 (570342) - Not triggered because alarm is off.
+00:09:44.410 (584410) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:44.409 (584409)
+00:09:44.442 (584442) - Not triggered because alarm is off.
+00:09:44.607 (584607) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:44.606 (584606)
+00:09:44.640 (584640) - Not triggered because alarm is off.
+00:09:44.805 (584805) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:44.804 (584804)
+00:09:44.839 (584839) - Not triggered because alarm is off.
+00:09:45.103 (585103) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:45.102 (585102)
+00:09:45.136 (585136) - Not triggered because alarm is off.
+00:09:50.302 (590302) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:50.301 (590301)
+00:09:50.334 (590334) - Not triggered because alarm is off.
+00:09:50.499 (590499) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:50.498 (590498)
+00:09:50.532 (590532) - Not triggered because alarm is off.
+00:09:50.697 (590697) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:50.696 (590696)
+00:09:50.731 (590731) - Not triggered because alarm is off.
+00:09:50.895 (590895) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:50.894 (590894)
+00:09:50.928 (590928) - Not triggered because alarm is off.
+00:09:51.092 (591092) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:51.091 (591091)
+00:09:51.126 (591126) - Not triggered because alarm is off.
+00:10:01.292 (601292) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:01.291 (601291)
+00:10:01.326 (601326) - Not triggered because alarm is off.
+00:10:01.490 (601490) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:01.489 (601489)
+00:10:01.524 (601524) - Not triggered because alarm is off.
+00:10:01.688 (601688) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:01.687 (601687)
+00:10:01.721 (601721) - Not triggered because alarm is off.
+00:10:01.885 (601885) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:01.884 (601884)
+00:10:01.919 (601919) - Not triggered because alarm is off.
+00:10:02.083 (602083) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:02.082 (602082)
+00:10:02.117 (602117) - Not triggered because alarm is off.
+00:10:11.183 (611183) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:11.182 (611182)
+00:10:11.218 (611218) - Turning alarm on.
+00:10:12.764 (612764) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:12.113 (612113)
+00:10:12.799 (612799) - Not triggered because of start delay.
+00:10:15.868 (615868) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:15.217 (615217)
+00:10:15.902 (615902) - Not triggered because of start delay.
+00:10:21.973 (621973) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:21.322 (621322)
+00:10:22.008 (622008) - Turning alarm off.
+00:10:22.755 (622755) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:22.754 (622754)
+00:10:22.788 (622788) - Not triggered because alarm is off.
+00:10:22.953 (622953) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:22.952 (622952)
+00:10:22.986 (622986) - Not triggered because alarm is off.
+00:10:23.151 (623151) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:23.150 (623150)
+00:10:23.183 (623183) - Not triggered because alarm is off.
+00:10:23.348 (623348) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:23.347 (623347)
+00:10:23.381 (623381) - Not triggered because alarm is off.
+00:10:32.048 (632048) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:32.047 (632047)
+00:10:32.081 (632081) - Not triggered because alarm is off.
+00:10:32.246 (632246) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:32.245 (632245)
+00:10:32.279 (632279) - Not triggered because alarm is off.
+00:10:32.443 (632443) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:32.442 (632442)
+00:10:32.476 (632476) - Not triggered because alarm is off.
+00:10:32.641 (632641) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:32.640 (632640)
+00:10:32.674 (632674) - Not triggered because alarm is off.
+00:10:32.839 (632839) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:32.838 (632838)
+00:10:32.872 (632872) - Not triggered because alarm is off.
+00:10:46.339 (646339) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:46.338 (646338)
+00:10:46.373 (646373) - Not triggered because alarm is off.
+00:10:46.537 (646537) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:46.536 (646536)
+00:10:46.571 (646571) - Not triggered because alarm is off.
+00:10:46.734 (646734) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:46.733 (646733)
+00:10:46.768 (646768) - Not triggered because alarm is off.
+00:11:59.948 (719948) - sensor triggered: ***REMOVED*** - time from last alarm: 00:11:59.947 (719947)
+00:11:59.982 (719982) - Turning alarm on.
+00:12:00.779 (720779) - sensor triggered: ***REMOVED*** - time from last alarm: 00:12:00.128 (720128)
+00:12:00.814 (720814) - Turning alarm on.
+00:12:03.862 (723862) - sensor triggered: ***REMOVED*** - time from last alarm: 00:12:03.210 (723210)
+00:12:03.896 (723896) - Not triggered because of start delay.
+02:14:06.477 (8046477) - sensor triggered: ***REMOVED*** - time from last alarm: 02:14:06.475 (8046475)
+02:14:06.513 (8046513) - !!! alarm, alarm, alarm !!!
+02:14:06.569 (8046569) - Alarm triggered by door.
+02:14:08.623 (8048623) - GSM - Sending message to mobile number: 0723002252
+02:14:08.636 (8048636) - GSM - Message:
+02:14:08.679 (8048679) - alarm acasa - door
+AT+CMGS="0723002252"%13%
+108 112>%13%%10%> 
+alarm acasa - door%26%%13%
+108 4>%13%%10%> %13%%10%+CMGS: 115%13%%10%%13%%10%OK%13%%10%
+02:14:12.377 (8052377) - GSM - SMS successfully sent
+02:14:12.532 (8052532) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:06.056 (6056)
+02:14:12.564 (8052564) - Not triggered because of alarm repeat interval.
+02:14:16.643 (8056643) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:10.167 (10167)
+02:14:16.676 (8056676) - Not triggered because of alarm repeat interval.
+02:14:16.854 (8056854) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:10.378 (10378)
+02:14:16.888 (8056888) - Not triggered because of alarm repeat interval.
+02:14:17.065 (8057065) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:10.589 (10589)
+02:14:17.099 (8057099) - Not triggered because of alarm repeat interval.
+02:14:17.277 (8057277) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:10.801 (10801)
+02:14:17.310 (8057310) - Not triggered because of alarm repeat interval.
+02:14:21.088 (8061088) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:14.612 (14612)
+02:14:21.123 (8061123) - Turning alarm off.
+02:14:22.371 (8062371) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:15.895 (15895)
+02:14:22.405 (8062405) - Not triggered because alarm is off.
+02:14:22.570 (8062570) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:16.094 (16094)
+02:14:22.604 (8062604) - Not triggered because alarm is off.
+02:14:22.770 (8062770) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:16.294 (16294)
+02:14:22.802 (8062802) - Not triggered because alarm is off.
+02:14:22.968 (8062968) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:16.492 (16492)
+02:14:23.001 (8063001) - Not triggered because alarm is off.
+02:14:23.167 (8063167) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:16.691 (16691)
+02:14:23.201 (8063201) - Not triggered because alarm is off.
+02:14:28.567 (8068567) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:22.091 (22091)
+02:14:28.600 (8068600) - Not triggered because alarm is off.
+02:14:28.765 (8068765) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:22.289 (22289)
+02:14:28.799 (8068799) - Not triggered because alarm is off.
+02:14:28.965 (8068965) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:22.489 (22489)
+02:14:28.998 (8068998) - Not triggered because alarm is off.
+02:14:29.164 (8069164) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:22.688 (22688)
+02:14:29.196 (8069196) - Not triggered because alarm is off.
+02:14:29.362 (8069362) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:22.886 (22886)
+02:14:29.395 (8069395) - Not triggered because alarm is off.
+02:14:35.062 (8075062) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:28.586 (28586)
+02:14:35.096 (8075096) - Not triggered because alarm is off.
+02:14:35.260 (8075260) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:28.784 (28784)
+02:14:35.294 (8075294) - Not triggered because alarm is off.
+02:14:35.460 (8075460) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:28.984 (28984)
+02:14:35.493 (8075493) - Not triggered because alarm is off.
+02:14:35.659 (8075659) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:29.183 (29183)
+02:14:35.692 (8075692) - Not triggered because alarm is off.
+02:14:41.058 (8081058) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:34.582 (34582)
+02:14:41.092 (8081092) - Not triggered because alarm is off.
+02:14:41.257 (8081257) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:34.781 (34781)
+02:14:41.291 (8081291) - Not triggered because alarm is off.
+02:14:41.456 (8081456) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:34.980 (34980)
+02:14:41.489 (8081489) - Not triggered because alarm is off.
+02:14:41.654 (8081654) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:35.178 (35178)
+02:14:41.688 (8081688) - Not triggered because alarm is off.
+02:14:41.854 (8081854) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:35.378 (35378)
+02:14:41.887 (8081887) - Not triggered because alarm is off.
+02:14:49.853 (8089853) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:43.377 (43377)
+02:14:49.887 (8089887) - Not triggered because alarm is off.
+02:14:50.053 (8090053) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:43.577 (43577)
+02:14:50.086 (8090086) - Not triggered because alarm is off.
+02:14:50.252 (8090252) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:43.776 (43776)
+02:14:50.285 (8090285) - Not triggered because alarm is off.
+02:14:50.450 (8090450) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:43.974 (43974)
+02:14:50.483 (8090483) - Not triggered because alarm is off.
+02:14:50.649 (8090649) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:44.173 (44173)
+02:14:50.683 (8090683) - Not triggered because alarm is off.
+02:14:55.849 (8095849) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:49.373 (49373)
+02:14:55.883 (8095883) - Not triggered because alarm is off.
+02:14:56.048 (8096048) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:49.572 (49572)
+02:14:56.081 (8096081) - Not triggered because alarm is off.
+02:14:56.246 (8096246) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:49.770 (49770)
+02:14:56.280 (8096280) - Not triggered because alarm is off.
+02:14:56.445 (8096445) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:49.969 (49969)
+02:14:56.479 (8096479) - Not triggered because alarm is off.
+02:14:56.644 (8096644) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:50.169 (50169)
+02:14:56.677 (8096677) - Not triggered because alarm is off.
+02:20:06.209 (8406209) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:59.733 (359733)
+02:20:06.243 (8406243) - Not triggered because alarm is off.
+02:20:06.409 (8406409) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:59.933 (359933)
+02:20:06.444 (8406444) - Not triggered because alarm is off.
+02:20:06.608 (8406608) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:00.132 (360132)
+02:20:06.643 (8406643) - Not triggered because alarm is off.
+02:20:06.808 (8406808) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:00.332 (360332)
+02:20:06.843 (8406843) - Not triggered because alarm is off.
+02:20:12.009 (8412009) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:05.533 (365533)
+02:20:12.044 (8412044) - Not triggered because alarm is off.
+02:20:12.210 (8412210) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:05.734 (365734)
+02:20:12.243 (8412243) - Not triggered because alarm is off.
+02:20:12.409 (8412409) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:05.933 (365933)
+02:20:12.443 (8412443) - Not triggered because alarm is off.
+02:20:12.609 (8412609) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:06.133 (366133)
+02:20:12.644 (8412644) - Not triggered because alarm is off.
+02:21:39.428 (8499428) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:32.952 (452952)
+02:21:39.462 (8499462) - Not triggered because alarm is off.
+02:21:39.628 (8499628) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:33.152 (453152)
+02:21:39.661 (8499661) - Not triggered because alarm is off.
+02:21:39.827 (8499827) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:33.351 (453351)
+02:21:39.862 (8499862) - Not triggered because alarm is off.
+02:21:40.027 (8500027) - sensor triggered: ***REMOVED*** - time from last alarm: 00:07:33.551 (453551)
+02:21:40.062 (8500062) - Not triggered because alarm is off.
+02:23:34.951 (8614951) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:28.475 (568475)
+02:23:34.986 (8614986) - Not triggered because alarm is off.
+02:23:35.151 (8615151) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:28.675 (568675)
+02:23:35.186 (8615186) - Not triggered because alarm is off.
+02:23:35.352 (8615352) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:28.876 (568876)
+02:23:35.386 (8615386) - Not triggered because alarm is off.
+02:23:35.552 (8615552) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:29.075 (569075)
+02:23:35.585 (8615585) - Not triggered because alarm is off.
+02:23:35.751 (8615751) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:29.275 (569275)
+02:23:35.786 (8615786) - Not triggered because alarm is off.
+02:23:51.654 (8631654) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:45.178 (585178)
+02:23:51.689 (8631689) - Not triggered because alarm is off.
+02:23:51.855 (8631855) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:45.379 (585379)
+02:23:51.888 (8631888) - Not triggered because alarm is off.
+02:23:52.054 (8632054) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:45.578 (585578)
+02:23:52.088 (8632088) - Not triggered because alarm is off.
+02:23:52.254 (8632254) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:45.778 (585778)
+02:23:52.289 (8632289) - Not triggered because alarm is off.
+02:23:52.454 (8632454) - sensor triggered: ***REMOVED*** - time from last alarm: 00:09:45.978 (585978)
+02:23:52.488 (8632488) - Not triggered because alarm is off.
+02:42:35.893 (9755893) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:29.417 (1709417)
+02:42:35.928 (9755928) - Not triggered because alarm is off.
+02:42:36.094 (9756094) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:29.618 (1709618)
+02:42:36.130 (9756130) - Not triggered because alarm is off.
+02:42:36.295 (9756295) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:29.819 (1709819)
+02:42:36.331 (9756331) - Not triggered because alarm is off.
+02:42:36.495 (9756495) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:30.019 (1710019)
+02:42:36.531 (9756531) - Not triggered because alarm is off.
+02:42:42.098 (9762098) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:35.622 (1715622)
+02:42:42.134 (9762134) - Not triggered because alarm is off.
+02:42:42.298 (9762298) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:35.822 (1715822)
+02:42:42.334 (9762334) - Not triggered because alarm is off.
+02:42:42.500 (9762500) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:36.024 (1716024)
+02:42:42.535 (9762535) - Not triggered because alarm is off.
+02:42:42.701 (9762701) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:36.225 (1716225)
+02:42:42.737 (9762737) - Not triggered because alarm is off.
+02:42:42.902 (9762902) - sensor triggered: ***REMOVED*** - time from last alarm: 00:28:36.425 (1716425)
+02:42:42.937 (9762937) - Not triggered because alarm is off.
+03:40:31.041 (13231041) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:24.565 (5184565)
+03:40:31.078 (13231078) - Not triggered because alarm is off.
+03:40:31.244 (13231244) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:24.768 (5184768)
+03:40:31.281 (13231281) - Not triggered because alarm is off.
+03:40:31.447 (13231447) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:24.971 (5184971)
+03:40:31.483 (13231483) - Not triggered because alarm is off.
+03:40:31.650 (13231650) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:25.174 (5185174)
+03:40:31.686 (13231686) - Not triggered because alarm is off.
+03:40:31.853 (13231853) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:25.377 (5185377)
+03:40:31.890 (13231890) - Not triggered because alarm is off.
+03:40:39.157 (13239157) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:32.681 (5192681)
+03:40:39.194 (13239194) - Not triggered because alarm is off.
+03:40:39.361 (13239361) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:32.885 (5192885)
+03:40:39.397 (13239397) - Not triggered because alarm is off.
+03:40:39.564 (13239564) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:33.088 (5193088)
+03:40:39.601 (13239601) - Not triggered because alarm is off.
+03:40:39.767 (13239767) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:33.291 (5193291)
+03:40:39.803 (13239803) - Not triggered because alarm is off.
+03:40:43.470 (13243470) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:36.994 (5196994)
+03:40:43.508 (13243508) - Turning alarm on.
+03:40:44.307 (13244307) - sensor triggered: ***REMOVED*** - time from last alarm: 01:26:37.180 (5197180)
+03:40:44.344 (13244344) - Turning alarm on.
+03:41:55.096 (13315096) - sensor triggered: ***REMOVED*** - time from last alarm: 01:27:48.620 (5268620)
+03:41:55.134 (13315134) - Turning alarm on.
+03:41:55.933 (13315933) - sensor triggered: ***REMOVED*** - time from last alarm: 01:27:48.805 (5268805)
+03:41:55.970 (13315970) - Turning alarm on.
+03:42:08.028 (13328028) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:00.902 (5280902)
+03:42:08.065 (13328065) - Not triggered because of start delay.
+04:06:31.438 (14791438) - sensor triggered: ***REMOVED*** - time from last alarm: 01:52:24.962 (6744962)
+04:06:31.475 (14791475) - !!! alarm, alarm, alarm !!!
+04:06:31.532 (14791532) - Alarm triggered by motion.
+04:06:33.589 (14793589) - GSM - Sending message to mobile number: 0723002252
+04:06:33.604 (14793604) - GSM - Message:
+04:06:33.648 (14793648) - alarm acasa - motion
+AT+CMGS="0723002252"%13%
+4 8>%13%%10%> 
+alarm acasa - motion%26%%13%
+4 28>%13%%10%> %13%%10%+CMGS: 116%13%%10%%13%%10%OK%13%%10%
+04:06:37.151 (14797151) - GSM - SMS successfully sent
+04:06:50.508 (14810508) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:19.070 (19070)
+04:06:50.544 (14810544) - Turning alarm off.
+04:06:51.393 (14811393) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:19.955 (19955)
+04:06:51.427 (14811427) - Not triggered because alarm is off.
+04:06:51.594 (14811594) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:20.156 (20156)
+04:06:51.628 (14811628) - Not triggered because alarm is off.
+04:06:51.795 (14811795) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:20.357 (20357)
+04:06:51.829 (14811829) - Not triggered because alarm is off.
+04:06:51.996 (14811996) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:20.558 (20558)
+04:06:52.030 (14812030) - Not triggered because alarm is off.
+04:06:52.196 (14812196) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:20.758 (20758)
+04:06:52.231 (14812231) - Not triggered because alarm is off.
+04:06:57.998 (14817998) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:26.560 (26560)
+04:06:58.033 (14818033) - Not triggered because alarm is off.
+04:06:58.199 (14818199) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:26.761 (26761)
+04:06:58.234 (14818234) - Not triggered because alarm is off.
+04:06:58.401 (14818401) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:26.963 (26963)
+04:06:58.435 (14818435) - Not triggered because alarm is off.
+04:06:58.601 (14818601) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:27.163 (27163)
+04:06:58.635 (14818635) - Not triggered because alarm is off.
+04:06:58.802 (14818802) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:27.364 (27364)
+04:06:58.837 (14818837) - Not triggered because alarm is off.
+04:07:04.104 (14824104) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:32.666 (32666)
+04:07:04.138 (14824138) - Not triggered because alarm is off.
+04:07:04.305 (14824305) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:32.867 (32867)
+04:07:04.339 (14824339) - Not triggered because alarm is off.
+04:07:04.506 (14824506) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:33.068 (33068)
+04:07:04.541 (14824541) - Not triggered because alarm is off.
+04:07:04.707 (14824707) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:33.269 (33269)
+04:07:04.741 (14824741) - Not triggered because alarm is off.
+04:07:04.907 (14824907) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:33.469 (33469)
+04:07:04.942 (14824942) - Not triggered because alarm is off.
+04:07:10.409 (14830409) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:38.971 (38971)
+04:07:10.444 (14830444) - Not triggered because alarm is off.
+04:07:10.611 (14830611) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:39.173 (39173)
+04:07:10.645 (14830645) - Not triggered because alarm is off.
+04:07:10.812 (14830812) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:39.374 (39374)
+04:07:10.845 (14830845) - Not triggered because alarm is off.
+04:07:11.012 (14831012) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:39.574 (39574)
+04:07:11.047 (14831047) - Not triggered because alarm is off.
+04:07:11.213 (14831213) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:39.775 (39775)
+04:07:11.248 (14831248) - Not triggered because alarm is off.
+04:07:16.616 (14836616) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:45.178 (45178)
+04:07:16.649 (14836649) - Not triggered because alarm is off.
+04:07:16.816 (14836816) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:45.378 (45378)
+04:07:16.851 (14836851) - Not triggered because alarm is off.
+04:07:17.017 (14837017) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:45.579 (45579)
+04:07:17.052 (14837052) - Not triggered because alarm is off.
+04:07:17.218 (14837218) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:45.780 (45780)
+04:07:17.253 (14837253) - Not triggered because alarm is off.
+04:07:17.420 (14837420) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:45.980 (45980)
+04:07:17.453 (14837453) - Not triggered because alarm is off.
+04:07:22.621 (14842621) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:51.183 (51183)
+04:07:22.655 (14842655) - Not triggered because alarm is off.
+04:07:22.822 (14842822) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:51.384 (51384)
+04:07:22.856 (14842856) - Not triggered because alarm is off.
+04:07:23.023 (14843023) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:51.585 (51585)
+04:07:23.058 (14843058) - Not triggered because alarm is off.
+04:07:23.224 (14843224) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:51.786 (51786)
+04:07:23.258 (14843258) - Not triggered because alarm is off.
+04:07:23.424 (14843424) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:51.986 (51986)
+04:07:23.459 (14843459) - Not triggered because alarm is off.
+04:07:30.627 (14850627) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:59.189 (59189)
+04:07:30.661 (14850661) - Not triggered because alarm is off.
+04:07:30.828 (14850828) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:59.390 (59390)
+04:07:30.863 (14850863) - Not triggered because alarm is off.
+04:07:31.028 (14851028) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:59.590 (59590)
+04:07:31.063 (14851063) - Not triggered because alarm is off.
+04:07:31.229 (14851229) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:59.791 (59791)
+04:07:31.264 (14851264) - Not triggered because alarm is off.
+04:07:31.431 (14851431) - sensor triggered: ***REMOVED*** - time from last alarm: 00:00:59.993 (59993)
+04:07:31.465 (14851465) - Not triggered because alarm is off.
+04:07:40.934 (14860934) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:09.496 (69496)
+04:07:40.967 (14860967) - Not triggered because alarm is off.
+04:07:41.134 (14861134) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:09.696 (69696)
+04:07:41.169 (14861169) - Not triggered because alarm is off.
+04:07:41.335 (14861335) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:09.897 (69897)
+04:07:41.370 (14861370) - Not triggered because alarm is off.
+04:07:41.536 (14861536) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:10.098 (70098)
+04:07:41.571 (14861571) - Not triggered because alarm is off.
+04:07:41.736 (14861736) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:10.299 (70299)
+04:07:41.771 (14861771) - Not triggered because alarm is off.
+04:07:52.640 (14872640) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:21.202 (81202)
+04:07:52.675 (14872675) - Not triggered because alarm is off.
+04:07:52.841 (14872841) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:21.403 (81403)
+04:07:52.876 (14872876) - Not triggered because alarm is off.
+04:07:53.042 (14873042) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:21.604 (81604)
+04:07:53.076 (14873076) - Not triggered because alarm is off.
+04:07:53.243 (14873243) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:21.805 (81805)
+04:07:53.277 (14873277) - Not triggered because alarm is off.
+04:07:53.444 (14873444) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:22.006 (82006)
+04:07:53.479 (14873479) - Not triggered because alarm is off.
+04:08:13.649 (14893649) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:42.211 (102211)
+04:08:13.684 (14893684) - Not triggered because alarm is off.
+04:08:13.851 (14893851) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:42.413 (102413)
+04:08:13.886 (14893886) - Not triggered because alarm is off.
+04:08:14.053 (14894053) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:42.615 (102615)
+04:08:14.089 (14894089) - Not triggered because alarm is off.
+04:08:14.255 (14894255) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:42.817 (102817)
+04:08:14.290 (14894290) - Not triggered because alarm is off.
+04:08:14.457 (14894457) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:43.019 (103019)
+04:08:14.492 (14894492) - Not triggered because alarm is off.
+04:08:21.660 (14901660) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:50.222 (110222)
+04:08:21.696 (14901696) - Not triggered because alarm is off.
+04:08:21.863 (14901863) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:50.425 (110425)
+04:08:21.898 (14901898) - Not triggered because alarm is off.
+04:08:22.065 (14902065) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:50.627 (110627)
+04:08:22.099 (14902099) - Not triggered because alarm is off.
+04:08:22.266 (14902266) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:50.828 (110828)
+04:08:22.302 (14902302) - Not triggered because alarm is off.
+04:08:22.468 (14902468) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:51.030 (111030)
+04:08:22.504 (14902504) - Not triggered because alarm is off.
+04:08:29.072 (14909072) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:57.634 (117634)
+04:08:29.108 (14909108) - Not triggered because alarm is off.
+04:08:29.274 (14909274) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:57.836 (117836)
+04:08:29.309 (14909309) - Not triggered because alarm is off.
+04:08:29.475 (14909475) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:58.037 (118037)
+04:08:29.511 (14909511) - Not triggered because alarm is off.
+04:08:29.678 (14909678) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:58.240 (118240)
+04:08:29.713 (14909713) - Not triggered because alarm is off.
+04:08:29.880 (14909880) - sensor triggered: ***REMOVED*** - time from last alarm: 00:01:58.442 (118442)
+04:08:29.915 (14909915) - Not triggered because alarm is off.
+04:08:35.383 (14915383) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:03.945 (123945)
+04:08:35.419 (14915419) - Not triggered because alarm is off.
+04:08:35.585 (14915585) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:04.147 (124147)
+04:08:35.620 (14915620) - Not triggered because alarm is off.
+04:08:35.786 (14915786) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:04.348 (124348)
+04:08:35.822 (14915822) - Not triggered because alarm is off.
+04:08:35.989 (14915989) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:04.551 (124551)
+04:08:36.024 (14916024) - Not triggered because alarm is off.
+04:08:36.191 (14916191) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:04.753 (124753)
+04:08:36.227 (14916227) - Not triggered because alarm is off.
+04:08:41.494 (14921494) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:10.056 (130056)
+04:08:41.529 (14921529) - Not triggered because alarm is off.
+04:08:41.696 (14921696) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:10.258 (130258)
+04:08:41.732 (14921732) - Not triggered because alarm is off.
+04:08:41.897 (14921897) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:10.459 (130459)
+04:08:41.933 (14921933) - Not triggered because alarm is off.
+04:08:42.099 (14922099) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:10.661 (130661)
+04:08:42.135 (14922135) - Not triggered because alarm is off.
+04:08:47.902 (14927902) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:16.464 (136464)
+04:08:47.938 (14927938) - Not triggered because alarm is off.
+04:08:48.105 (14928105) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:16.667 (136667)
+04:08:48.140 (14928140) - Not triggered because alarm is off.
+04:08:48.307 (14928307) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:16.869 (136869)
+04:08:48.343 (14928343) - Not triggered because alarm is off.
+04:08:48.508 (14928508) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:17.070 (137070)
+04:08:48.544 (14928544) - Not triggered because alarm is off.
+04:08:53.812 (14933812) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:22.374 (142374)
+04:08:53.848 (14933848) - Not triggered because alarm is off.
+04:08:54.013 (14934013) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:22.575 (142575)
+04:08:54.049 (14934049) - Not triggered because alarm is off.
+04:08:54.215 (14934215) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:22.777 (142777)
+04:08:54.251 (14934251) - Not triggered because alarm is off.
+04:08:54.418 (14934418) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:22.980 (142980)
+04:08:54.453 (14934453) - Not triggered because alarm is off.
+04:08:54.620 (14934620) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:23.182 (143182)
+04:08:54.654 (14934654) - Not triggered because alarm is off.
+04:08:59.823 (14939823) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:28.385 (148385)
+04:08:59.858 (14939858) - Not triggered because alarm is off.
+04:09:00.024 (14940024) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:28.586 (148586)
+04:09:00.060 (14940060) - Not triggered because alarm is off.
+04:09:00.226 (14940226) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:28.788 (148788)
+04:09:00.262 (14940262) - Not triggered because alarm is off.
+04:09:00.429 (14940429) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:28.991 (148991)
+04:09:00.464 (14940464) - Not triggered because alarm is off.
+04:09:05.831 (14945831) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:34.393 (154393)
+04:09:05.867 (14945867) - Not triggered because alarm is off.
+04:09:06.033 (14946033) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:34.595 (154595)
+04:09:06.069 (14946069) - Not triggered because alarm is off.
+04:09:06.235 (14946235) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:34.797 (154797)
+04:09:06.271 (14946271) - Not triggered because alarm is off.
+04:09:06.438 (14946438) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:35.000 (155000)
+04:09:06.472 (14946472) - Not triggered because alarm is off.
+04:09:06.639 (14946639) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:35.201 (155201)
+04:09:06.675 (14946675) - Not triggered because alarm is off.
+04:09:11.742 (14951742) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:40.304 (160304)
+04:09:11.778 (14951778) - Not triggered because alarm is off.
+04:09:11.945 (14951945) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:40.507 (160507)
+04:09:11.980 (14951980) - Not triggered because alarm is off.
+04:09:12.146 (14952146) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:40.708 (160708)
+04:09:12.181 (14952181) - Not triggered because alarm is off.
+04:09:12.348 (14952348) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:40.910 (160910)
+04:09:12.384 (14952384) - Not triggered because alarm is off.
+04:09:12.550 (14952550) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:41.112 (161112)
+04:09:12.586 (14952586) - Not triggered because alarm is off.
+04:09:17.654 (14957654) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:46.215 (166215)
+04:09:17.688 (14957688) - Not triggered because alarm is off.
+04:09:17.855 (14957855) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:46.417 (166417)
+04:09:17.891 (14957891) - Not triggered because alarm is off.
+04:09:18.057 (14958057) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:46.619 (166619)
+04:09:18.093 (14958093) - Not triggered because alarm is off.
+04:09:18.260 (14958260) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:46.822 (166822)
+04:09:18.295 (14958295) - Not triggered because alarm is off.
+04:09:24.162 (14964162) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:52.724 (172724)
+04:09:24.198 (14964198) - Not triggered because alarm is off.
+04:09:24.365 (14964365) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:52.927 (172927)
+04:09:24.400 (14964400) - Not triggered because alarm is off.
+04:09:24.567 (14964567) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:53.129 (173129)
+04:09:24.602 (14964602) - Not triggered because alarm is off.
+04:09:24.768 (14964768) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:53.330 (173330)
+04:09:24.804 (14964804) - Not triggered because alarm is off.
+04:09:24.970 (14964970) - sensor triggered: ***REMOVED*** - time from last alarm: 00:02:53.532 (173532)
+04:09:25.006 (14965006) - Not triggered because alarm is off.
+04:09:41.776 (14981776) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:10.338 (190338)
+04:09:41.812 (14981812) - Not triggered because alarm is off.
+04:09:41.978 (14981978) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:10.540 (190540)
+04:09:42.013 (14982013) - Not triggered because alarm is off.
+04:09:42.179 (14982179) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:10.741 (190741)
+04:09:42.215 (14982215) - Not triggered because alarm is off.
+04:09:42.382 (14982382) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:10.944 (190944)
+04:09:42.417 (14982417) - Not triggered because alarm is off.
+04:09:42.584 (14982584) - sensor triggered: ***REMOVED*** - time from last alarm: 00:03:11.146 (191146)
+04:09:42.620 (14982620) - Not triggered because alarm is off.
+04:12:24.921 (15144921) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:53.483 (353483)
+04:12:24.955 (15144955) - Not triggered because alarm is off.
+04:12:25.122 (15145122) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:53.684 (353684)
+04:12:25.158 (15145158) - Not triggered because alarm is off.
+04:12:25.324 (15145324) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:53.886 (353886)
+04:12:25.360 (15145360) - Not triggered because alarm is off.
+04:12:25.527 (15145527) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:54.089 (354089)
+04:12:25.562 (15145562) - Not triggered because alarm is off.
+04:12:25.729 (15145729) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:54.291 (354291)
+04:12:25.764 (15145764) - Not triggered because alarm is off.
+04:12:31.131 (15151131) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:59.693 (359693)
+04:12:31.167 (15151167) - Not triggered because alarm is off.
+04:12:31.334 (15151334) - sensor triggered: ***REMOVED*** - time from last alarm: 00:05:59.896 (359896)
+04:12:31.369 (15151369) - Not triggered because alarm is off.
+04:12:31.536 (15151536) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:00.098 (360098)
+04:12:31.571 (15151571) - Not triggered because alarm is off.
+04:12:31.737 (15151737) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:00.299 (360299)
+04:12:31.773 (15151773) - Not triggered because alarm is off.
+04:12:31.939 (15151939) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:00.501 (360501)
+04:12:31.975 (15151975) - Not triggered because alarm is off.
+04:12:55.047 (15175047) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:23.609 (383609)
+04:12:55.081 (15175081) - Not triggered because alarm is off.
+04:12:55.248 (15175248) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:23.810 (383810)
+04:12:55.283 (15175283) - Not triggered because alarm is off.
+04:12:55.450 (15175450) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:24.012 (384012)
+04:12:55.486 (15175486) - Not triggered because alarm is off.
+04:12:55.652 (15175652) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:24.214 (384214)
+04:12:55.688 (15175688) - Not triggered because alarm is off.
+04:12:55.854 (15175854) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:24.416 (384416)
+04:12:55.889 (15175889) - Not triggered because alarm is off.
+04:13:02.757 (15182757) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:31.319 (391319)
+04:13:02.793 (15182793) - Not triggered because alarm is off.
+04:13:02.959 (15182959) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:31.521 (391521)
+04:13:02.995 (15182995) - Not triggered because alarm is off.
+04:13:03.161 (15183161) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:31.723 (391723)
+04:13:03.197 (15183197) - Not triggered because alarm is off.
+04:13:03.364 (15183364) - sensor triggered: ***REMOVED*** - time from last alarm: 00:06:31.926 (391926)
+04:13:03.398 (15183398) - Not triggered because alarm is off.
+04:14:49.788 (15289788) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:18.350 (498350)
+04:14:49.824 (15289824) - Not triggered because alarm is off.
+04:14:49.990 (15289990) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:18.552 (498552)
+04:14:50.025 (15290025) - Not triggered because alarm is off.
+04:14:50.191 (15290191) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:18.753 (498753)
+04:14:50.227 (15290227) - Not triggered because alarm is off.
+04:14:50.394 (15290394) - sensor triggered: ***REMOVED*** - time from last alarm: 00:08:18.956 (498956)
+04:14:50.429 (15290429) - Not triggered because alarm is off.
+04:16:35.018 (15395018) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:03.580 (603580)
+04:16:35.053 (15395053) - Not triggered because alarm is off.
+04:16:35.220 (15395220) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:03.782 (603782)
+04:16:35.256 (15395256) - Not triggered because alarm is off.
+04:16:35.422 (15395422) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:03.984 (603984)
+04:16:35.458 (15395458) - Not triggered because alarm is off.
+04:16:35.623 (15395623) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:04.185 (604185)
+04:16:35.659 (15395659) - Not triggered because alarm is off.
+04:16:43.327 (15403327) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:11.889 (611889)
+04:16:43.363 (15403363) - Not triggered because alarm is off.
+04:16:43.530 (15403530) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:12.092 (612092)
+04:16:43.565 (15403565) - Not triggered because alarm is off.
+04:16:43.731 (15403731) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:12.293 (612293)
+04:16:43.767 (15403767) - Not triggered because alarm is off.
+04:16:43.933 (15403933) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:12.495 (612495)
+04:16:43.969 (15403969) - Not triggered because alarm is off.
+04:16:51.337 (15411337) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:19.899 (619899)
+04:16:51.373 (15411373) - Not triggered because alarm is off.
+04:16:51.538 (15411538) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:20.100 (620100)
+04:16:51.574 (15411574) - Not triggered because alarm is off.
+04:16:51.741 (15411741) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:20.303 (620303)
+04:16:51.776 (15411776) - Not triggered because alarm is off.
+04:16:51.943 (15411943) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:20.505 (620505)
+04:16:51.979 (15411979) - Not triggered because alarm is off.
+04:16:52.145 (15412145) - sensor triggered: ***REMOVED*** - time from last alarm: 00:10:20.707 (620707)
+04:16:52.180 (15412180) - Not triggered because alarm is off.
+05:23:23.495 (19403495) - sensor triggered: ***REMOVED*** - time from last alarm: 01:16:52.057 (4612057)
+05:23:23.532 (19403532) - Not triggered because alarm is off.
+05:23:23.698 (19403698) - sensor triggered: ***REMOVED*** - time from last alarm: 01:16:52.260 (4612260)
+05:23:23.735 (19403735) - Not triggered because alarm is off.
+05:23:23.900 (19403900) - sensor triggered: ***REMOVED*** - time from last alarm: 01:16:52.462 (4612462)
+05:23:23.937 (19403937) - Not triggered because alarm is off.
+05:23:24.104 (19404104) - sensor triggered: ***REMOVED*** - time from last alarm: 01:16:52.666 (4612666)
+05:23:24.140 (19404140) - Not triggered because alarm is off.
+05:23:37.710 (19417710) - sensor triggered: ***REMOVED*** - time from last alarm: 01:17:06.272 (4626272)
+05:23:37.746 (19417746) - Not triggered because alarm is off.
+05:23:37.913 (19417913) - sensor triggered: ***REMOVED*** - time from last alarm: 01:17:06.475 (4626475)
+05:23:37.950 (19417950) - Not triggered because alarm is off.
+05:23:38.116 (19418116) - sensor triggered: ***REMOVED*** - time from last alarm: 01:17:06.678 (4626678)
+05:23:38.152 (19418152) - Not triggered because alarm is off.
+05:23:38.319 (19418319) - sensor triggered: ***REMOVED*** - time from last alarm: 01:17:06.880 (4626880)
+05:23:38.355 (19418355) - Not triggered because alarm is off.
+05:23:38.522 (19418522) - sensor triggered: ***REMOVED*** - time from last alarm: 01:17:07.084 (4627084)
+05:23:38.558 (19418558) - Not triggered because alarm is off.
+05:28:10.482 (19690482) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:39.044 (4899044)
+05:28:10.519 (19690519) - Not triggered because alarm is off.
+05:28:10.686 (19690686) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:39.248 (4899248)
+05:28:10.722 (19690722) - Not triggered because alarm is off.
+05:28:10.889 (19690889) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:39.451 (4899451)
+05:28:10.926 (19690926) - Not triggered because alarm is off.
+05:28:11.091 (19691091) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:39.653 (4899653)
+05:28:11.128 (19691128) - Not triggered because alarm is off.
+05:28:11.295 (19691295) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:39.857 (4899857)
+05:28:11.331 (19691331) - Not triggered because alarm is off.
+05:28:29.502 (19709502) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:58.064 (4918064)
+05:28:29.538 (19709538) - Not triggered because alarm is off.
+05:28:29.705 (19709705) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:58.267 (4918267)
+05:28:29.742 (19709742) - Not triggered because alarm is off.
+05:28:29.907 (19709907) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:58.469 (4918469)
+05:28:29.944 (19709944) - Not triggered because alarm is off.
+05:28:30.111 (19710111) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:58.673 (4918673)
+05:28:30.147 (19710147) - Not triggered because alarm is off.
+05:28:30.314 (19710314) - sensor triggered: ***REMOVED*** - time from last alarm: 01:21:58.876 (4918876)
+05:28:30.351 (19710351) - Not triggered because alarm is off.
+05:35:08.601 (20108601) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:37.163 (5317163)
+05:35:08.638 (20108638) - Not triggered because alarm is off.
+05:35:08.805 (20108805) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:37.367 (5317367)
+05:35:08.840 (20108840) - Not triggered because alarm is off.
+05:35:09.007 (20109007) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:37.569 (5317569)
+05:35:09.044 (20109044) - Not triggered because alarm is off.
+05:35:09.210 (20109210) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:37.772 (5317772)
+05:35:09.247 (20109247) - Not triggered because alarm is off.
+05:35:21.116 (20121116) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:49.678 (5329678)
+05:35:21.152 (20121152) - Not triggered because alarm is off.
+05:35:21.319 (20121319) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:49.881 (5329881)
+05:35:21.356 (20121356) - Not triggered because alarm is off.
+05:35:21.522 (20121522) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:50.084 (5330084)
+05:35:21.559 (20121559) - Not triggered because alarm is off.
+05:35:21.725 (20121725) - sensor triggered: ***REMOVED*** - time from last alarm: 01:28:50.287 (5330287)
+05:35:21.761 (20121761) - Not triggered because alarm is off.
+05:36:02.737 (20162737) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:31.299 (5371299)
+05:36:02.774 (20162774) - Not triggered because alarm is off.
+05:36:02.939 (20162939) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:31.501 (5371501)
+05:36:02.976 (20162976) - Not triggered because alarm is off.
+05:36:03.143 (20163143) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:31.704 (5371704)
+05:36:03.179 (20163179) - Not triggered because alarm is off.
+05:36:03.346 (20163346) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:31.908 (5371908)
+05:36:03.382 (20163382) - Not triggered because alarm is off.
+05:36:08.850 (20168850) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:37.412 (5377412)
+05:36:08.887 (20168887) - Not triggered because alarm is off.
+05:36:09.053 (20169053) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:37.615 (5377615)
+05:36:09.090 (20169090) - Not triggered because alarm is off.
+05:36:09.256 (20169256) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:37.817 (5377817)
+05:36:09.292 (20169292) - Not triggered because alarm is off.
+05:36:09.459 (20169459) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:38.021 (5378021)
+05:36:09.496 (20169496) - Not triggered because alarm is off.
+05:36:09.662 (20169662) - sensor triggered: ***REMOVED*** - time from last alarm: 01:29:38.224 (5378224)
+05:36:09.699 (20169699) - Not triggered because alarm is off.
+05:36:31.869 (20191869) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:00.431 (5400431)
+05:36:31.906 (20191906) - Not triggered because alarm is off.
+05:36:32.073 (20192073) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:00.635 (5400635)
+05:36:32.109 (20192109) - Not triggered because alarm is off.
+05:36:32.276 (20192276) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:00.838 (5400838)
+05:36:32.313 (20192313) - Not triggered because alarm is off.
+05:36:32.479 (20192479) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:01.041 (5401041)
+05:36:32.516 (20192516) - Not triggered because alarm is off.
+05:36:40.984 (20200984) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:09.546 (5409546)
+05:36:41.020 (20201020) - Not triggered because alarm is off.
+05:36:41.187 (20201187) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:09.749 (5409749)
+05:36:41.224 (20201224) - Not triggered because alarm is off.
+05:36:41.390 (20201390) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:09.952 (5409952)
+05:36:41.426 (20201426) - Not triggered because alarm is off.
+05:36:41.592 (20201592) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:10.154 (5410154)
+05:36:41.629 (20201629) - Not triggered because alarm is off.
+05:36:41.796 (20201796) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:10.358 (5410358)
+05:36:41.832 (20201832) - Not triggered because alarm is off.
+05:36:50.600 (20210600) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:19.162 (5419162)
+05:36:50.637 (20210637) - Not triggered because alarm is off.
+05:36:50.803 (20210803) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:19.365 (5419365)
+05:36:50.840 (20210840) - Not triggered because alarm is off.
+05:36:51.007 (20211007) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:19.569 (5419569)
+05:36:51.043 (20211043) - Not triggered because alarm is off.
+05:36:51.210 (20211210) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:19.772 (5419772)
+05:36:51.247 (20211247) - Not triggered because alarm is off.
+05:36:56.514 (20216514) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:25.076 (5425076)
+05:36:56.550 (20216550) - Not triggered because alarm is off.
+05:36:56.717 (20216717) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:25.279 (5425279)
+05:36:56.754 (20216754) - Not triggered because alarm is off.
+05:36:56.920 (20216920) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:25.482 (5425482)
+05:36:56.956 (20216956) - Not triggered because alarm is off.
+05:36:57.123 (20217123) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:25.685 (5425685)
+05:36:57.159 (20217159) - Not triggered because alarm is off.
+05:36:57.326 (20217326) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:25.888 (5425888)
+05:36:57.363 (20217363) - Not triggered because alarm is off.
+05:37:03.230 (20223230) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:31.792 (5431792)
+05:37:03.266 (20223266) - Not triggered because alarm is off.
+05:37:03.433 (20223433) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:31.995 (5431995)
+05:37:03.470 (20223470) - Not triggered because alarm is off.
+05:37:03.637 (20223637) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:32.199 (5432199)
+05:37:03.673 (20223673) - Not triggered because alarm is off.
+05:37:03.840 (20223840) - sensor triggered: ***REMOVED*** - time from last alarm: 01:30:32.402 (5432402)
+05:37:03.877 (20223877) - Not triggered because alarm is off.
+05:38:43.464 (20323464) - sensor triggered: ***REMOVED*** - time from last alarm: 01:32:12.026 (5532026)
+05:38:43.501 (20323501) - Not triggered because alarm is off.
+05:38:43.666 (20323666) - sensor triggered: ***REMOVED*** - time from last alarm: 01:32:12.228 (5532228)
+05:38:43.703 (20323703) - Not triggered because alarm is off.
+05:38:43.870 (20323870) - sensor triggered: ***REMOVED*** - time from last alarm: 01:32:12.432 (5532432)
+05:38:43.906 (20323906) - Not triggered because alarm is off.
+05:38:44.073 (20324073) - sensor triggered: ***REMOVED*** - time from last alarm: 01:32:12.635 (5532635)
+05:38:44.110 (20324110) - Not triggered because alarm is off.
+05:43:36.738 (20616738) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:05.300 (5825300)
+05:43:36.774 (20616774) - Not triggered because alarm is off.
+05:43:36.941 (20616941) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:05.503 (5825503)
+05:43:36.978 (20616978) - Not triggered because alarm is off.
+05:43:37.144 (20617144) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:05.706 (5825706)
+05:43:37.181 (20617181) - Not triggered because alarm is off.
+05:43:37.347 (20617347) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:05.909 (5825909)
+05:43:37.383 (20617383) - Not triggered because alarm is off.
+05:43:37.550 (20617550) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:06.112 (5826112)
+05:43:37.586 (20617586) - Not triggered because alarm is off.
+05:43:44.055 (20624055) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:12.617 (5832617)
+05:43:44.091 (20624091) - Not triggered because alarm is off.
+05:43:44.258 (20624258) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:12.820 (5832820)
+05:43:44.294 (20624294) - Not triggered because alarm is off.
+05:43:44.460 (20624460) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:13.022 (5833022)
+05:43:44.497 (20624497) - Not triggered because alarm is off.
+05:43:44.663 (20624663) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:13.225 (5833225)
+05:43:44.700 (20624700) - Not triggered because alarm is off.
+05:43:44.867 (20624867) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:13.429 (5833429)
+05:43:44.903 (20624903) - Not triggered because alarm is off.
+05:43:51.671 (20631671) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:20.233 (5840233)
+05:43:51.707 (20631707) - Not triggered because alarm is off.
+05:43:51.874 (20631874) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:20.436 (5840436)
+05:43:51.911 (20631911) - Not triggered because alarm is off.
+05:43:52.077 (20632077) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:20.639 (5840639)
+05:43:52.114 (20632114) - Not triggered because alarm is off.
+05:43:52.281 (20632281) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:20.842 (5840842)
+05:43:52.316 (20632316) - Not triggered because alarm is off.
+05:43:58.785 (20638785) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:27.346 (5847346)
+05:43:58.821 (20638821) - Not triggered because alarm is off.
+05:43:58.988 (20638988) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:27.550 (5847550)
+05:43:59.024 (20639024) - Not triggered because alarm is off.
+05:43:59.191 (20639191) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:27.753 (5847753)
+05:43:59.227 (20639227) - Not triggered because alarm is off.
+05:43:59.393 (20639393) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:27.955 (5847955)
+05:43:59.430 (20639430) - Not triggered because alarm is off.
+05:43:59.597 (20639597) - sensor triggered: ***REMOVED*** - time from last alarm: 01:37:28.159 (5848159)
+05:43:59.633 (20639633) - Not triggered because alarm is off.
+05:45:05.914 (20705914) - sensor triggered: ***REMOVED*** - time from last alarm: 01:38:34.475 (5914475)
+05:45:05.950 (20705950) - Not triggered because alarm is off.
+05:45:06.117 (20706117) - sensor triggered: ***REMOVED*** - time from last alarm: 01:38:34.679 (5914679)
+05:45:06.153 (20706153) - Not triggered because alarm is off.
+05:45:06.320 (20706320) - sensor triggered: ***REMOVED*** - time from last alarm: 01:38:34.882 (5914882)
+05:45:06.357 (20706357) - Not triggered because alarm is off.
+05:45:06.523 (20706523) - sensor triggered: ***REMOVED*** - time from last alarm: 01:38:35.085 (5915085)
+05:45:06.560 (20706560) - Not triggered because alarm is off.
+05:45:32.231 (20732231) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:00.793 (5940793)
+05:45:32.268 (20732268) - Not triggered because alarm is off.
+05:45:32.435 (20732435) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:00.997 (5940997)
+05:45:32.471 (20732471) - Not triggered because alarm is off.
+05:45:32.638 (20732638) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:01.200 (5941200)
+05:45:32.675 (20732675) - Not triggered because alarm is off.
+05:45:32.840 (20732840) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:01.402 (5941402)
+05:45:32.877 (20732877) - Not triggered because alarm is off.
+05:45:33.043 (20733043) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:01.605 (5941605)
+05:45:33.080 (20733080) - Not triggered because alarm is off.
+05:46:17.556 (20777556) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:46.118 (5986118)
+05:46:17.592 (20777592) - Not triggered because alarm is off.
+05:46:17.759 (20777759) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:46.321 (5986321)
+05:46:17.796 (20777796) - Not triggered because alarm is off.
+05:46:17.962 (20777962) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:46.524 (5986524)
+05:46:17.999 (20777999) - Not triggered because alarm is off.
+05:46:18.166 (20778166) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:46.728 (5986728)
+05:46:18.202 (20778202) - Not triggered because alarm is off.
+05:46:23.370 (20783370) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:51.932 (5991932)
+05:46:23.406 (20783406) - Not triggered because alarm is off.
+05:46:23.572 (20783572) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:52.134 (5992134)
+05:46:23.609 (20783609) - Not triggered because alarm is off.
+05:46:23.775 (20783775) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:52.337 (5992337)
+05:46:23.812 (20783812) - Not triggered because alarm is off.
+05:46:23.979 (20783979) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:52.541 (5992541)
+05:46:24.015 (20784015) - Not triggered because alarm is off.
+05:46:29.582 (20789582) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:58.144 (5998144)
+05:46:29.619 (20789619) - Not triggered because alarm is off.
+05:46:29.786 (20789786) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:58.348 (5998348)
+05:46:29.823 (20789823) - Not triggered because alarm is off.
+05:46:29.989 (20789989) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:58.551 (5998551)
+05:46:30.026 (20790026) - Not triggered because alarm is off.
+05:46:30.193 (20790193) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:58.754 (5998754)
+05:46:30.228 (20790228) - Not triggered because alarm is off.
+05:46:30.395 (20790395) - sensor triggered: ***REMOVED*** - time from last alarm: 01:39:58.957 (5998957)
+05:46:30.431 (20790431) - Not triggered because alarm is off.
+05:46:35.400 (20795400) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:03.962 (6003962)
+05:46:35.436 (20795436) - Not triggered because alarm is off.
+05:46:35.602 (20795602) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:04.164 (6004164)
+05:46:35.639 (20795639) - Not triggered because alarm is off.
+05:46:35.805 (20795805) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:04.367 (6004367)
+05:46:35.842 (20795842) - Not triggered because alarm is off.
+05:46:36.008 (20796008) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:04.570 (6004570)
+05:46:36.045 (20796045) - Not triggered because alarm is off.
+05:46:36.212 (20796212) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:04.774 (6004774)
+05:46:36.248 (20796248) - Not triggered because alarm is off.
+05:46:56.619 (20816619) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:25.181 (6025181)
+05:46:56.655 (20816655) - Not triggered because alarm is off.
+05:46:56.822 (20816822) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:25.384 (6025384)
+05:46:56.859 (20816859) - Not triggered because alarm is off.
+05:46:57.025 (20817025) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:25.587 (6025587)
+05:46:57.061 (20817061) - Not triggered because alarm is off.
+05:46:57.227 (20817227) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:25.789 (6025789)
+05:46:57.264 (20817264) - Not triggered because alarm is off.
+05:46:57.431 (20817431) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:25.993 (6025993)
+05:46:57.468 (20817468) - Not triggered because alarm is off.
+05:47:04.936 (20824936) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:33.498 (6033498)
+05:47:04.972 (20824972) - Not triggered because alarm is off.
+05:47:05.139 (20825139) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:33.701 (6033701)
+05:47:05.176 (20825176) - Not triggered because alarm is off.
+05:47:05.341 (20825341) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:33.903 (6033903)
+05:47:05.378 (20825378) - Not triggered because alarm is off.
+05:47:05.545 (20825545) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:34.106 (6034106)
+05:47:05.581 (20825581) - Not triggered because alarm is off.
+05:47:05.748 (20825748) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:34.310 (6034310)
+05:47:05.784 (20825784) - Not triggered because alarm is off.
+05:47:12.652 (20832652) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:41.214 (6041214)
+05:47:12.689 (20832689) - Not triggered because alarm is off.
+05:47:12.856 (20832856) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:41.418 (6041418)
+05:47:12.891 (20832891) - Not triggered because alarm is off.
+05:47:13.058 (20833058) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:41.620 (6041620)
+05:47:13.095 (20833095) - Not triggered because alarm is off.
+05:47:13.261 (20833261) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:41.823 (6041823)
+05:47:13.298 (20833298) - Not triggered because alarm is off.
+05:47:13.465 (20833465) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:42.027 (6042027)
+05:47:13.501 (20833501) - Not triggered because alarm is off.
+05:47:22.970 (20842970) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:51.532 (6051532)
+05:47:23.006 (20843006) - Not triggered because alarm is off.
+05:47:23.172 (20843172) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:51.734 (6051734)
+05:47:23.209 (20843209) - Not triggered because alarm is off.
+05:47:23.375 (20843375) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:51.937 (6051937)
+05:47:23.412 (20843412) - Not triggered because alarm is off.
+05:47:23.579 (20843579) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:52.141 (6052141)
+05:47:23.615 (20843615) - Not triggered because alarm is off.
+05:47:23.782 (20843782) - sensor triggered: ***REMOVED*** - time from last alarm: 01:40:52.344 (6052344)
+05:47:23.819 (20843819) - Not triggered because alarm is off.
+05:47:32.386 (20852386) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:00.948 (6060948)
+05:47:32.423 (20852423) - Not triggered because alarm is off.
+05:47:32.590 (20852590) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:01.152 (6061152)
+05:47:32.626 (20852626) - Not triggered because alarm is off.
+05:47:32.793 (20852793) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:01.355 (6061355)
+05:47:32.829 (20852829) - Not triggered because alarm is off.
+05:47:32.996 (20852996) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:01.558 (6061558)
+05:47:33.032 (20853032) - Not triggered because alarm is off.
+05:47:33.198 (20853198) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:01.760 (6061760)
+05:47:33.235 (20853235) - Not triggered because alarm is off.
+05:47:39.003 (20859003) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:07.565 (6067565)
+05:47:39.039 (20859039) - Not triggered because alarm is off.
+05:47:39.206 (20859206) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:07.768 (6067768)
+05:47:39.242 (20859242) - Not triggered because alarm is off.
+05:47:39.409 (20859409) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:07.971 (6067971)
+05:47:39.446 (20859446) - Not triggered because alarm is off.
+05:47:39.612 (20859612) - sensor triggered: ***REMOVED*** - time from last alarm: 01:41:08.174 (6068174)
+05:47:39.649 (20859649) - Not triggered because alarm is off.
+05:50:16.249 (21016249) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:44.811 (6224811)
+05:50:16.285 (21016285) - Not triggered because alarm is off.
+05:50:16.452 (21016452) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:45.014 (6225014)
+05:50:16.488 (21016488) - Not triggered because alarm is off.
+05:50:16.654 (21016654) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:45.216 (6225216)
+05:50:16.691 (21016691) - Not triggered because alarm is off.
+05:50:16.857 (21016857) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:45.419 (6225419)
+05:50:16.894 (21016894) - Not triggered because alarm is off.
+05:50:17.061 (21017061) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:45.623 (6225623)
+05:50:17.097 (21017097) - Not triggered because alarm is off.
+05:50:22.665 (21022665) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:51.227 (6231227)
+05:50:22.701 (21022701) - Not triggered because alarm is off.
+05:50:22.868 (21022868) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:51.430 (6231430)
+05:50:22.905 (21022905) - Not triggered because alarm is off.
+05:50:23.071 (21023071) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:51.633 (6231633)
+05:50:23.108 (21023108) - Not triggered because alarm is off.
+05:50:23.275 (21023275) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:51.835 (6231835)
+05:50:23.310 (21023310) - Not triggered because alarm is off.
+05:50:23.477 (21023477) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:52.039 (6232039)
+05:50:23.513 (21023513) - Not triggered because alarm is off.
+05:50:29.382 (21029382) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:57.944 (6237944)
+05:50:29.417 (21029417) - Not triggered because alarm is off.
+05:50:29.584 (21029584) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:58.146 (6238146)
+05:50:29.621 (21029621) - Not triggered because alarm is off.
+05:50:29.787 (21029787) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:58.349 (6238349)
+05:50:29.824 (21029824) - Not triggered because alarm is off.
+05:50:29.990 (21029990) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:58.552 (6238552)
+05:50:30.027 (21030027) - Not triggered because alarm is off.
+05:50:30.194 (21030194) - sensor triggered: ***REMOVED*** - time from last alarm: 01:43:58.756 (6238756)
+05:50:30.230 (21030230) - Not triggered because alarm is off.
+05:50:35.597 (21035597) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:04.159 (6244159)
+05:50:35.634 (21035634) - Not triggered because alarm is off.
+05:50:35.800 (21035800) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:04.362 (6244362)
+05:50:35.837 (21035837) - Not triggered because alarm is off.
+05:50:36.004 (21036004) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:04.566 (6244566)
+05:50:36.040 (21036040) - Not triggered because alarm is off.
+05:50:36.207 (21036207) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:04.769 (6244769)
+05:50:36.243 (21036243) - Not triggered because alarm is off.
+05:50:41.911 (21041911) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:10.473 (6250473)
+05:50:41.947 (21041947) - Not triggered because alarm is off.
+05:50:42.114 (21042114) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:10.676 (6250676)
+05:50:42.151 (21042151) - Not triggered because alarm is off.
+05:50:42.317 (21042317) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:10.879 (6250879)
+05:50:42.354 (21042354) - Not triggered because alarm is off.
+05:50:42.520 (21042520) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:11.082 (6251082)
+05:50:42.556 (21042556) - Not triggered because alarm is off.
+05:50:42.723 (21042723) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:11.285 (6251285)
+05:50:42.759 (21042759) - Not triggered because alarm is off.
+05:50:48.027 (21048027) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:16.589 (6256589)
+05:50:48.064 (21048064) - Not triggered because alarm is off.
+05:50:48.230 (21048230) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:16.792 (6256792)
+05:50:48.266 (21048266) - Not triggered because alarm is off.
+05:50:48.433 (21048433) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:16.995 (6256995)
+05:50:48.470 (21048470) - Not triggered because alarm is off.
+05:50:48.636 (21048636) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:17.198 (6257198)
+05:50:48.673 (21048673) - Not triggered because alarm is off.
+05:50:48.840 (21048840) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:17.402 (6257402)
+05:50:48.876 (21048876) - Not triggered because alarm is off.
+05:50:53.943 (21053943) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:22.505 (6262505)
+05:50:53.980 (21053980) - Not triggered because alarm is off.
+05:50:54.146 (21054146) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:22.708 (6262708)
+05:50:54.183 (21054183) - Not triggered because alarm is off.
+05:50:54.350 (21054350) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:22.912 (6262912)
+05:50:54.386 (21054386) - Not triggered because alarm is off.
+05:50:54.553 (21054553) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:23.115 (6263115)
+05:50:54.589 (21054589) - Not triggered because alarm is off.
+05:50:54.755 (21054755) - sensor triggered: ***REMOVED*** - time from last alarm: 01:44:23.317 (6263317)
+05:50:54.792 (21054792) - Not triggered because alarm is off.
+05:54:31.304 (21271304) - sensor triggered: ***REMOVED*** - time from last alarm: 01:47:59.866 (6479866)
+05:54:31.341 (21271341) - Not triggered because alarm is off.
+05:54:31.507 (21271507) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:00.069 (6480069)
+05:54:31.543 (21271543) - Not triggered because alarm is off.
+05:54:31.710 (21271710) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:00.272 (6480272)
+05:54:31.747 (21271747) - Not triggered because alarm is off.
+05:54:31.913 (21271913) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:00.475 (6480475)
+05:54:31.950 (21271950) - Not triggered because alarm is off.
+05:54:32.117 (21272117) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:00.679 (6480679)
+05:54:32.153 (21272153) - Not triggered because alarm is off.
+05:54:37.820 (21277820) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:06.382 (6486382)
+05:54:37.857 (21277857) - Not triggered because alarm is off.
+05:54:38.023 (21278023) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:06.585 (6486585)
+05:54:38.060 (21278060) - Not triggered because alarm is off.
+05:54:38.227 (21278227) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:06.789 (6486789)
+05:54:38.263 (21278263) - Not triggered because alarm is off.
+05:54:38.430 (21278430) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:06.992 (6486992)
+05:54:38.466 (21278466) - Not triggered because alarm is off.
+05:54:38.632 (21278632) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:07.194 (6487194)
+05:54:38.669 (21278669) - Not triggered because alarm is off.
+05:54:49.037 (21289037) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:17.599 (6497599)
+05:54:49.074 (21289074) - Not triggered because alarm is off.
+05:54:49.241 (21289241) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:17.803 (6497803)
+05:54:49.277 (21289277) - Not triggered because alarm is off.
+05:54:49.444 (21289444) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:18.006 (6498006)
+05:54:49.481 (21289481) - Not triggered because alarm is off.
+05:54:49.647 (21289647) - sensor triggered: ***REMOVED*** - time from last alarm: 01:48:18.209 (6498209)
+05:54:49.683 (21289683) - Not triggered because alarm is off.
+06:17:45.042 (22665042) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:13.604 (7873604)
+06:17:45.079 (22665079) - Not triggered because alarm is off.
+06:17:45.245 (22665245) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:13.807 (7873807)
+06:17:45.282 (22665282) - Not triggered because alarm is off.
+06:17:45.449 (22665449) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:14.011 (7874011)
+06:17:45.485 (22665485) - Not triggered because alarm is off.
+06:17:45.652 (22665652) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:14.214 (7874214)
+06:17:45.689 (22665689) - Not triggered because alarm is off.
+06:17:51.556 (22671556) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:20.118 (7880118)
+06:17:51.592 (22671592) - Not triggered because alarm is off.
+06:17:51.759 (22671759) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:20.321 (7880321)
+06:17:51.796 (22671796) - Not triggered because alarm is off.
+06:17:51.962 (22671962) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:20.524 (7880524)
+06:17:51.998 (22671998) - Not triggered because alarm is off.
+06:17:52.165 (22672165) - sensor triggered: ***REMOVED*** - time from last alarm: 02:11:20.727 (7880727)
+06:17:52.201 (22672201) - Not triggered because alarm is off.
+06:18:36.577 (22716577) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:05.139 (7925139)
+06:18:36.614 (22716614) - Not triggered because alarm is off.
+06:18:36.780 (22716780) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:05.342 (7925342)
+06:18:36.817 (22716817) - Not triggered because alarm is off.
+06:18:36.984 (22716984) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:05.546 (7925546)
+06:18:37.020 (22717020) - Not triggered because alarm is off.
+06:18:37.187 (22717187) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:05.749 (7925749)
+06:18:37.223 (22717223) - Not triggered because alarm is off.
+06:18:37.389 (22717389) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:05.951 (7925951)
+06:18:37.426 (22717426) - Not triggered because alarm is off.
+06:18:52.496 (22732496) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:21.057 (7941057)
+06:18:52.532 (22732532) - Not triggered because alarm is off.
+06:18:52.699 (22732699) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:21.261 (7941261)
+06:18:52.735 (22732735) - Not triggered because alarm is off.
+06:18:52.902 (22732902) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:21.464 (7941464)
+06:18:52.939 (22732939) - Not triggered because alarm is off.
+06:18:53.105 (22733105) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:21.667 (7941667)
+06:18:53.142 (22733142) - Not triggered because alarm is off.
+06:19:03.610 (22743610) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:32.172 (7952172)
+06:19:03.647 (22743647) - Not triggered because alarm is off.
+06:19:03.814 (22743814) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:32.376 (7952376)
+06:19:03.849 (22743849) - Not triggered because alarm is off.
+06:19:04.016 (22744016) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:32.578 (7952578)
+06:19:04.053 (22744053) - Not triggered because alarm is off.
+06:19:04.219 (22744219) - sensor triggered: ***REMOVED*** - time from last alarm: 02:12:32.781 (7952781)
+06:19:04.256 (22744256) - Not triggered because alarm is off.
+06:20:25.639 (22825639) - sensor triggered: ***REMOVED*** - time from last alarm: 02:13:54.201 (8034201)
+06:20:25.676 (22825676) - Not triggered because alarm is off.
+06:20:25.843 (22825843) - sensor triggered: ***REMOVED*** - time from last alarm: 02:13:54.404 (8034404)
+06:20:25.879 (22825879) - Not triggered because alarm is off.
+06:20:26.046 (22826046) - sensor triggered: ***REMOVED*** - time from last alarm: 02:13:54.608 (8034608)
+06:20:26.082 (22826082) - Not triggered because alarm is off.
+06:20:26.249 (22826249) - sensor triggered: ***REMOVED*** - time from last alarm: 02:13:54.811 (8034811)
+06:20:26.286 (22826286) - Not triggered because alarm is off.
+06:23:39.693 (23019693) - sensor triggered: ***REMOVED*** - time from last alarm: 02:17:08.255 (8228255)
+06:23:39.729 (23019729) - Not triggered because alarm is off.
+06:23:39.896 (23019896) - sensor triggered: ***REMOVED*** - time from last alarm: 02:17:08.458 (8228458)
+06:23:39.932 (23019932) - Not triggered because alarm is off.
+06:23:40.099 (23020099) - sensor triggered: ***REMOVED*** - time from last alarm: 02:17:08.661 (8228661)
+06:23:40.136 (23020136) - Not triggered because alarm is off.
+06:23:40.302 (23020302) - sensor triggered: ***REMOVED*** - time from last alarm: 02:17:08.864 (8228864)
+06:23:40.339 (23020339) - Not triggered because alarm is off.
+06:23:40.506 (23020506) - sensor triggered: ***REMOVED*** - time from last alarm: 02:17:09.068 (8229068)
+06:23:40.541 (23020541) - Not triggered because alarm is off.
+06:27:04.252 (23224252) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:32.814 (8432814)
+06:27:04.288 (23224288) - Not triggered because alarm is off.
+06:27:04.455 (23224455) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:33.017 (8433017)
+06:27:04.492 (23224492) - Not triggered because alarm is off.
+06:27:04.657 (23224657) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:33.219 (8433219)
+06:27:04.694 (23224694) - Not triggered because alarm is off.
+06:27:04.861 (23224861) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:33.422 (8433422)
+06:27:04.897 (23224897) - Not triggered because alarm is off.
+06:27:29.069 (23249069) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:57.631 (8457631)
+06:27:29.105 (23249105) - Not triggered because alarm is off.
+06:27:29.272 (23249272) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:57.834 (8457834)
+06:27:29.308 (23249308) - Not triggered because alarm is off.
+06:27:29.475 (23249475) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:58.037 (8458037)
+06:27:29.512 (23249512) - Not triggered because alarm is off.
+06:27:29.678 (23249678) - sensor triggered: ***REMOVED*** - time from last alarm: 02:20:58.240 (8458240)
+06:27:29.715 (23249715) - Not triggered because alarm is off.
+06:29:24.905 (23364905) - sensor triggered: ***REMOVED*** - time from last alarm: 02:22:53.467 (8573467)
+06:29:24.942 (23364942) - Not triggered because alarm is off.
+06:29:25.209 (23365209) - sensor triggered: ***REMOVED*** - time from last alarm: 02:22:53.771 (8573771)
+06:29:25.245 (23365245) - Not triggered because alarm is off.
+06:29:25.412 (23365412) - sensor triggered: ***REMOVED*** - time from last alarm: 02:22:53.974 (8573974)
+06:29:25.448 (23365448) - Not triggered because alarm is off.
+06:29:25.615 (23365615) - sensor triggered: ***REMOVED*** - time from last alarm: 02:22:54.177 (8574177)
+06:29:25.651 (23365651) - Not triggered because alarm is off.
+06:34:36.184 (23676184) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:04.746 (8884746)
+06:34:36.220 (23676220) - Not triggered because alarm is off.
+06:34:36.387 (23676387) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:04.949 (8884949)
+06:34:36.424 (23676424) - Not triggered because alarm is off.
+06:34:36.590 (23676590) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:05.152 (8885152)
+06:34:36.626 (23676626) - Not triggered because alarm is off.
+06:34:36.792 (23676792) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:05.354 (8885354)
+06:34:36.829 (23676829) - Not triggered because alarm is off.
+06:34:36.996 (23676996) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:05.558 (8885558)
+06:34:37.032 (23677032) - Not triggered because alarm is off.
+06:35:16.407 (23716407) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:44.969 (8924969)
+06:35:16.444 (23716444) - Not triggered because alarm is off.
+06:35:16.611 (23716611) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:45.173 (8925173)
+06:35:16.646 (23716646) - Not triggered because alarm is off.
+06:35:16.813 (23716813) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:45.375 (8925375)
+06:35:16.850 (23716850) - Not triggered because alarm is off.
+06:35:17.016 (23717016) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:45.578 (8925578)
+06:35:17.053 (23717053) - Not triggered because alarm is off.
+06:35:22.320 (23722320) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:50.882 (8930882)
+06:35:22.357 (23722357) - Not triggered because alarm is off.
+06:35:22.523 (23722523) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:51.085 (8931085)
+06:35:22.560 (23722560) - Not triggered because alarm is off.
+06:35:22.727 (23722727) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:51.289 (8931289)
+06:35:22.763 (23722763) - Not triggered because alarm is off.
+06:35:22.930 (23722930) - sensor triggered: ***REMOVED*** - time from last alarm: 02:28:51.492 (8931492)
+06:35:22.967 (23722967) - Not triggered because alarm is off.
+07:04:39.805 (25479805) - sensor triggered: ***REMOVED*** - time from last alarm: 02:58:08.367 (10688367)
+07:04:39.843 (25479843) - Not triggered because alarm is off.
+07:04:40.010 (25480010) - sensor triggered: ***REMOVED*** - time from last alarm: 02:58:08.572 (10688572)
+07:04:40.047 (25480047) - Not triggered because alarm is off.
+07:04:40.214 (25480214) - sensor triggered: ***REMOVED*** - time from last alarm: 02:58:08.776 (10688776)
+07:04:40.252 (25480252) - Not triggered because alarm is off.
+07:04:40.418 (25480418) - sensor triggered: ***REMOVED*** - time from last alarm: 02:58:08.980 (10688980)
+07:04:40.456 (25480456) - Not triggered because alarm is off.
+07:04:40.623 (25480623) - sensor triggered: ***REMOVED*** - time from last alarm: 02:58:09.185 (10689185)
+07:04:40.660 (25480660) - Not triggered because alarm is off.
+07:52:18.033 (28338033) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:46.594 (13546594)
+07:52:18.070 (28338070) - Not triggered because alarm is off.
+07:52:18.237 (28338237) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:46.799 (13546799)
+07:52:18.275 (28338275) - Not triggered because alarm is off.
+07:52:18.441 (28338441) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:47.003 (13547003)
+07:52:18.479 (28338479) - Not triggered because alarm is off.
+07:52:18.644 (28338644) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:47.206 (13547206)
+07:52:18.682 (28338682) - Not triggered because alarm is off.
+07:52:18.849 (28338849) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:47.411 (13547411)
+07:52:18.886 (28338886) - Not triggered because alarm is off.
+07:52:24.954 (28344954) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:53.516 (13553516)
+07:52:24.992 (28344992) - Not triggered because alarm is off.
+07:52:25.158 (28345158) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:53.720 (13553720)
+07:52:25.196 (28345196) - Not triggered because alarm is off.
+07:52:25.363 (28345363) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:53.925 (13553925)
+07:52:25.400 (28345400) - Not triggered because alarm is off.
+07:52:25.567 (28345567) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:54.129 (13554129)
+07:52:25.605 (28345605) - Not triggered because alarm is off.
+07:52:30.872 (28350872) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:59.434 (13559434)
+07:52:30.910 (28350910) - Not triggered because alarm is off.
+07:52:31.076 (28351076) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:59.638 (13559638)
+07:52:31.114 (28351114) - Not triggered because alarm is off.
+07:52:31.280 (28351280) - sensor triggered: ***REMOVED*** - time from last alarm: 03:45:59.842 (13559842)
+07:52:31.318 (28351318) - Not triggered because alarm is off.
+07:52:31.484 (28351484) - sensor triggered: ***REMOVED*** - time from last alarm: 03:46:00.046 (13560046)
+07:52:31.522 (28351522) - Not triggered because alarm is off.
+14:30:02.941 (52202941) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:31.503 (37411503)
+14:30:02.978 (52202978) - Not triggered because alarm is off.
+14:30:03.145 (52203145) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:31.707 (37411707)
+14:30:03.183 (52203183) - Not triggered because alarm is off.
+14:30:03.449 (52203449) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:32.011 (37412011)
+14:30:03.487 (52203487) - Not triggered because alarm is off.
+14:30:03.653 (52203653) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:32.215 (37412215)
+14:30:03.691 (52203691) - Not triggered because alarm is off.
+14:30:09.058 (52209058) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:37.620 (37417620)
+14:30:09.096 (52209096) - Not triggered because alarm is off.
+14:30:09.262 (52209262) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:37.824 (37417824)
+14:30:09.300 (52209300) - Not triggered because alarm is off.
+14:30:09.467 (52209467) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:38.028 (37418028)
+14:30:09.504 (52209504) - Not triggered because alarm is off.
+14:30:09.671 (52209671) - sensor triggered: ***REMOVED*** - time from last alarm: 10:23:38.233 (37418233)
+14:30:09.709 (52209709) - Not triggered because alarm is off.
+14:30:32.179 (52232179) - sensor triggered: ***REMOVED*** - time from last alarm: 10:24:00.741 (37440741)
+14:30:32.217 (52232217) - Not triggered because alarm is off.
+14:30:32.384 (52232384) - sensor triggered: ***REMOVED*** - time from last alarm: 10:24:00.945 (37440945)
+14:30:32.421 (52232421) - Not triggered because alarm is off.
+14:30:32.588 (52232588) - sensor triggered: ***REMOVED*** - time from last alarm: 10:24:01.150 (37441150)
+14:30:32.626 (52232626) - Not triggered because alarm is off.
+14:30:32.792 (52232792) - sensor triggered: ***REMOVED*** - time from last alarm: 10:24:01.354 (37441354)
+14:30:32.829 (52232829) - Not triggered because alarm is off.
+14:30:32.996 (52232996) - sensor triggered: ***REMOVED*** - time from last alarm: 10:24:01.558 (37441558)
+14:30:33.033 (52233033) - Not triggered because alarm is off.
+14:37:24.587 (52644587) - sensor triggered: ***REMOVED*** - time from last alarm: 10:30:53.149 (37853149)
+14:37:24.625 (52644625) - Not triggered because alarm is off.
+14:37:25.092 (52645092) - sensor triggered: ***REMOVED*** - time from last alarm: 10:30:53.654 (37853654)
+14:37:25.131 (52645131) - Not triggered because alarm is off.
+14:37:25.598 (52645598) - sensor triggered: ***REMOVED*** - time from last alarm: 10:30:54.159 (37854159)
+14:37:25.636 (52645636) - Not triggered because alarm is off.
+14:39:22.127 (52762127) - sensor triggered: ***REMOVED*** - time from last alarm: 10:32:50.689 (37970689)
+14:39:22.166 (52762166) - Not triggered because alarm is off.
+14:39:22.532 (52762532) - sensor triggered: ***REMOVED*** - time from last alarm: 10:32:51.094 (37971094)
+14:39:22.571 (52762571) - Not triggered because alarm is off.
+14:39:23.037 (52763037) - sensor triggered: ***REMOVED*** - time from last alarm: 10:32:51.599 (37971599)
+14:39:23.076 (52763076) - Not triggered because alarm is off.
+15:00:55.114 (54055114) - sensor triggered: ***REMOVED*** - time from last alarm: 10:54:23.676 (39263676)
+15:00:55.153 (54055153) - Turning alarm on.
+15:00:58.954 (54058954) - sensor triggered: ***REMOVED*** - time from last alarm: 10:54:26.865 (39266865)
+15:00:58.992 (54058992) - Turning alarm off.
+15:00:59.442 (54059442) - sensor triggered: ***REMOVED*** - time from last alarm: 10:54:28.004 (39268004)
+16:55:23.732 (60923732) - sensor triggered: ***REMOVED*** - time from last alarm: 12:48:52.294 (46132294)
+16:55:23.769 (60923769) - Not triggered because alarm is off.
+16:55:23.936 (60923936) - sensor triggered: ***REMOVED*** - time from last alarm: 12:48:52.498 (46132498)
+16:55:23.974 (60923974) - Not triggered because alarm is off.
+16:55:24.140 (60924140) - sensor triggered: ***REMOVED*** - time from last alarm: 12:48:52.702 (46132702)
+16:55:24.178 (60924178) - Not triggered because alarm is off.
+16:55:24.345 (60924345) - sensor triggered: ***REMOVED*** - time from last alarm: 12:48:52.907 (46132907)
+16:55:24.382 (60924382) - Not triggered because alarm is off.
+16:55:24.549 (60924549) - sensor triggered: ***REMOVED*** - time from last alarm: 12:48:53.111 (46133111)
+16:55:24.587 (60924587) - Not triggered because alarm is off.
+16:55:35.055 (60935055) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:03.617 (46143617)
+16:55:35.093 (60935093) - Not triggered because alarm is off.
+16:55:35.259 (60935259) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:03.821 (46143821)
+16:55:35.297 (60935297) - Not triggered because alarm is off.
+16:55:35.463 (60935463) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:04.025 (46144025)
+16:55:35.500 (60935500) - Not triggered because alarm is off.
+16:55:35.667 (60935667) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:04.229 (46144229)
+16:55:35.705 (60935705) - Not triggered because alarm is off.
+16:55:35.871 (60935871) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:04.433 (46144433)
+16:55:35.909 (60935909) - Not triggered because alarm is off.
+16:55:41.277 (60941277) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:09.839 (46149839)
+16:55:41.315 (60941315) - Not triggered because alarm is off.
+16:55:41.480 (60941480) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:10.042 (46150042)
+16:55:41.518 (60941518) - Not triggered because alarm is off.
+16:55:41.685 (60941685) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:10.247 (46150247)
+16:55:41.722 (60941722) - Not triggered because alarm is off.
+16:55:41.889 (60941889) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:10.451 (46150451)
+16:55:41.927 (60941927) - Not triggered because alarm is off.
+16:55:42.093 (60942093) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:10.655 (46150655)
+16:55:42.131 (60942131) - Not triggered because alarm is off.
+16:55:52.399 (60952399) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:20.961 (46160961)
+16:55:52.437 (60952437) - Not triggered because alarm is off.
+16:55:52.604 (60952604) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:21.165 (46161165)
+16:55:52.641 (60952641) - Not triggered because alarm is off.
+16:55:52.808 (60952808) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:21.370 (46161370)
+16:55:52.846 (60952846) - Not triggered because alarm is off.
+16:55:53.012 (60953012) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:21.574 (46161574)
+16:55:53.050 (60953050) - Not triggered because alarm is off.
+16:55:53.217 (60953217) - sensor triggered: ***REMOVED*** - time from last alarm: 12:49:21.777 (46161777)
+16:55:53.253 (60953253) - Not triggered because alarm is off.
+17:55:02.369 (64502369) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:30.931 (49710931)
+17:55:02.406 (64502406) - Not triggered because alarm is off.
+17:55:02.573 (64502573) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:31.135 (49711135)
+17:55:02.610 (64502610) - Not triggered because alarm is off.
+17:55:02.776 (64502776) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:31.338 (49711338)
+17:55:02.814 (64502814) - Not triggered because alarm is off.
+17:55:02.981 (64502981) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:31.543 (49711543)
+17:55:03.018 (64503018) - Not triggered because alarm is off.
+17:55:03.185 (64503185) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:31.747 (49711747)
+17:55:03.223 (64503223) - Not triggered because alarm is off.
+17:55:08.990 (64508990) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:37.552 (49717552)
+17:55:09.028 (64509028) - Not triggered because alarm is off.
+17:55:09.194 (64509194) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:37.756 (49717756)
+17:55:09.232 (64509232) - Not triggered because alarm is off.
+17:55:09.399 (64509399) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:37.961 (49717961)
+17:55:09.436 (64509436) - Not triggered because alarm is off.
+17:55:09.602 (64509602) - sensor triggered: ***REMOVED*** - time from last alarm: 13:48:38.164 (49718164)
+17:55:09.640 (64509640) - Not triggered because alarm is off.
+17:58:06.843 (64686843) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:35.405 (49895405)
+17:58:06.881 (64686881) - Not triggered because alarm is off.
+17:58:07.048 (64687048) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:35.609 (49895609)
+17:58:07.085 (64687085) - Not triggered because alarm is off.
+17:58:07.252 (64687252) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:35.814 (49895814)
+17:58:07.290 (64687290) - Not triggered because alarm is off.
+17:58:07.456 (64687456) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:36.018 (49896018)
+17:58:07.494 (64687494) - Not triggered because alarm is off.
+17:58:14.462 (64694462) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:43.024 (49903024)
+17:58:14.499 (64694499) - Not triggered because alarm is off.
+17:58:14.666 (64694666) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:43.228 (49903228)
+17:58:14.704 (64694704) - Not triggered because alarm is off.
+17:58:14.870 (64694870) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:43.431 (49903431)
+17:58:14.907 (64694907) - Not triggered because alarm is off.
+17:58:15.074 (64695074) - sensor triggered: ***REMOVED*** - time from last alarm: 13:51:43.636 (49903636)
+17:58:15.111 (64695111) - Not triggered because alarm is off.
+17:59:59.900 (64799900) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:28.462 (50008462)
+17:59:59.938 (64799938) - Turning alarm on.
+18:00:04.490 (64804490) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:32.401 (50012401)
+18:00:04.529 (64804529) - Turning alarm off.
+18:00:07.979 (64807979) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:36.540 (50016540)
+18:00:08.016 (64808016) - Not triggered because alarm is off.
+18:00:08.183 (64808183) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:36.745 (50016745)
+18:00:08.220 (64808220) - Not triggered because alarm is off.
+18:00:08.387 (64808387) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:36.949 (50016949)
+18:00:08.425 (64808425) - Not triggered because alarm is off.
+18:00:08.591 (64808591) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:37.153 (50017153)
+18:00:08.629 (64808629) - Not triggered because alarm is off.
+18:00:11.796 (64811796) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:40.358 (50020358)
+18:00:11.835 (64811835) - Turning alarm on.
+18:00:14.885 (64814885) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:42.796 (50022796)
+18:00:14.923 (64814923) - Turning alarm off.
+18:00:15.373 (64815373) - sensor triggered: ***REMOVED*** - time from last alarm: 13:53:43.935 (50023935)
+18:00:34.317 (64834317) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:02.879 (50042879)
+18:00:34.355 (64834355) - Not triggered because alarm is off.
+18:00:34.521 (64834521) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:03.083 (50043083)
+18:00:34.558 (64834558) - Not triggered because alarm is off.
+18:00:34.725 (64834725) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:03.287 (50043287)
+18:00:34.762 (64834762) - Not triggered because alarm is off.
+18:00:34.929 (64834929) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:03.491 (50043491)
+18:00:34.967 (64834967) - Not triggered because alarm is off.
+18:00:35.133 (64835133) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:03.695 (50043695)
+18:00:35.171 (64835171) - Not triggered because alarm is off.
+18:00:40.839 (64840839) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:09.401 (50049401)
+18:00:40.877 (64840877) - Not triggered because alarm is off.
+18:00:41.042 (64841042) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:09.604 (50049604)
+18:00:41.080 (64841080) - Not triggered because alarm is off.
+18:00:41.246 (64841246) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:09.808 (50049808)
+18:00:41.284 (64841284) - Not triggered because alarm is off.
+18:00:41.451 (64841451) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:10.013 (50050013)
+18:00:41.489 (64841489) - Not triggered because alarm is off.
+18:00:49.356 (64849356) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:17.918 (50057918)
+18:00:49.394 (64849394) - Not triggered because alarm is off.
+18:00:49.561 (64849561) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:18.123 (50058123)
+18:00:49.598 (64849598) - Not triggered because alarm is off.
+18:00:49.765 (64849765) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:18.327 (50058327)
+18:00:49.803 (64849803) - Not triggered because alarm is off.
+18:00:49.969 (64849969) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:18.531 (50058531)
+18:00:50.007 (64850007) - Not triggered because alarm is off.
+18:00:50.173 (64850173) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:18.735 (50058735)
+18:00:50.210 (64850210) - Not triggered because alarm is off.
+18:00:55.178 (64855178) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:23.740 (50063740)
+18:00:55.216 (64855216) - Not triggered because alarm is off.
+18:00:55.383 (64855383) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:23.945 (50063945)
+18:00:55.419 (64855419) - Not triggered because alarm is off.
+18:00:55.586 (64855586) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:24.148 (50064148)
+18:00:55.624 (64855624) - Not triggered because alarm is off.
+18:00:55.790 (64855790) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:24.352 (50064352)
+18:00:55.828 (64855828) - Not triggered because alarm is off.
+18:00:55.995 (64855995) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:24.557 (50064557)
+18:00:56.032 (64856032) - Not triggered because alarm is off.
+18:01:01.300 (64861300) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:29.861 (50069861)
+18:01:01.337 (64861337) - Not triggered because alarm is off.
+18:01:01.504 (64861504) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:30.066 (50070066)
+18:01:01.542 (64861542) - Not triggered because alarm is off.
+18:01:07.609 (64867609) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:36.171 (50076171)
+18:01:07.647 (64867647) - Not triggered because alarm is off.
+18:01:07.814 (64867814) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:36.375 (50076375)
+18:01:07.851 (64867851) - Not triggered because alarm is off.
+18:01:08.018 (64868018) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:36.580 (50076580)
+18:01:08.056 (64868056) - Not triggered because alarm is off.
+18:01:13.122 (64873122) - sensor triggered: 317272 - time from last alarm: 13:54:41.684 (50081684)
+18:01:13.160 (64873160) - Not triggered because alarm is off.
+18:01:13.327 (64873327) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:41.889 (50081889)
+18:01:13.364 (64873364) - Not triggered because alarm is off.
+18:01:13.731 (64873731) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:42.293 (50082293)
+18:01:13.768 (64873768) - Not triggered because alarm is off.
+18:01:20.936 (64880936) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:49.498 (50089498)
+18:01:20.974 (64880974) - Not triggered because alarm is off.
+18:01:21.140 (64881140) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:49.702 (50089702)
+18:01:21.178 (64881178) - Not triggered because alarm is off.
+18:01:21.345 (64881345) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:49.907 (50089907)
+18:01:21.382 (64881382) - Not triggered because alarm is off.
+18:01:21.549 (64881549) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:50.111 (50090111)
+18:01:21.587 (64881587) - Not triggered because alarm is off.
+18:01:28.155 (64888155) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:56.717 (50096717)
+18:01:28.192 (64888192) - Not triggered because alarm is off.
+18:01:28.358 (64888358) - sensor triggered: ***REMOVED*** - time from last alarm: 13:54:56.920 (50096920)
+18:01:28.396 (64888396) - Not triggered because alarm is off.
+18:01:34.864 (64894864) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:03.426 (50103426)
+18:01:34.902 (64894902) - Not triggered because alarm is off.
+18:01:52.071 (64912071) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:20.633 (50120633)
+18:01:52.109 (64912109) - Not triggered because alarm is off.
+18:01:52.276 (64912276) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:20.838 (50120838)
+18:01:52.313 (64912313) - Not triggered because alarm is off.
+18:01:52.480 (64912480) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:21.042 (50121042)
+18:01:52.518 (64912518) - Not triggered because alarm is off.
+18:01:52.684 (64912684) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:21.246 (50121246)
+18:01:52.721 (64912721) - Not triggered because alarm is off.
+18:01:52.888 (64912888) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:21.450 (50121450)
+18:01:52.925 (64912925) - Not triggered because alarm is off.
+18:01:57.993 (64917993) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:26.555 (50126555)
+18:01:58.031 (64918031) - Not triggered because alarm is off.
+18:01:58.197 (64918197) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:26.759 (50126759)
+18:01:58.235 (64918235) - Not triggered because alarm is off.
+18:01:58.402 (64918402) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:26.964 (50126964)
+18:01:58.438 (64918438) - Not triggered because alarm is off.
+18:02:16.609 (64936609) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:45.171 (50145171)
+18:02:16.647 (64936647) - Not triggered because alarm is off.
+18:02:16.813 (64936813) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:45.375 (50145375)
+18:02:16.851 (64936851) - Not triggered because alarm is off.
+18:02:17.018 (64937018) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:45.580 (50145580)
+18:02:17.055 (64937055) - Not triggered because alarm is off.
+18:02:17.222 (64937222) - sensor triggered: ***REMOVED*** - time from last alarm: 13:55:45.784 (50145784)
+18:02:17.260 (64937260) - Not triggered because alarm is off.
+18:03:41.144 (65021144) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:09.706 (50229706)
+18:03:41.181 (65021181) - Not triggered because alarm is off.
+18:03:41.347 (65021347) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:09.909 (50229909)
+18:03:41.385 (65021385) - Not triggered because alarm is off.
+18:03:41.552 (65021552) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:10.113 (50230113)
+18:03:41.589 (65021589) - Not triggered because alarm is off.
+18:03:41.756 (65021756) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:10.318 (50230318)
+18:03:41.794 (65021794) - Not triggered because alarm is off.
+18:03:59.364 (65039364) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:27.926 (50247926)
+18:03:59.401 (65039401) - Not triggered because alarm is off.
+18:03:59.567 (65039567) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:28.129 (50248129)
+18:03:59.605 (65039605) - Not triggered because alarm is off.
+18:03:59.872 (65039872) - sensor triggered: ***REMOVED*** - time from last alarm: 13:57:28.433 (50248433)
+18:03:59.909 (65039909) - Not triggered because alarm is off.
+18:08:14.329 (65294329) - sensor triggered: ***REMOVED*** - time from last alarm: 14:01:42.891 (50502891)
+18:08:14.366 (65294366) - Not triggered because alarm is off.
+18:08:14.533 (65294533) - sensor triggered: ***REMOVED*** - time from last alarm: 14:01:43.095 (50503095)
+18:08:14.571 (65294571) - Not triggered because alarm is off.
+18:08:14.938 (65294938) - sensor triggered: ***REMOVED*** - time from last alarm: 14:01:43.500 (50503500)
+18:08:14.974 (65294974) - Not triggered because alarm is off.
+18:09:02.852 (65342852) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:31.414 (50551414)
+18:09:02.888 (65342888) - Not triggered because alarm is off.
+18:09:03.055 (65343055) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:31.617 (50551617)
+18:09:03.093 (65343093) - Not triggered because alarm is off.
+18:09:03.259 (65343259) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:31.821 (50551821)
+18:09:03.297 (65343297) - Not triggered because alarm is off.
+18:09:03.464 (65343464) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:32.026 (50552026)
+18:09:03.501 (65343501) - Not triggered because alarm is off.
+18:09:19.371 (65359371) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:47.933 (50567933)
+18:09:19.409 (65359409) - Not triggered because alarm is off.
+18:09:19.576 (65359576) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:48.138 (50568138)
+18:09:19.612 (65359612) - Not triggered because alarm is off.
+18:09:19.779 (65359779) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:48.341 (50568341)
+18:09:19.817 (65359817) - Not triggered because alarm is off.
+18:09:19.983 (65359983) - sensor triggered: ***REMOVED*** - time from last alarm: 14:02:48.545 (50568545)
+18:09:20.021 (65360021) - Not triggered because alarm is off.
+18:10:16.499 (65416499) - sensor triggered: ***REMOVED*** - time from last alarm: 14:03:45.061 (50625061)
+18:10:16.537 (65416537) - Not triggered because alarm is off.
+18:10:16.704 (65416704) - sensor triggered: ***REMOVED*** - time from last alarm: 14:03:45.265 (50625265)
+18:10:16.741 (65416741) - Not triggered because alarm is off.
+18:10:16.907 (65416907) - sensor triggered: ***REMOVED*** - time from last alarm: 14:03:45.469 (50625469)
+18:10:16.945 (65416945) - Not triggered because alarm is off.
+18:10:17.112 (65417112) - sensor triggered: ***REMOVED*** - time from last alarm: 14:03:45.674 (50625674)
+18:10:17.149 (65417149) - Not triggered because alarm is off.
+18:11:05.626 (65465626) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:34.188 (50674188)
+18:11:05.663 (65465663) - Not triggered because alarm is off.
+18:11:05.830 (65465830) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:34.392 (50674392)
+18:11:05.868 (65465868) - Not triggered because alarm is off.
+18:11:06.234 (65466234) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:34.796 (50674796)
+18:11:06.271 (65466271) - Not triggered because alarm is off.
+18:11:19.141 (65479141) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:47.703 (50687703)
+18:11:19.179 (65479179) - Not triggered because alarm is off.
+18:11:19.345 (65479345) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:47.907 (50687907)
+18:11:19.383 (65479383) - Not triggered because alarm is off.
+18:11:19.549 (65479549) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:48.111 (50688111)
+18:11:19.586 (65479586) - Not triggered because alarm is off.
+18:11:19.753 (65479753) - sensor triggered: ***REMOVED*** - time from last alarm: 14:04:48.315 (50688315)
+18:11:19.791 (65479791) - Not triggered because alarm is off.
+18:11:46.263 (65506263) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:14.825 (50714825)
+18:11:46.300 (65506300) - Not triggered because alarm is off.
+18:11:46.467 (65506467) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:15.029 (50715029)
+18:11:46.504 (65506504) - Not triggered because alarm is off.
+18:11:46.671 (65506671) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:15.233 (50715233)
+18:11:46.709 (65506709) - Not triggered because alarm is off.
+18:11:46.875 (65506875) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:15.437 (50715437)
+18:11:46.913 (65506913) - Not triggered because alarm is off.
+18:11:52.780 (65512780) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:21.342 (50721342)
+18:11:52.818 (65512818) - Not triggered because alarm is off.
+18:12:17.390 (65537390) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:45.952 (50745952)
+18:12:17.427 (65537427) - Not triggered because alarm is off.
+18:12:17.594 (65537594) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:46.156 (50746156)
+18:12:17.632 (65537632) - Not triggered because alarm is off.
+18:12:17.798 (65537798) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:46.360 (50746360)
+18:12:17.836 (65537836) - Not triggered because alarm is off.
+18:12:18.002 (65538002) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:46.564 (50746564)
+18:12:18.039 (65538039) - Not triggered because alarm is off.
+18:12:27.009 (65547009) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:55.571 (50755571)
+18:12:27.045 (65547045) - Not triggered because alarm is off.
+18:12:27.212 (65547212) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:55.774 (50755774)
+18:12:27.250 (65547250) - Not triggered because alarm is off.
+18:12:27.416 (65547416) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:55.978 (50755978)
+18:12:27.454 (65547454) - Not triggered because alarm is off.
+18:12:27.621 (65547621) - sensor triggered: ***REMOVED*** - time from last alarm: 14:05:56.183 (50756183)
+18:12:27.658 (65547658) - Not triggered because alarm is off.
+18:12:51.030 (65571030) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:19.591 (50779591)
+18:12:51.067 (65571067) - Not triggered because alarm is off.
+18:12:51.533 (65571533) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:20.095 (50780095)
+18:12:51.571 (65571571) - Not triggered because alarm is off.
+18:13:07.341 (65587341) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:35.903 (50795903)
+18:13:07.379 (65587379) - Not triggered because alarm is off.
+18:13:07.545 (65587545) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:36.107 (50796107)
+18:13:07.582 (65587582) - Not triggered because alarm is off.
+18:13:07.749 (65587749) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:36.311 (50796311)
+18:13:07.787 (65587787) - Not triggered because alarm is off.
+18:13:17.555 (65597555) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:46.117 (50806117)
+18:13:17.593 (65597593) - Not triggered because alarm is off.
+18:13:17.960 (65597960) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:46.522 (50806522)
+18:13:17.997 (65597997) - Not triggered because alarm is off.
+18:13:24.665 (65604665) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:53.227 (50813227)
+18:13:24.703 (65604703) - Not triggered because alarm is off.
+18:13:24.869 (65604869) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:53.431 (50813431)
+18:13:24.907 (65604907) - Not triggered because alarm is off.
+18:13:25.073 (65605073) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:53.635 (50813635)
+18:13:25.110 (65605110) - Not triggered because alarm is off.
+18:13:25.277 (65605277) - sensor triggered: ***REMOVED*** - time from last alarm: 14:06:53.839 (50813839)
+18:13:25.315 (65605315) - Not triggered because alarm is off.
+18:13:32.583 (65612583) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:01.144 (50821144)
+18:13:32.620 (65612620) - Not triggered because alarm is off.
+18:13:32.888 (65612888) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:01.449 (50821449)
+18:13:32.924 (65612924) - Not triggered because alarm is off.
+18:13:33.091 (65613091) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:01.653 (50821653)
+18:13:33.129 (65613129) - Not triggered because alarm is off.
+18:13:33.295 (65613295) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:01.857 (50821857)
+18:13:33.333 (65613333) - Not triggered because alarm is off.
+18:13:48.203 (65628203) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:16.764 (50836764)
+18:13:48.240 (65628240) - Not triggered because alarm is off.
+18:13:48.407 (65628407) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:16.968 (50836968)
+18:13:48.444 (65628444) - Not triggered because alarm is off.
+18:13:48.611 (65628611) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:17.173 (50837173)
+18:13:48.649 (65628649) - Not triggered because alarm is off.
+18:13:48.815 (65628815) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:17.377 (50837377)
+18:13:48.853 (65628853) - Not triggered because alarm is off.
+18:13:54.221 (65634221) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:22.783 (50842783)
+18:13:54.257 (65634257) - Not triggered because alarm is off.
+18:13:54.424 (65634424) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:22.986 (50842986)
+18:13:54.462 (65634462) - Not triggered because alarm is off.
+18:13:54.628 (65634628) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:23.190 (50843190)
+18:13:54.666 (65634666) - Not triggered because alarm is off.
+18:14:00.034 (65640034) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:28.596 (50848596)
+18:14:00.072 (65640072) - Not triggered because alarm is off.
+18:14:00.238 (65640238) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:28.800 (50848800)
+18:14:00.275 (65640275) - Not triggered because alarm is off.
+18:14:00.441 (65640441) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:29.003 (50849003)
+18:14:00.479 (65640479) - Not triggered because alarm is off.
+18:14:00.646 (65640646) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:29.208 (50849208)
+18:14:00.684 (65640684) - Not triggered because alarm is off.
+18:14:13.853 (65653853) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:42.415 (50862415)
+18:14:13.891 (65653891) - Not triggered because alarm is off.
+18:14:14.056 (65654056) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:42.618 (50862618)
+18:14:14.094 (65654094) - Not triggered because alarm is off.
+18:14:14.261 (65654261) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:42.823 (50862823)
+18:14:14.298 (65654298) - Not triggered because alarm is off.
+18:14:14.465 (65654465) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:43.027 (50863027)
+18:14:14.503 (65654503) - Not triggered because alarm is off.
+18:14:23.771 (65663771) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:52.333 (50872333)
+18:14:23.809 (65663809) - Not triggered because alarm is off.
+18:14:23.975 (65663975) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:52.537 (50872537)
+18:14:24.013 (65664013) - Not triggered because alarm is off.
+18:14:24.180 (65664180) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:52.742 (50872742)
+18:14:24.217 (65664217) - Not triggered because alarm is off.
+18:14:24.384 (65664384) - sensor triggered: ***REMOVED*** - time from last alarm: 14:07:52.945 (50872945)
+18:14:24.421 (65664421) - Not triggered because alarm is off.
+18:14:31.689 (65671689) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:00.251 (50880251)
+18:14:31.727 (65671727) - Not triggered because alarm is off.
+18:14:31.894 (65671894) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:00.455 (50880455)
+18:14:31.930 (65671930) - Not triggered because alarm is off.
+18:14:32.097 (65672097) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:00.659 (50880659)
+18:14:32.135 (65672135) - Not triggered because alarm is off.
+18:14:32.301 (65672301) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:00.863 (50880863)
+18:14:32.339 (65672339) - Not triggered because alarm is off.
+18:14:43.708 (65683708) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:12.269 (50892269)
+18:14:43.745 (65683745) - Not triggered because alarm is off.
+18:15:01.016 (65701016) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:29.578 (50909578)
+18:15:01.053 (65701053) - Not triggered because alarm is off.
+18:15:01.220 (65701220) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:29.782 (50909782)
+18:15:01.258 (65701258) - Not triggered because alarm is off.
+18:15:01.424 (65701424) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:29.986 (50909986)
+18:15:01.462 (65701462) - Not triggered because alarm is off.
+18:15:01.628 (65701628) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:30.190 (50910190)
+18:15:01.665 (65701665) - Not triggered because alarm is off.
+18:15:18.036 (65718036) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:46.597 (50926597)
+18:15:18.073 (65718073) - Not triggered because alarm is off.
+18:15:18.240 (65718240) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:46.802 (50926802)
+18:15:18.278 (65718278) - Not triggered because alarm is off.
+18:15:18.444 (65718444) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:47.006 (50927006)
+18:15:18.481 (65718481) - Not triggered because alarm is off.
+18:15:18.648 (65718648) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:47.209 (50927209)
+18:15:18.685 (65718685) - Not triggered because alarm is off.
+18:15:18.852 (65718852) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:47.414 (50927414)
+18:15:18.890 (65718890) - Not triggered because alarm is off.
+18:15:30.758 (65730758) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:59.320 (50939320)
+18:15:30.796 (65730796) - Not triggered because alarm is off.
+18:15:30.963 (65730963) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:59.525 (50939525)
+18:15:31.000 (65731000) - Not triggered because alarm is off.
+18:15:31.167 (65731167) - sensor triggered: ***REMOVED*** - time from last alarm: 14:08:59.729 (50939729)
+18:15:31.205 (65731205) - Not triggered because alarm is off.
+18:15:31.471 (65731471) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:00.033 (50940033)
+18:15:31.509 (65731509) - Not triggered because alarm is off.
+18:15:41.877 (65741877) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:10.439 (50950439)
+18:15:41.915 (65741915) - Not triggered because alarm is off.
+18:15:42.082 (65742082) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:10.644 (50950644)
+18:15:42.118 (65742118) - Not triggered because alarm is off.
+18:15:42.285 (65742285) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:10.847 (50950847)
+18:15:42.323 (65742323) - Not triggered because alarm is off.
+18:15:42.489 (65742489) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:11.051 (50951051)
+18:15:42.527 (65742527) - Not triggered because alarm is off.
+18:15:51.596 (65751596) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:20.158 (50960158)
+18:15:51.633 (65751633) - Not triggered because alarm is off.
+18:15:51.799 (65751799) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:20.361 (50960361)
+18:15:51.837 (65751837) - Not triggered because alarm is off.
+18:15:52.004 (65752004) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:20.565 (50960565)
+18:15:52.041 (65752041) - Not triggered because alarm is off.
+18:15:52.208 (65752208) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:20.770 (50960770)
+18:15:52.246 (65752246) - Not triggered because alarm is off.
+18:16:03.014 (65763014) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:31.576 (50971576)
+18:16:03.052 (65763052) - Not triggered because alarm is off.
+18:16:03.218 (65763218) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:31.780 (50971780)
+18:16:03.256 (65763256) - Not triggered because alarm is off.
+18:16:03.423 (65763423) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:31.984 (50971984)
+18:16:03.460 (65763460) - Not triggered because alarm is off.
+18:16:03.627 (65763627) - sensor triggered: ***REMOVED*** - time from last alarm: 14:09:32.188 (50972188)
+18:16:03.664 (65763664) - Not triggered because alarm is off.
+18:16:43.639 (65803639) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:12.200 (51012200)
+18:16:43.676 (65803676) - Not triggered because alarm is off.
+18:16:43.843 (65803843) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:12.405 (51012405)
+18:16:43.881 (65803881) - Not triggered because alarm is off.
+18:16:44.047 (65804047) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:12.609 (51012609)
+18:16:44.085 (65804085) - Not triggered because alarm is off.
+18:16:44.251 (65804251) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:12.813 (51012813)
+18:16:44.289 (65804289) - Not triggered because alarm is off.
+18:16:44.455 (65804455) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:13.017 (51013017)
+18:16:44.493 (65804493) - Not triggered because alarm is off.
+18:16:52.061 (65812061) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:20.623 (51020623)
+18:16:52.099 (65812099) - Not triggered because alarm is off.
+18:16:52.265 (65812265) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:20.826 (51020826)
+18:16:52.302 (65812302) - Not triggered because alarm is off.
+18:16:52.469 (65812469) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:21.031 (51021031)
+18:16:52.507 (65812507) - Not triggered because alarm is off.
+18:16:52.673 (65812673) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:21.235 (51021235)
+18:16:52.711 (65812711) - Not triggered because alarm is off.
+18:17:04.580 (65824580) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:33.142 (51033142)
+18:17:04.617 (65824617) - Not triggered because alarm is off.
+18:17:04.784 (65824784) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:33.346 (51033346)
+18:17:04.822 (65824822) - Not triggered because alarm is off.
+18:17:04.988 (65824988) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:33.550 (51033550)
+18:17:05.026 (65825026) - Not triggered because alarm is off.
+18:17:05.192 (65825192) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:33.754 (51033754)
+18:17:05.229 (65825229) - Not triggered because alarm is off.
+18:17:10.697 (65830697) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:39.259 (51039259)
+18:17:10.735 (65830735) - Not triggered because alarm is off.
+18:17:11.102 (65831102) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:39.664 (51039664)
+18:17:11.139 (65831139) - Not triggered because alarm is off.
+18:17:11.306 (65831306) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:39.868 (51039868)
+18:17:11.344 (65831344) - Not triggered because alarm is off.
+18:17:25.513 (65845513) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:54.075 (51054075)
+18:17:25.551 (65845551) - Not triggered because alarm is off.
+18:17:25.716 (65845716) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:54.278 (51054278)
+18:17:25.754 (65845754) - Not triggered because alarm is off.
+18:17:25.921 (65845921) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:54.483 (51054483)
+18:17:25.958 (65845958) - Not triggered because alarm is off.
+18:17:26.125 (65846125) - sensor triggered: ***REMOVED*** - time from last alarm: 14:10:54.687 (51054687)
+18:17:26.163 (65846163) - Not triggered because alarm is off.
+18:17:34.931 (65854931) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:03.492 (51063492)
+18:17:34.968 (65854968) - Not triggered because alarm is off.
+18:17:35.135 (65855135) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:03.697 (51063697)
+18:17:35.173 (65855173) - Not triggered because alarm is off.
+18:17:35.339 (65855339) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:03.901 (51063901)
+18:17:35.377 (65855377) - Not triggered because alarm is off.
+18:17:48.146 (65868146) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:16.708 (51076708)
+18:17:48.184 (65868184) - Not triggered because alarm is off.
+18:17:48.350 (65868350) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:16.912 (51076912)
+18:17:48.388 (65868388) - Not triggered because alarm is off.
+18:17:48.555 (65868555) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:17.116 (51077116)
+18:17:48.592 (65868592) - Not triggered because alarm is off.
+18:17:48.759 (65868759) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:17.321 (51077321)
+18:17:48.796 (65868796) - Not triggered because alarm is off.
+18:17:53.964 (65873964) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:22.526 (51082526)
+18:17:54.001 (65874001) - Not triggered because alarm is off.
+18:17:54.167 (65874167) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:22.729 (51082729)
+18:17:54.205 (65874205) - Not triggered because alarm is off.
+18:17:54.372 (65874372) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:22.934 (51082934)
+18:17:54.409 (65874409) - Not triggered because alarm is off.
+18:17:54.676 (65874676) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:23.238 (51083238)
+18:17:54.713 (65874713) - Not triggered because alarm is off.
+18:18:00.181 (65880181) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:28.743 (51088743)
+18:18:00.219 (65880219) - Not triggered because alarm is off.
+18:18:00.685 (65880685) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:29.247 (51089247)
+18:18:00.723 (65880723) - Not triggered because alarm is off.
+18:18:12.592 (65892592) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:41.154 (51101154)
+18:18:12.630 (65892630) - Not triggered because alarm is off.
+18:18:12.796 (65892796) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:41.358 (51101358)
+18:18:12.834 (65892834) - Not triggered because alarm is off.
+18:18:13.100 (65893100) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:41.662 (51101662)
+18:18:13.138 (65893138) - Not triggered because alarm is off.
+18:18:13.305 (65893305) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:41.866 (51101866)
+18:18:13.342 (65893342) - Not triggered because alarm is off.
+18:18:19.110 (65899110) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:47.672 (51107672)
+18:18:19.148 (65899148) - Not triggered because alarm is off.
+18:18:19.514 (65899514) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:48.075 (51108075)
+18:18:19.551 (65899551) - Not triggered because alarm is off.
+18:18:19.718 (65899718) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:48.280 (51108280)
+18:18:19.756 (65899756) - Not triggered because alarm is off.
+18:18:25.523 (65905523) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:54.085 (51114085)
+18:18:25.561 (65905561) - Not triggered because alarm is off.
+18:18:25.727 (65905727) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:54.289 (51114289)
+18:18:25.765 (65905765) - Not triggered because alarm is off.
+18:18:25.932 (65905932) - sensor triggered: ***REMOVED*** - time from last alarm: 14:11:54.494 (51114494)
+18:18:25.970 (65905970) - Not triggered because alarm is off.
+18:19:22.948 (65962948) - sensor triggered: ***REMOVED*** - time from last alarm: 14:12:51.510 (51171510)
+18:19:22.985 (65962985) - Not triggered because alarm is off.
+18:19:23.152 (65963152) - sensor triggered: ***REMOVED*** - time from last alarm: 14:12:51.714 (51171714)
+18:19:23.190 (65963190) - Not triggered because alarm is off.
+18:19:23.356 (65963356) - sensor triggered: ***REMOVED*** - time from last alarm: 14:12:51.918 (51171918)
+18:19:23.394 (65963394) - Not triggered because alarm is off.
+18:19:23.560 (65963560) - sensor triggered: ***REMOVED*** - time from last alarm: 14:12:52.122 (51172122)
+18:19:23.598 (65963598) - Not triggered because alarm is off.
+18:19:23.764 (65963764) - sensor triggered: ***REMOVED*** - time from last alarm: 14:12:52.326 (51172326)
+18:19:23.802 (65963802) - Not triggered because alarm is off.
+18:20:58.088 (66058088) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:26.650 (51266650)
+18:20:58.126 (66058126) - Not triggered because alarm is off.
+18:20:58.292 (66058292) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:26.854 (51266854)
+18:20:58.330 (66058330) - Not triggered because alarm is off.
+18:20:58.497 (66058497) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:27.059 (51267059)
+18:20:58.533 (66058533) - Not triggered because alarm is off.
+18:20:58.700 (66058700) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:27.262 (51267262)
+18:20:58.738 (66058738) - Not triggered because alarm is off.
+18:21:08.907 (66068907) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:37.468 (51277468)
+18:21:08.944 (66068944) - Not triggered because alarm is off.
+18:21:09.110 (66069110) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:37.672 (51277672)
+18:21:09.148 (66069148) - Not triggered because alarm is off.
+18:21:09.315 (66069315) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:37.877 (51277877)
+18:21:09.352 (66069352) - Not triggered because alarm is off.
+18:21:09.519 (66069519) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:38.081 (51278081)
+18:21:09.557 (66069557) - Not triggered because alarm is off.
+18:21:19.625 (66079625) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:48.187 (51288187)
+18:21:19.663 (66079663) - Not triggered because alarm is off.
+18:21:19.830 (66079830) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:48.391 (51288391)
+18:21:19.866 (66079866) - Not triggered because alarm is off.
+18:21:20.033 (66080033) - sensor triggered: ***REMOVED*** - time from last alarm: 14:14:48.595 (51288595)
+18:21:20.071 (66080071) - Not triggered because alarm is off.
+18:21:32.940 (66092940) - sensor triggered: ***REMOVED*** - time from last alarm: 14:15:01.502 (51301502)
+18:21:32.978 (66092978) - Not triggered because alarm is off.
+18:21:33.145 (66093145) - sensor triggered: ***REMOVED*** - time from last alarm: 14:15:01.707 (51301707)
+18:21:33.181 (66093181) - Not triggered because alarm is off.
+18:21:33.348 (66093348) - sensor triggered: ***REMOVED*** - time from last alarm: 14:15:01.910 (51301910)
+18:21:33.386 (66093386) - Not triggered because alarm is off.
+18:24:01.284 (66241284) - sensor triggered: ***REMOVED*** - time from last alarm: 14:17:29.846 (51449846)
+18:24:01.321 (66241321) - Turning alarm on.
+18:24:02.120 (66242120) - sensor triggered: ***REMOVED*** - time from last alarm: 14:17:30.032 (51450032)
+18:24:02.159 (66242159) - Turning alarm on.
+18:24:05.210 (66245210) - sensor triggered: ***REMOVED*** - time from last alarm: 14:17:33.120 (51453120)
+18:24:05.249 (66245249) - Turning alarm off.
+18:30:34.578 (66634578) - sensor triggered: ***REMOVED*** - time from last alarm: 14:24:03.140 (51843140)
+18:30:34.616 (66634616) - Not triggered because alarm is off.
+18:30:34.783 (66634783) - sensor triggered: ***REMOVED*** - time from last alarm: 14:24:03.345 (51843345)
+18:30:34.821 (66634821) - Not triggered because alarm is off.
+18:30:42.088 (66642088) - sensor triggered: ***REMOVED*** - time from last alarm: 14:24:10.650 (51850650)
+18:30:42.126 (66642126) - Not triggered because alarm is off.
+18:30:42.393 (66642393) - sensor triggered: ***REMOVED*** - time from last alarm: 14:24:10.955 (51850955)
+18:30:42.430 (66642430) - Not triggered because alarm is off.
+18:30:42.597 (66642597) - sensor triggered: ***REMOVED*** - time from last alarm: 14:24:11.159 (51851159)
+18:30:42.634 (66642634) - Not triggered because alarm is off.
+18:34:49.053 (66889053) - sensor triggered: ***REMOVED*** - time from last alarm: 14:28:17.615 (52097615)
+18:34:49.092 (66889092) - Turning alarm on.
+18:34:53.643 (66893643) - sensor triggered: ***REMOVED*** - time from last alarm: 14:28:21.554 (52101554)
+18:34:53.681 (66893681) - Turning alarm off.
+18:57:16.913 (68236913) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:45.475 (53445475)
+18:57:16.951 (68236951) - Not triggered because alarm is off.
+18:57:17.117 (68237117) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:45.679 (53445679)
+18:57:17.155 (68237155) - Not triggered because alarm is off.
+18:57:17.322 (68237322) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:45.884 (53445884)
+18:57:17.359 (68237359) - Not triggered because alarm is off.
+18:57:17.526 (68237526) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:46.087 (53446087)
+18:57:17.563 (68237563) - Not triggered because alarm is off.
+18:57:17.729 (68237729) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:46.291 (53446291)
+18:57:17.767 (68237767) - Not triggered because alarm is off.
+18:57:24.035 (68244035) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:52.597 (53452597)
+18:57:24.073 (68244073) - Not triggered because alarm is off.
+18:57:24.239 (68244239) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:52.801 (53452801)
+18:57:24.277 (68244277) - Not triggered because alarm is off.
+18:57:24.643 (68244643) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:53.205 (53453205)
+18:57:24.681 (68244681) - Not triggered because alarm is off.
+18:57:30.249 (68250249) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:58.811 (53458811)
+18:57:30.287 (68250287) - Not triggered because alarm is off.
+18:57:30.452 (68250452) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:59.014 (53459014)
+18:57:30.490 (68250490) - Not triggered because alarm is off.
+18:57:30.857 (68250857) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:59.419 (53459419)
+18:57:30.895 (68250895) - Not triggered because alarm is off.
+18:57:31.061 (68251061) - sensor triggered: ***REMOVED*** - time from last alarm: 14:50:59.623 (53459623)
+18:57:31.099 (68251099) - Not triggered because alarm is off.
+18:57:45.368 (68265368) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:13.930 (53473930)
+18:57:45.406 (68265406) - Not triggered because alarm is off.
+18:57:45.572 (68265572) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:14.134 (53474134)
+18:57:45.610 (68265610) - Not triggered because alarm is off.
+18:57:45.777 (68265777) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:14.339 (53474339)
+18:57:45.814 (68265814) - Not triggered because alarm is off.
+18:57:46.081 (68266081) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:14.643 (53474643)
+18:57:46.118 (68266118) - Not triggered because alarm is off.
+18:58:03.088 (68283088) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:31.650 (53491650)
+18:58:03.126 (68283126) - Not triggered because alarm is off.
+18:58:03.292 (68283292) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:31.854 (53491854)
+18:58:03.330 (68283330) - Not triggered because alarm is off.
+18:58:03.596 (68283596) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:32.158 (53492158)
+18:58:03.634 (68283634) - Not triggered because alarm is off.
+18:58:03.801 (68283801) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:32.363 (53492363)
+18:58:03.838 (68283838) - Not triggered because alarm is off.
+18:58:10.506 (68290506) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:39.068 (53499068)
+18:58:10.544 (68290544) - Not triggered because alarm is off.
+18:58:10.710 (68290710) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:39.272 (53499272)
+18:58:10.748 (68290748) - Not triggered because alarm is off.
+18:58:21.317 (68301317) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:49.879 (53509879)
+18:58:21.355 (68301355) - Not triggered because alarm is off.
+18:58:21.520 (68301520) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:50.082 (53510082)
+18:58:21.558 (68301558) - Not triggered because alarm is off.
+18:58:21.725 (68301725) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:50.287 (53510287)
+18:58:21.762 (68301762) - Not triggered because alarm is off.
+18:58:21.929 (68301929) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:50.491 (53510491)
+18:58:21.967 (68301967) - Not triggered because alarm is off.
+18:58:22.133 (68302133) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:50.695 (53510695)
+18:58:22.171 (68302171) - Not triggered because alarm is off.
+18:58:27.438 (68307438) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:56.000 (53516000)
+18:58:27.476 (68307476) - Not triggered because alarm is off.
+18:58:27.643 (68307643) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:56.204 (53516204)
+18:58:27.680 (68307680) - Not triggered because alarm is off.
+18:58:27.847 (68307847) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:56.409 (53516409)
+18:58:27.885 (68307885) - Not triggered because alarm is off.
+18:58:28.050 (68308050) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:56.612 (53516612)
+18:58:28.088 (68308088) - Not triggered because alarm is off.
+18:58:28.255 (68308255) - sensor triggered: ***REMOVED*** - time from last alarm: 14:51:56.816 (53516816)
+18:58:28.292 (68308292) - Not triggered because alarm is off.
+18:58:33.560 (68313560) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:02.122 (53522122)
+18:58:33.597 (68313597) - Not triggered because alarm is off.
+18:58:33.964 (68313964) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:02.526 (53522526)
+18:58:34.002 (68314002) - Not triggered because alarm is off.
+18:58:34.168 (68314168) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:02.730 (53522730)
+18:58:34.206 (68314206) - Not triggered because alarm is off.
+18:58:39.574 (68319574) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:08.135 (53528135)
+18:58:39.611 (68319611) - Not triggered because alarm is off.
+18:58:39.777 (68319777) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:08.339 (53528339)
+18:58:39.815 (68319815) - Not triggered because alarm is off.
+18:58:39.982 (68319982) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:08.544 (53528544)
+18:58:40.020 (68320020) - Not triggered because alarm is off.
+18:58:40.186 (68320186) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:08.748 (53528748)
+18:58:40.224 (68320224) - Not triggered because alarm is off.
+18:58:45.892 (68325892) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:14.454 (53534454)
+18:58:45.928 (68325928) - Not triggered because alarm is off.
+18:58:46.295 (68326295) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:14.857 (53534857)
+18:58:46.333 (68326333) - Not triggered because alarm is off.
+18:58:46.599 (68326599) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:15.161 (53535161)
+18:58:46.637 (68326637) - Not triggered because alarm is off.
+18:58:52.805 (68332805) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:21.367 (53541367)
+18:58:52.843 (68332843) - Not triggered because alarm is off.
+18:58:53.209 (68333209) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:21.771 (53541771)
+18:58:53.247 (68333247) - Not triggered because alarm is off.
+18:58:53.413 (68333413) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:21.975 (53541975)
+18:58:53.451 (68333451) - Not triggered because alarm is off.
+18:58:58.619 (68338619) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:27.181 (53547181)
+18:58:58.656 (68338656) - Not triggered because alarm is off.
+18:58:58.823 (68338823) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:27.385 (53547385)
+18:58:58.861 (68338861) - Not triggered because alarm is off.
+18:58:59.326 (68339326) - sensor triggered: ***REMOVED*** - time from last alarm: 14:52:27.888 (53547888)
+18:58:59.364 (68339364) - Not triggered because alarm is off.
+18:59:31.738 (68371738) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:00.300 (53580300)
+18:59:31.775 (68371775) - Not triggered because alarm is off.
+18:59:31.942 (68371942) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:00.504 (53580504)
+18:59:31.980 (68371980) - Not triggered because alarm is off.
+18:59:32.146 (68372146) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:00.708 (53580708)
+18:59:32.184 (68372184) - Not triggered because alarm is off.
+18:59:32.350 (68372350) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:00.911 (53580911)
+18:59:32.387 (68372387) - Not triggered because alarm is off.
+18:59:32.554 (68372554) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:01.116 (53581116)
+18:59:32.592 (68372592) - Not triggered because alarm is off.
+18:59:52.062 (68392062) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:20.624 (53600624)
+18:59:52.100 (68392100) - Not triggered because alarm is off.
+18:59:52.266 (68392266) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:20.828 (53600828)
+18:59:52.304 (68392304) - Not triggered because alarm is off.
+18:59:52.471 (68392471) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:21.033 (53601033)
+18:59:52.508 (68392508) - Not triggered because alarm is off.
+18:59:52.675 (68392675) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:21.237 (53601237)
+18:59:52.713 (68392713) - Not triggered because alarm is off.
+18:59:52.879 (68392879) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:21.441 (53601441)
+18:59:52.916 (68392916) - Not triggered because alarm is off.
+18:59:59.484 (68399484) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:28.046 (53608046)
+18:59:59.522 (68399522) - Not triggered because alarm is off.
+18:59:59.688 (68399688) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:28.250 (53608250)
+18:59:59.726 (68399726) - Not triggered because alarm is off.
+18:59:59.893 (68399893) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:28.455 (53608455)
+18:59:59.930 (68399930) - Not triggered because alarm is off.
+19:00:00.097 (68400097) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:28.659 (53608659)
+19:00:00.135 (68400135) - Not triggered because alarm is off.
+19:00:00.301 (68400301) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:28.863 (53608863)
+19:00:00.338 (68400338) - Not triggered because alarm is off.
+19:00:05.306 (68405306) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:33.868 (53613868)
+19:00:05.344 (68405344) - Not triggered because alarm is off.
+19:00:05.511 (68405511) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:34.072 (53614072)
+19:00:05.548 (68405548) - Not triggered because alarm is off.
+19:00:05.714 (68405714) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:34.276 (53614276)
+19:00:05.752 (68405752) - Not triggered because alarm is off.
+19:00:05.918 (68405918) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:34.480 (53614480)
+19:00:05.956 (68405956) - Not triggered because alarm is off.
+19:00:06.123 (68406123) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:34.684 (53614684)
+19:00:06.160 (68406160) - Not triggered because alarm is off.
+19:00:11.228 (68411228) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:39.790 (53619790)
+19:00:11.266 (68411266) - Not triggered because alarm is off.
+19:00:11.431 (68411431) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:39.993 (53619993)
+19:00:11.469 (68411469) - Not triggered because alarm is off.
+19:00:11.636 (68411636) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:40.198 (53620198)
+19:00:11.673 (68411673) - Not triggered because alarm is off.
+19:00:11.840 (68411840) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:40.402 (53620402)
+19:00:11.878 (68411878) - Not triggered because alarm is off.
+19:00:17.045 (68417045) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:45.607 (53625607)
+19:00:17.083 (68417083) - Not triggered because alarm is off.
+19:00:17.250 (68417250) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:45.812 (53625812)
+19:00:17.287 (68417287) - Not triggered because alarm is off.
+19:00:17.454 (68417454) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:46.016 (53626016)
+19:00:17.491 (68417491) - Not triggered because alarm is off.
+19:00:17.657 (68417657) - sensor triggered: ***REMOVED*** - time from last alarm: 14:53:46.219 (53626219)
+19:00:17.695 (68417695) - Not triggered because alarm is off.
+19:01:14.674 (68474674) - sensor triggered: ***REMOVED*** - time from last alarm: 14:54:43.236 (53683236)
+19:01:14.712 (68474712) - Not triggered because alarm is off.
+19:01:14.878 (68474878) - sensor triggered: ***REMOVED*** - time from last alarm: 14:54:43.439 (53683439)
+19:01:14.915 (68474915) - Not triggered because alarm is off.
+19:01:15.082 (68475082) - sensor triggered: ***REMOVED*** - time from last alarm: 14:54:43.644 (53683644)
+19:01:15.120 (68475120) - Not triggered because alarm is off.
+19:01:15.286 (68475286) - sensor triggered: ***REMOVED*** - time from last alarm: 14:54:43.848 (53683848)
+19:01:15.324 (68475324) - Not triggered because alarm is off.
+19:01:57.600 (68517600) - sensor triggered: ***REMOVED*** - time from last alarm: 14:55:26.162 (53726162)
+19:01:57.637 (68517637) - Not triggered because alarm is off.
+19:01:57.804 (68517804) - sensor triggered: ***REMOVED*** - time from last alarm: 14:55:26.366 (53726366)
+19:01:57.841 (68517841) - Not triggered because alarm is off.
+19:01:58.007 (68518007) - sensor triggered: ***REMOVED*** - time from last alarm: 14:55:26.569 (53726569)
+19:01:58.045 (68518045) - Not triggered because alarm is off.
+19:01:58.212 (68518212) - sensor triggered: ***REMOVED*** - time from last alarm: 14:55:26.774 (53726774)
+19:01:58.249 (68518249) - Not triggered because alarm is off.
+19:01:58.416 (68518416) - sensor triggered: ***REMOVED*** - time from last alarm: 14:55:26.978 (53726978)
+19:01:58.454 (68518454) - Not triggered because alarm is off.
+19:02:47.530 (68567530) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:16.092 (53776092)
+19:02:47.568 (68567568) - Not triggered because alarm is off.
+19:02:47.834 (68567834) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:16.396 (53776396)
+19:02:47.872 (68567872) - Not triggered because alarm is off.
+19:02:48.039 (68568039) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:16.601 (53776601)
+19:02:48.076 (68568076) - Not triggered because alarm is off.
+19:02:48.243 (68568243) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:16.805 (53776805)
+19:02:48.281 (68568281) - Not triggered because alarm is off.
+19:02:54.248 (68574248) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:22.809 (53782809)
+19:02:54.285 (68574285) - Not triggered because alarm is off.
+19:02:54.452 (68574452) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:23.014 (53783014)
+19:02:54.490 (68574490) - Not triggered because alarm is off.
+19:02:54.656 (68574656) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:23.218 (53783218)
+19:02:54.694 (68574694) - Not triggered because alarm is off.
+19:02:54.861 (68574861) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:23.423 (53783423)
+19:02:54.898 (68574898) - Not triggered because alarm is off.
+19:02:55.065 (68575065) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:23.627 (53783627)
+19:02:55.102 (68575102) - Not triggered because alarm is off.
+19:03:27.276 (68607276) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:55.838 (53815838)
+19:03:27.313 (68607313) - Not triggered because alarm is off.
+19:03:27.479 (68607479) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:56.041 (53816041)
+19:03:27.517 (68607517) - Not triggered because alarm is off.
+19:03:27.783 (68607783) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:56.345 (53816345)
+19:03:27.821 (68607821) - Not triggered because alarm is off.
+19:03:27.988 (68607988) - sensor triggered: ***REMOVED*** - time from last alarm: 14:56:56.550 (53816550)
+19:03:28.025 (68608025) - Not triggered because alarm is off.
+19:03:36.794 (68616794) - sensor triggered: ***REMOVED*** - time from last alarm: 14:57:05.356 (53825356)
+19:03:36.832 (68616832) - Not triggered because alarm is off.
+19:03:37.198 (68617198) - sensor triggered: ***REMOVED*** - time from last alarm: 14:57:05.760 (53825760)
+19:03:37.236 (68617236) - Not triggered because alarm is off.
+19:03:37.402 (68617402) - sensor triggered: ***REMOVED*** - time from last alarm: 14:57:05.964 (53825964)
+19:03:37.440 (68617440) - Not triggered because alarm is off.
+19:07:41.058 (68861058) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:09.620 (54069620)
+19:07:41.095 (68861095) - Not triggered because alarm is off.
+19:07:41.262 (68861262) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:09.824 (54069824)
+19:07:41.299 (68861299) - Not triggered because alarm is off.
+19:07:41.466 (68861466) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:10.028 (54070028)
+19:07:41.504 (68861504) - Not triggered because alarm is off.
+19:07:41.670 (68861670) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:10.232 (54070232)
+19:07:41.708 (68861708) - Not triggered because alarm is off.
+19:07:41.875 (68861875) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:10.437 (54070437)
+19:07:41.912 (68861912) - Not triggered because alarm is off.
+19:08:13.685 (68893685) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:42.247 (54102247)
+19:08:13.723 (68893723) - Not triggered because alarm is off.
+19:08:13.889 (68893889) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:42.451 (54102451)
+19:08:13.927 (68893927) - Not triggered because alarm is off.
+19:08:14.094 (68894094) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:42.656 (54102656)
+19:08:14.131 (68894131) - Not triggered because alarm is off.
+19:08:14.298 (68894298) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:42.860 (54102860)
+19:08:14.336 (68894336) - Not triggered because alarm is off.
+19:08:14.501 (68894501) - sensor triggered: ***REMOVED*** - time from last alarm: 15:01:43.063 (54103063)
+19:08:14.539 (68894539) - Not triggered because alarm is off.
+19:08:42.612 (68922612) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:11.174 (54131174)
+19:08:42.649 (68922649) - Not triggered because alarm is off.
+19:08:42.816 (68922816) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:11.378 (54131378)
+19:08:42.854 (68922854) - Not triggered because alarm is off.
+19:08:43.020 (68923020) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:11.582 (54131582)
+19:08:43.058 (68923058) - Not triggered because alarm is off.
+19:08:43.225 (68923225) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:11.787 (54131787)
+19:08:43.261 (68923261) - Not triggered because alarm is off.
+19:09:20.737 (68960737) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:49.298 (54169298)
+19:09:20.774 (68960774) - Not triggered because alarm is off.
+19:09:21.041 (68961041) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:49.602 (54169602)
+19:09:21.078 (68961078) - Not triggered because alarm is off.
+19:09:21.245 (68961245) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:49.807 (54169807)
+19:09:21.283 (68961283) - Not triggered because alarm is off.
+19:09:21.448 (68961448) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:50.010 (54170010)
+19:09:21.486 (68961486) - Not triggered because alarm is off.
+19:09:30.955 (68970955) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:59.517 (54179517)
+19:09:30.992 (68970992) - Not triggered because alarm is off.
+19:09:31.359 (68971359) - sensor triggered: ***REMOVED*** - time from last alarm: 15:02:59.921 (54179921)
+19:09:31.397 (68971397) - Not triggered because alarm is off.
+19:09:31.564 (68971564) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:00.126 (54180126)
+19:09:31.600 (68971600) - Not triggered because alarm is off.
+19:09:38.168 (68978168) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:06.730 (54186730)
+19:09:38.206 (68978206) - Not triggered because alarm is off.
+19:09:38.373 (68978373) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:06.935 (54186935)
+19:09:38.410 (68978410) - Not triggered because alarm is off.
+19:09:38.577 (68978577) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:07.139 (54187139)
+19:09:38.615 (68978615) - Not triggered because alarm is off.
+19:09:38.781 (68978781) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:07.343 (54187343)
+19:09:38.819 (68978819) - Not triggered because alarm is off.
+19:09:38.985 (68978985) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:07.547 (54187547)
+19:09:39.022 (68979022) - Not triggered because alarm is off.
+19:09:44.390 (68984390) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:12.952 (54192952)
+19:09:44.428 (68984428) - Not triggered because alarm is off.
+19:09:44.595 (68984595) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:13.156 (54193156)
+19:09:44.632 (68984632) - Not triggered because alarm is off.
+19:09:44.799 (68984799) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:13.361 (54193361)
+19:09:44.837 (68984837) - Not triggered because alarm is off.
+19:09:45.003 (68985003) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:13.564 (54193564)
+19:09:45.040 (68985040) - Not triggered because alarm is off.
+19:09:50.508 (68990508) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:19.070 (54199070)
+19:09:50.545 (68990545) - Not triggered because alarm is off.
+19:09:50.712 (68990712) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:19.274 (54199274)
+19:09:50.749 (68990749) - Not triggered because alarm is off.
+19:09:50.916 (68990916) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:19.478 (54199478)
+19:09:50.954 (68990954) - Not triggered because alarm is off.
+19:09:51.120 (68991120) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:19.682 (54199682)
+19:09:51.158 (68991158) - Not triggered because alarm is off.
+19:09:51.325 (68991325) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:19.887 (54199887)
+19:09:51.362 (68991362) - Not triggered because alarm is off.
+19:09:56.429 (68996429) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:24.991 (54204991)
+19:09:56.467 (68996467) - Not triggered because alarm is off.
+19:09:56.834 (68996834) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:25.396 (54205396)
+19:09:56.872 (68996872) - Not triggered because alarm is off.
+19:09:57.038 (68997038) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:25.600 (54205600)
+19:09:57.075 (68997075) - Not triggered because alarm is off.
+19:10:06.644 (69006644) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:35.206 (54215206)
+19:10:06.682 (69006682) - Not triggered because alarm is off.
+19:10:06.849 (69006849) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:35.409 (54215409)
+19:10:06.885 (69006885) - Not triggered because alarm is off.
+19:10:07.052 (69007052) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:35.614 (54215614)
+19:10:07.090 (69007090) - Not triggered because alarm is off.
+19:10:07.256 (69007256) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:35.818 (54215818)
+19:10:07.294 (69007294) - Not triggered because alarm is off.
+19:10:18.463 (69018463) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:47.025 (54227025)
+19:10:18.501 (69018501) - Not triggered because alarm is off.
+19:10:18.767 (69018767) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:47.329 (54227329)
+19:10:18.805 (69018805) - Not triggered because alarm is off.
+19:10:18.971 (69018971) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:47.533 (54227533)
+19:10:19.009 (69019009) - Not triggered because alarm is off.
+19:10:19.175 (69019175) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:47.737 (54227737)
+19:10:19.212 (69019212) - Not triggered because alarm is off.
+19:10:24.481 (69024481) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:53.042 (54233042)
+19:10:24.518 (69024518) - Not triggered because alarm is off.
+19:10:24.884 (69024884) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:53.446 (54233446)
+19:10:24.922 (69024922) - Not triggered because alarm is off.
+19:10:25.089 (69025089) - sensor triggered: ***REMOVED*** - time from last alarm: 15:03:53.650 (54233650)
+19:10:25.126 (69025126) - Not triggered because alarm is off.
+19:10:49.198 (69049198) - sensor triggered: ***REMOVED*** - time from last alarm: 15:04:17.760 (54257760)
+19:10:49.235 (69049235) - Not triggered because alarm is off.
+19:10:49.402 (69049402) - sensor triggered: ***REMOVED*** - time from last alarm: 15:04:17.964 (54257964)
+19:10:49.440 (69049440) - Not triggered because alarm is off.
+19:10:49.606 (69049606) - sensor triggered: ***REMOVED*** - time from last alarm: 15:04:18.168 (54258168)
+19:10:49.644 (69049644) - Not triggered because alarm is off.
+19:10:49.810 (69049810) - sensor triggered: ***REMOVED*** - time from last alarm: 15:04:18.372 (54258372)
+19:10:49.848 (69049848) - Not triggered because alarm is off.
+19:11:25.322 (69085322) - sensor triggered: ***REMOVED*** - time from last alarm: 15:04:53.884 (54293884)
+19:11:25.361 (69085361) - Turning alarm on.
+19:11:28.411 (69088411) - sensor triggered: ***REMOVED*** - time from last alarm: 15:04:56.323 (54296323)
+19:11:28.450 (69088450) - Turning alarm off.
+19:11:37.001 (69097001) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:05.562 (54305562)
+19:11:37.039 (69097039) - Turning alarm on.
+19:11:43.092 (69103092) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:11.004 (54311004)
+19:11:43.131 (69103131) - Turning alarm off.
+19:12:08.786 (69128786) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:37.348 (54337348)
+19:12:08.824 (69128824) - Turning alarm on.
+19:12:09.623 (69129623) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:37.535 (54337535)
+19:12:09.662 (69129662) - Turning alarm on.
+19:12:13.463 (69133463) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:41.374 (54341374)
+19:12:13.502 (69133502) - Turning alarm off.
+19:12:13.952 (69133952) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:42.512 (54342512)
+19:12:16.291 (69136291) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:44.853 (54344853)
+19:12:16.329 (69136329) - Turning alarm on.
+19:12:17.128 (69137128) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:45.040 (54345040)
+19:12:17.167 (69137167) - Turning alarm on.
+19:12:20.217 (69140217) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:48.129 (54348129)
+19:12:20.256 (69140256) - Turning alarm off.
+19:12:20.706 (69140706) - sensor triggered: ***REMOVED*** - time from last alarm: 15:05:49.268 (54349268)
+19:14:49.076 (69289076) - sensor triggered: 6158083 - time from last alarm: 15:08:17.638 (54497638)
+19:14:49.115 (69289115) - Not triggered because alarm is off.
+19:14:49.282 (69289282) - sensor triggered: 6158083 - time from last alarm: 15:08:17.844 (54497844)
+19:14:49.321 (69289321) - Not triggered because alarm is off.
+19:14:49.487 (69289487) - sensor triggered: 6158083 - time from last alarm: 15:08:18.049 (54498049)
+19:14:49.526 (69289526) - Not triggered because alarm is off.
+19:15:08.096 (69308096) - sensor triggered: 6158083 - time from last alarm: 15:08:36.658 (54516658)
+19:15:08.135 (69308135) - Not triggered because alarm is off.
+19:15:08.301 (69308301) - sensor triggered: 6158083 - time from last alarm: 15:08:36.863 (54516863)
+19:15:08.340 (69308340) - Not triggered because alarm is off.
+19:15:08.507 (69308507) - sensor triggered: 6158083 - time from last alarm: 15:08:37.069 (54517069)
+19:15:08.546 (69308546) - Not triggered because alarm is off.
+19:15:08.711 (69308711) - sensor triggered: 6158083 - time from last alarm: 15:08:37.273 (54517273)
+19:15:08.750 (69308750) - Not triggered because alarm is off.
+19:15:08.917 (69308917) - sensor triggered: 6158083 - time from last alarm: 15:08:37.479 (54517479)
+19:15:08.955 (69308955) - Not triggered because alarm is off.
+19:15:14.023 (69314023) - sensor triggered: 6158128 - time from last alarm: 15:08:42.585 (54522585)
+19:15:14.062 (69314062) - Not triggered because alarm is off.
+19:15:14.228 (69314228) - sensor triggered: 6158128 - time from last alarm: 15:08:42.790 (54522790)
+19:15:14.267 (69314267) - Not triggered because alarm is off.
+19:15:14.434 (69314434) - sensor triggered: 6158128 - time from last alarm: 15:08:42.996 (54522996)
+19:15:14.472 (69314472) - Not triggered because alarm is off.
+19:15:14.638 (69314638) - sensor triggered: 6158128 - time from last alarm: 15:08:43.200 (54523200)
+19:15:14.677 (69314677) - Not triggered because alarm is off.
+19:15:14.844 (69314844) - sensor triggered: 6158128 - time from last alarm: 15:08:43.406 (54523406)
+19:15:14.882 (69314882) - Not triggered because alarm is off.
+19:15:21.150 (69321150) - sensor triggered: ***REMOVED*** - time from last alarm: 15:08:49.712 (54529712)
+19:15:21.189 (69321189) - Turning alarm on.
+19:15:24.239 (69324239) - sensor triggered: 6158083 - time from last alarm: 15:08:52.150 (54532150)
+19:15:24.278 (69324278) - Not triggered because unknown signal.
+19:15:24.346 (69324346) - Not triggered because of start delay.
+19:15:25.165 (69325165) - sensor triggered: 6158083 - time from last alarm: 15:08:53.076 (54533076)
+19:15:25.203 (69325203) - Not triggered because unknown signal.
+19:15:25.271 (69325271) - Not triggered because of start delay.
+19:15:27.592 (69327592) - sensor triggered: 6158083 - time from last alarm: 15:08:55.503 (54535503)
+19:15:27.630 (69327630) - Not triggered because unknown signal.
+19:15:27.697 (69327697) - Not triggered because of start delay.
+19:15:28.517 (69328517) - sensor triggered: 6158083 - time from last alarm: 15:08:56.428 (54536428)
+19:15:28.556 (69328556) - Not triggered because unknown signal.
+19:15:28.623 (69328623) - Not triggered because of start delay.
+19:15:29.442 (69329442) - sensor triggered: 6158083 - time from last alarm: 15:08:57.354 (54537354)
+19:15:29.481 (69329481) - Not triggered because unknown signal.
+19:15:29.549 (69329549) - Not triggered because of start delay.
+19:15:30.368 (69330368) - sensor triggered: 6158083 - time from last alarm: 15:08:58.280 (54538280)
+19:15:30.407 (69330407) - Not triggered because unknown signal.
+19:15:30.475 (69330475) - Not triggered because of start delay.
+19:15:43.304 (69343304) - sensor triggered: ***REMOVED*** - time from last alarm: 15:09:11.216 (54551216)
+19:15:43.343 (69343343) - Turning alarm off.
+19:15:52.694 (69352694) - sensor triggered: ***REMOVED*** - time from last alarm: 15:09:21.256 (54561256)
+19:15:52.732 (69352732) - Not triggered because alarm is off.
+19:15:52.898 (69352898) - sensor triggered: ***REMOVED*** - time from last alarm: 15:09:21.460 (54561460)
+19:15:52.936 (69352936) - Not triggered because alarm is off.
+19:15:53.103 (69353103) - sensor triggered: ***REMOVED*** - time from last alarm: 15:09:21.665 (54561665)
+19:15:53.140 (69353140) - Not triggered because alarm is off.
+19:15:53.307 (69353307) - sensor triggered: ***REMOVED*** - time from last alarm: 15:09:21.869 (54561869)
+19:15:53.345 (69353345) - Not triggered because alarm is off.
+19:16:53.923 (69413923) - sensor triggered: ***REMOVED*** - time from last alarm: 15:10:22.485 (54622485)
+19:16:53.961 (69413961) - Not triggered because alarm is off.
+19:16:54.128 (69414128) - sensor triggered: ***REMOVED*** - time from last alarm: 15:10:22.690 (54622690)
+19:16:54.165 (69414165) - Not triggered because alarm is off.
+19:16:54.332 (69414332) - sensor triggered: ***REMOVED*** - time from last alarm: 15:10:22.894 (54622894)
+19:16:54.370 (69414370) - Not triggered because alarm is off.
+19:16:54.536 (69414536) - sensor triggered: ***REMOVED*** - time from last alarm: 15:10:23.098 (54623098)
+19:16:54.574 (69414574) - Not triggered because alarm is off.
+19:17:26.247 (69446247) - sensor triggered: ***REMOVED*** - time from last alarm: 15:10:54.809 (54654809)
+19:17:26.286 (69446286) - Turning alarm on.
+19:17:27.084 (69447084) - sensor triggered: ***REMOVED*** - time from last alarm: 15:10:54.995 (54654995)
+19:17:27.122 (69447122) - Turning alarm on.
+19:17:36.929 (69456929) - sensor triggered: ***REMOVED*** - time from last alarm: 15:11:04.840 (54664840)
+19:17:36.967 (69456967) - Turning alarm off.
+19:17:37.417 (69457417) - sensor triggered: ***REMOVED*** - time from last alarm: 15:11:05.979 (54665979)
+19:19:38.383 (69578383) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:06.945 (54786945)
+19:19:38.421 (69578421) - Turning alarm off.
+19:19:40.670 (69580670) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:09.232 (54789232)
+19:19:40.709 (69580709) - Turning alarm off.
+19:19:41.159 (69581159) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:09.721 (54789721)
+19:19:41.299 (69581299) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:09.861 (54789861)
+19:19:41.438 (69581438) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.000 (54790000)
+19:19:41.578 (69581578) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.140 (54790140)
+19:19:41.718 (69581718) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.280 (54790280)
+19:19:41.857 (69581857) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.419 (54790419)
+19:19:41.998 (69581998) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.560 (54790560)
+19:19:42.137 (69582137) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.699 (54790699)
+19:19:42.277 (69582277) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.839 (54790839)
+19:19:42.416 (69582416) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:10.978 (54790978)
+19:19:42.556 (69582556) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:11.118 (54791118)
+19:19:42.696 (69582696) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:11.258 (54791258)
+19:19:42.735 (69582735) - Turning alarm off.
+19:19:43.284 (69583284) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:11.846 (54791846)
+19:19:43.424 (69583424) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:11.986 (54791986)
+19:19:43.563 (69583563) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.125 (54792125)
+19:19:43.704 (69583704) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.265 (54792265)
+19:19:43.843 (69583843) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.405 (54792405)
+19:19:43.982 (69583982) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.544 (54792544)
+19:19:44.122 (69584122) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.684 (54792684)
+19:19:44.262 (69584262) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.824 (54792824)
+19:19:44.402 (69584402) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:12.964 (54792964)
+19:19:44.541 (69584541) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:13.103 (54793103)
+19:19:44.681 (69584681) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:13.243 (54793243)
+19:19:44.821 (69584821) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:13.383 (54793383)
+19:19:44.860 (69584860) - Turning alarm off.
+19:19:45.509 (69585509) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:14.071 (54794071)
+19:19:45.648 (69585648) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:14.210 (54794210)
+19:19:45.788 (69585788) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:14.350 (54794350)
+19:19:45.928 (69585928) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:14.490 (54794490)
+19:19:46.068 (69586068) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:14.630 (54794630)
+19:19:46.207 (69586207) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:14.769 (54794769)
+19:20:02.051 (69602051) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:30.613 (54810613)
+19:20:02.089 (69602089) - Turning alarm on.
+19:20:20.903 (69620903) - sensor triggered: ***REMOVED*** - time from last alarm: 15:13:48.815 (54828815)
+19:20:20.942 (69620942) - Turning alarm off.
+19:23:11.928 (69791928) - sensor triggered: ***REMOVED*** - time from last alarm: 15:16:40.490 (55000490)
+19:23:11.967 (69791967) - Turning alarm on.
+19:23:15.768 (69795768) - sensor triggered: ***REMOVED*** - time from last alarm: 15:16:43.679 (55003679)
+19:23:15.806 (69795806) - Turning alarm off.
+19:23:56.264 (69836264) - sensor triggered: ***REMOVED*** - time from last alarm: 15:17:24.826 (55044826)
+19:23:56.303 (69836303) - Turning alarm on.
+19:23:57.102 (69837102) - sensor triggered: ***REMOVED*** - time from last alarm: 15:17:25.012 (55045012)
+19:23:57.139 (69837139) - Turning alarm on.
+19:23:57.938 (69837938) - sensor triggered: ***REMOVED*** - time from last alarm: 15:17:25.850 (55045850)
+19:23:57.977 (69837977) - Turning alarm on.
+19:30:25.200 (70225200) - sensor triggered: ***REMOVED*** - time from last alarm: 15:23:53.761 (55433761)
+19:30:25.238 (70225238) - Turning alarm off.
+19:34:55.244 (70495244) - sensor triggered: ***REMOVED*** - time from last alarm: 15:28:23.806 (55703806)
+19:34:55.283 (70495283) - Turning alarm on.
+19:35:05.839 (70505839) - sensor triggered: ***REMOVED*** - time from last alarm: 15:28:33.751 (55713751)
+19:35:05.878 (70505878) - Turning alarm off.
+19:40:31.296 (70831296) - sensor triggered: ***REMOVED*** - time from last alarm: 15:33:59.858 (56039858)
+19:40:31.334 (70831334) - Not triggered because alarm is off.
+19:40:31.700 (70831700) - sensor triggered: ***REMOVED*** - time from last alarm: 15:34:00.262 (56040262)
+19:40:31.737 (70831737) - Not triggered because alarm is off.
+19:40:31.904 (70831904) - sensor triggered: ***REMOVED*** - time from last alarm: 15:34:00.466 (56040466)
+19:40:31.942 (70831942) - Not triggered because alarm is off.
+19:40:37.910 (70837910) - sensor triggered: ***REMOVED*** - time from last alarm: 15:34:06.471 (56046471)
+19:40:37.947 (70837947) - Not triggered because alarm is off.
+19:43:57.656 (71037656) - sensor triggered: ***REMOVED*** - time from last alarm: 15:37:26.218 (56246218)
+19:43:57.693 (71037693) - Not triggered because alarm is off.
+19:43:57.859 (71037859) - sensor triggered: ***REMOVED*** - time from last alarm: 15:37:26.421 (56246421)
+19:43:57.897 (71037897) - Not triggered because alarm is off.
+19:43:58.064 (71038064) - sensor triggered: ***REMOVED*** - time from last alarm: 15:37:26.625 (56246625)
+19:43:58.101 (71038101) - Not triggered because alarm is off.
+20:24:29.278 (73469278) - sensor triggered: ***REMOVED*** - time from last alarm: 16:17:57.840 (58677840)
+20:24:29.317 (73469317) - Turning alarm off.
+20:35:11.700 (74111700) - sensor triggered: ***REMOVED*** - time from last alarm: 16:28:40.262 (59320262)
+20:35:11.738 (74111738) - Not triggered because alarm is off.
+20:35:11.904 (74111904) - sensor triggered: ***REMOVED*** - time from last alarm: 16:28:40.466 (59320466)
+20:35:11.942 (74111942) - Not triggered because alarm is off.
+20:35:12.109 (74112109) - sensor triggered: ***REMOVED*** - time from last alarm: 16:28:40.671 (59320671)
+20:35:12.146 (74112146) - Not triggered because alarm is off.
+20:35:17.414 (74117414) - sensor triggered: ***REMOVED*** - time from last alarm: 16:28:45.976 (59325976)
+20:35:17.451 (74117451) - Not triggered because alarm is off.
+20:35:17.618 (74117618) - sensor triggered: ***REMOVED*** - time from last alarm: 16:28:46.180 (59326180)
+20:35:17.656 (74117656) - Not triggered because alarm is off.
+20:35:17.822 (74117822) - sensor triggered: ***REMOVED*** - time from last alarm: 16:28:46.384 (59326384)
+20:35:17.860 (74117860) - Not triggered because alarm is off.
+21:06:57.128 (76017128) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:25.690 (61225690)
+21:06:57.165 (76017165) - Not triggered because alarm is off.
+21:06:57.531 (76017531) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:26.093 (61226093)
+21:06:57.569 (76017569) - Not triggered because alarm is off.
+21:06:57.736 (76017736) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:26.298 (61226298)
+21:06:57.773 (76017773) - Not triggered because alarm is off.
+21:07:14.643 (76034643) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:43.205 (61243205)
+21:07:14.681 (76034681) - Not triggered because alarm is off.
+21:07:14.847 (76034847) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:43.409 (61243409)
+21:07:14.885 (76034885) - Not triggered because alarm is off.
+21:07:15.052 (76035052) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:43.614 (61243614)
+21:07:15.089 (76035089) - Not triggered because alarm is off.
+21:07:15.256 (76035256) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:43.818 (61243818)
+21:07:15.294 (76035294) - Not triggered because alarm is off.
+21:07:15.460 (76035460) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:44.022 (61244022)
+21:07:15.497 (76035497) - Not triggered because alarm is off.
+21:07:20.966 (76040966) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:49.527 (61249527)
+21:07:21.003 (76041003) - Not triggered because alarm is off.
+21:07:21.369 (76041369) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:49.931 (61249931)
+21:07:21.407 (76041407) - Not triggered because alarm is off.
+21:07:21.574 (76041574) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:50.136 (61250136)
+21:07:21.611 (76041611) - Not triggered because alarm is off.
+21:07:26.979 (76046979) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:55.541 (61255541)
+21:07:27.016 (76047016) - Not triggered because alarm is off.
+21:07:27.182 (76047182) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:55.744 (61255744)
+21:07:27.220 (76047220) - Not triggered because alarm is off.
+21:07:27.387 (76047387) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:55.949 (61255949)
+21:07:27.425 (76047425) - Not triggered because alarm is off.
+21:07:27.591 (76047591) - sensor triggered: ***REMOVED*** - time from last alarm: 17:00:56.153 (61256153)
+21:07:27.629 (76047629) - Not triggered because alarm is off.
+

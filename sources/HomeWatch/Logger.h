@@ -1,6 +1,10 @@
 #ifndef Logger_h
 #define Logger_h
 
+/**
+ * This class is logging both to Serial and to a SD card.
+ * It uses the SD.h library and neede the Serial to be already started.
+ */
 class Logger
 {
   private:

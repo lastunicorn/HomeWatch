@@ -18,8 +18,8 @@ void setup() {
   Serial.begin(9600);
 
   logger.write("=======================================================");
-  logger.write("Home Watch - Powered by Arduino");
-  logger.write("Copyright © Dust in the Wind");
+  logger.write("=== Home Watch - Powered by Arduino");
+  logger.write("=== Copyright © 2016 Dust in the Wind");
   logger.write("=======================================================");
 
   pinMode(alarmLedPin, OUTPUT);

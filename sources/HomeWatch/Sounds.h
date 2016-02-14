@@ -1,10 +1,16 @@
 #ifndef Sounds_h
 #define Sounds_h
 
+struct MusicalNote
+{
+  unsigned int frequency;
+  unsigned long duration;
+};
+
 class Sounds
 {
   public:
-    int alarmPiezoPin = 9;
+    int piezoPin = 9;
 
   public:
     Sounds();

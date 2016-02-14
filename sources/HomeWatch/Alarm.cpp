@@ -28,48 +28,25 @@ void Alarm::refresh()
     sensorValue = mySwitch.getReceivedValue();
     mySwitch.resetAvailable();
 
-    unsigned long timeFromLastAlarm = lastNow - lastAlarmTime;
-
-    logSensorValue(timeFromLastAlarm);
+    logSensorValue();
 
     if (isOnButtonPressed())
     {
-      start();
+      handleOnButtonPressed();
       return;
     }
 
     if (isOffButtonPressed())
     {
-      if (lastNow - lastStopTime >= 2000)
-        stop();
-
+      handleOffButtonPressed();
       return;
     }
 
-    if (on == false)
+    if (isKnownSensor())
     {
-      logger.write("Not triggered because alarm is off.");
+      handleSensorTriggered();
       return;
     }
-
-    if (sensorValue != doorSensorId && sensorValue != motionSensorId)
-    {
-      logger.write("Not triggered because unknown signal.");
-    }
-
-    if (timeFromLastStart <= startDelay)
-    {
-      logger.write("Not triggered because of start delay.");
-      return;
-    }
-
-    if (timeFromLastAlarm <= alarmRepeatInterval)
-    {
-      logger.write("Not triggered because of alarm repeat interval.");
-      return;
-    }
-
-    triggerAlarm();
   }
 }
 
@@ -80,14 +57,27 @@ void Alarm::resetTriggerFlags()
   isMotionTriggered = false;
 }
 
-void Alarm::logSensorValue(unsigned long timeFromLastAlarm)
+void Alarm::logSensorValue()
 {
   String s;
 
-  s += "sensor triggered: ";
+  s += "Value received: ";
   s += sensorValue;
-  s += " - time from last alarm: ";
-  s += formatTimeAsString(timeFromLastAlarm);
+
+  if (sensorValue == doorSensorId)
+    s += " - door sensor";
+  else if (sensorValue == motionSensorId)
+    s += " - motion sensor";
+  else if (sensorValue == onId1)
+    s += " - remote 1 on";
+  else if (sensorValue == offId1)
+    s += " - remote 1 off";
+  else if (sensorValue == onId2)
+    s += " - remote 2 on";
+  else if (sensorValue == offId2)
+    s += " - remote 2 off";
+  else
+    s += " - unknown";
 
   logger.write(s);
 }
@@ -102,38 +92,76 @@ boolean Alarm::isOffButtonPressed()
   return sensorValue == offId1 || sensorValue == offId2;
 }
 
-void Alarm::start()
+void Alarm::handleOnButtonPressed()
 {
+  if (lastNow - lastStartTime <= 2000)
+  {
+    logger.write("Ignored");
+    return;
+  }
+
   logger.write("Turning alarm on.");
   on = true;
   lastStartTime = lastNow;
 }
 
-void Alarm::stop()
+void Alarm::handleOffButtonPressed()
 {
+  if (lastNow - lastStopTime <= 2000)
+  {
+    logger.write("Ignored");
+    return;
+  }
+
   logger.write("Turning alarm off.");
   on = false;
   lastStopTime = lastNow;
   sounds.makeOffSound();
 }
 
-void Alarm::triggerAlarm()
+boolean Alarm::isKnownSensor()
 {
-  logger.write("!!! alarm, alarm, alarm !!!");
-  lastAlarmTime = lastNow;
+  return sensorValue == doorSensorId || sensorValue == motionSensorId;
+}
 
-  isTriggered = true;
+void Alarm::handleSensorTriggered()
+{
+  if (on == false)
+  {
+    logger.write("Not triggered because alarm is off.");
+    return;
+  }
+
+  unsigned long timeFromLastStart = lastNow - lastStartTime;
+  if (timeFromLastStart <= startDelay)
+  {
+    logger.write("Not triggered because of start delay.");
+    return;
+  }
+
+  unsigned long timeFromLastAlarm = lastNow - lastAlarmTime;
+  if (timeFromLastAlarm <= repeatInterval)
+  {
+    logger.write("Not triggered because of alarm repeat interval.");
+    return;
+  }
 
   if (sensorValue == doorSensorId)
   {
-    logger.write("Alarm triggered by door.");
+    lastAlarmTime = lastNow;
+    isTriggered = true;
     isDoorTriggered = true;
+
+    logger.write("!!! alarm, alarm, alarm !!! - Alarm triggered by door.");
   }
 
   if (sensorValue == motionSensorId)
   {
-    logger.write("Alarm triggered by motion.");
+    lastAlarmTime = lastNow;
+    isTriggered = true;
     isMotionTriggered = true;
+
+    logger.write("!!! alarm, alarm, alarm !!! - Alarm triggered by motion.");
   }
 }
 
