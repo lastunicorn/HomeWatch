@@ -78,4 +78,3 @@ void Logger::logToSdCard(String text)
     Serial.println("Could not write in log file.");
   }
 }
-

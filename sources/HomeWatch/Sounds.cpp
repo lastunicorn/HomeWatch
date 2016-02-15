@@ -39,4 +39,3 @@ void Sounds::makeOffSound()
   tone(piezoPin, 100, 200);
   delay(200);
 }
-

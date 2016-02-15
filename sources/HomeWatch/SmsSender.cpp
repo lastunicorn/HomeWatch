@@ -13,6 +13,9 @@ SmsSender::SmsSender(boolean isReal)
 
   pinMode(pinError, OUTPUT);
   pinMode(pinReady, OUTPUT);
+
+  digitalWrite(pinError, LOW);
+  digitalWrite(pinReady, LOW);
 }
 
 void SmsSender::connect()
