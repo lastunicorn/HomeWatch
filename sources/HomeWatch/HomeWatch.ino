@@ -1,18 +1,14 @@
 #include <GSM.h>
-//#include <SPI.h>
-//#include <SD.h>
-#include "SmsSender.h"
 #include "Alarm.h"
 #include "Logger.h"
 #include "Sounds.h"
-
-const int alarmLedPin = 8;
-
-Alarm alarm;
-SmsSender smsSender;
-Sounds sounds;
+#include "Listener.h"
 
 Logger logger;
+Sounds sounds;
+
+Alarm alarm = Alarm(&logger, &sounds);
+Listener listener = Listener(&logger, &sounds, &alarm);
 
 void setup() {
   Serial.begin(9600);
@@ -22,39 +18,12 @@ void setup() {
   logger.write("=== Copyright © 2016 Dust in the Wind");
   logger.write("=======================================================");
 
-  pinMode(alarmLedPin, OUTPUT);
-  digitalWrite(alarmLedPin, LOW);
-
-  smsSender.connect();
+  alarm.init();
 
   logger.write("Arduino started");
 }
 
 void loop() {
-  alarm.refresh();
-
-  if (alarm.isTriggered)
-    triggerAlarm();
-
+  listener.refresh();
   delay(100);
-}
-
-void triggerAlarm()
-{
-  // led on
-  digitalWrite(alarmLedPin, HIGH);
-
-  // make sound
-  sounds.makeAlarmSound();
-
-  // send sms
-  if (alarm.isDoorTriggered)
-    smsSender.sendSMS("0723002252", "alarm acasa - door");
-  else  if (alarm.isMotionTriggered)
-    smsSender.sendSMS("0723002252", "alarm acasa - motion");
-  else
-    smsSender.sendSMS("0723002252", "alarm acasa");
-
-  // led off
-  digitalWrite(alarmLedPin, LOW);
 }
