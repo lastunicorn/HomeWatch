@@ -214,5 +214,5 @@ boolean Listener::allowToTriggerSensor()
 
 void Listener::triggerMotionSensor()
 {
-  alarm->trigger("door");
+  alarm->trigger("motion");
 }

@@ -61,6 +61,8 @@ class Listener
   public:
     Listener(Logger *logger, Sounds *sounds, Alarm *alarm);
     void refresh();
+    void turnOn();
+    void turnOff();
 
   private:
     void logSensorValue();
@@ -74,8 +76,6 @@ class Listener
 
     boolean allowToTriggerSensor();
 
-    void turnOn();
-    void turnOff();
     void triggerDoorSensor();
     void triggerMotionSensor();
 };
