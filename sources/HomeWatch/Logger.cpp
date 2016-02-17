@@ -9,6 +9,22 @@ Logger::Logger()
   //initializeSdCard();
 }
 
+void Logger::initializeSdCard()
+{
+  Serial.println("Initializing SD card...");
+
+  if (!SD.begin(4))
+  {
+    Serial.println("initialization failed!");
+    sdCardAvailable = false;
+  }
+  else
+  {
+    Serial.println("SD card successfully initialized.");
+    sdCardAvailable = true;
+  }
+}
+
 void Logger::add(String text)
 {
   buffer += text;
@@ -35,23 +51,6 @@ void Logger::write(unsigned long value)
 {
   String str(value);
   write(str);
-}
-
-
-void Logger::initializeSdCard()
-{
-  Serial.println("Initializing SD card...");
-
-  if (!SD.begin(4))
-  {
-    Serial.println("initialization failed!");
-    sdCardAvailable = false;
-  }
-  else
-  {
-    Serial.println("SD card successfully initialized.");
-    sdCardAvailable = true;
-  }
 }
 
 void Logger::logToSerial(String text)

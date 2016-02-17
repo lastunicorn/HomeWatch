@@ -13,11 +13,13 @@ class Listener
     int pinOff = 11;
 
   private:
-    boolean on = false;
-    RCSwitch mySwitch;
     Logger *logger;
     Sounds *sounds;
     Alarm *alarm;
+
+    boolean isListening = false;
+    int secondValueDelay = 4000;
+    RCSwitch mySwitch;
 
     unsigned long lastNow = 0;
     unsigned long lastStartTime = 0;
@@ -52,8 +54,12 @@ class Listener
     void handleDoorSensorTriggered();
     void handleMotionSensorTriggered();
 
+    boolean allowToTriggerSensor();
+
     void turnOn();
     void turnOff();
+    void triggerDoorSensor();
+    void triggerMotionSensor();
 };
 
 #endif

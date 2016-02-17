@@ -3,12 +3,10 @@
 #include "Logger.h"
 #include "Sounds.h"
 
-void makeFakeSound();
-extern Logger logger;
-extern Sounds sounds;
-
-SmsSender::SmsSender(boolean isReal)
+SmsSender::SmsSender(Logger *logger, Sounds *sounds, boolean isReal)
 {
+  this->logger = logger;
+  this->sounds = sounds;
   this->isReal = isReal;
 
   pinMode(pinError, OUTPUT);
@@ -22,12 +20,12 @@ void SmsSender::connect()
 {
   if (isReal)
   {
-    logger.write("GSM - Starting the GSM module...");
+    logger->write("GSM - Starting the GSM module...");
   }
   else
   {
-    logger.write("GSM - Fakeing the GSM module...");
-    sounds.makeFakeSound();
+    logger->write("GSM - Fakeing the GSM module...");
+    sounds->makeFakeSound();
   }
 
   while (!isConnected)
@@ -38,7 +36,7 @@ void SmsSender::connect()
 
     String s = "GSM - Connect code: ";
     s += gsmConnectCode;
-    logger.write(s);
+    logger->write(s);
 
     if (gsmConnectCode == GSM_READY)
     {
@@ -54,7 +52,7 @@ void SmsSender::connect()
 
 void SmsSender::changeStateToConnecting()
 {
-  logger.write("GSM - Connecting...");
+  logger->write("GSM - Connecting...");
   digitalWrite(pinError, LOW);
   digitalWrite(pinReady, LOW);
 }
@@ -62,14 +60,14 @@ void SmsSender::changeStateToConnecting()
 void SmsSender::changeStateToConnected()
 {
   digitalWrite(pinReady, HIGH);
-  logger.write("GSM - Connected");
+  logger->write("GSM - Connected");
   isConnected = true;
 }
 
 void SmsSender::changeStateToNotConnected()
 {
   digitalWrite(pinError, HIGH);
-  logger.write("GSM - Not connected");
+  logger->write("GSM - Not connected");
 }
 
 int SmsSender::tryToConnectGsm()
@@ -79,14 +77,14 @@ int SmsSender::tryToConnectGsm()
 
   if (simPin == NULL || strlen(simPin) == 0)
   {
-    logger.write("GSM - Try to connect without pin.");
+    logger->write("GSM - Try to connect without pin.");
     return gsmAccess.begin();
   }
   else
   {
     String s = "GSM - Try to connect using pin = ";
     s += simPin;
-    logger.write(s);
+    logger->write(s);
 
     return gsmAccess.begin(simPin);
   }
@@ -98,23 +96,23 @@ void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
   {
     String s = "GSM - Fake send sms to number: ";
     s += remoteNumber;
-    logger.write(s);
+    logger->write(s);
     
     return;
   }
 
   String s = "GSM - Sending message to mobile number: ";
   s += remoteNumber;
-  logger.write(s);
+  logger->write(s);
 
   // sms text
-  logger.write("GSM - Message:");
-  logger.write(txtMsg);
+  logger->write("GSM - Message:");
+  logger->write(txtMsg);
 
   // send the message
   sms.beginSMS(remoteNumber);
   sms.print(txtMsg);
   sms.endSMS();
 
-  logger.write("GSM - SMS successfully sent");
+  logger->write("GSM - SMS successfully sent");
 }

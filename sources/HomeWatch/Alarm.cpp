@@ -1,9 +1,10 @@
 #include "Alarm.h"
 
-Alarm::Alarm(Logger *logger, Sounds *sounds)
+Alarm::Alarm(Logger *logger, Sounds *sounds, SmsSender *smsSender)
 {
   this->logger = logger;
   this->sounds = sounds;
+  this->smsSender = smsSender;
 
   pinMode(pinOn, OUTPUT);
   pinMode(pinOff, OUTPUT);
@@ -16,14 +17,14 @@ Alarm::Alarm(Logger *logger, Sounds *sounds)
 
 void Alarm::init()
 {
-  smsSender.connect();
+  smsSender->connect();
 }
 
 void Alarm::trigger(String sensorName)
 {
   unsigned long now = millis();
 
-  if (lastAlarmTime != 0 && now - lastAlarmTime <= repeatInterval)
+  if (lastAlarmTime != 0 && now - lastAlarmTime <= repeatDelay)
   {
     logger->write("Not triggered because of alarm repeat interval.");
     return;
@@ -47,7 +48,7 @@ void Alarm::trigger(String sensorName)
   char str[message.length() + 1];
   message.toCharArray(str, message.length() + 1);
 
-  smsSender.sendSMS("0723002252", str);
+  smsSender->sendSMS("0723002252", str);
 
   // led off
   digitalWrite(pinAlarm, LOW);

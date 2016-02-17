@@ -3,8 +3,6 @@
 #include "Logger.h"
 #include "Sounds.h"
 
-String formatTimeAsString(unsigned long milliseconds);
-
 Listener::Listener(Logger *logger, Sounds *sounds, Alarm *alarm)
 {
   this->logger = logger;
@@ -25,7 +23,7 @@ void Listener::refresh()
   lastNow = millis();
   unsigned long timeFromLastStart = lastNow - lastStartTime;
 
-  if (on == true && timeFromLastStart <= startDelay)
+  if (isListening == true && timeFromLastStart <= startDelay)
     sounds->makeStartingSound();
 
   if (mySwitch.available())
@@ -89,7 +87,7 @@ void Listener::logSensorValue()
 
 void Listener::handleOnButton1Pressed()
 {
-  if (lastNow - lastOnButton1Time <= 2000)
+  if (lastNow - lastOnButton1Time <= secondValueDelay)
     return;
 
   lastOnButton1Time = lastNow;
@@ -98,7 +96,7 @@ void Listener::handleOnButton1Pressed()
 
 void Listener::handleOnButton2Pressed()
 {
-  if (lastNow - lastOnButton2Time <= 2000)
+  if (lastNow - lastOnButton2Time <= secondValueDelay)
     return;
 
   lastOnButton2Time = lastNow;
@@ -108,7 +106,8 @@ void Listener::handleOnButton2Pressed()
 void Listener::turnOn()
 {
   logger->write("Turning sensor listener on.");
-  on = true;
+
+  isListening = true;
   lastStartTime = lastNow;
 
   digitalWrite(pinOn, HIGH);
@@ -117,7 +116,7 @@ void Listener::turnOn()
 
 void Listener::handleOffButton1Pressed()
 {
-  if (lastNow - lastOffButton1Time <= 2000)
+  if (lastNow - lastOffButton1Time <= secondValueDelay)
     return;
 
   lastOffButton1Time = lastNow;
@@ -127,7 +126,7 @@ void Listener::handleOffButton1Pressed()
 
 void Listener::handleOffButton2Pressed()
 {
-  if (lastNow - lastOffButton2Time <= 2000)
+  if (lastNow - lastOffButton2Time <= secondValueDelay)
     return;
 
   lastOffButton2Time = lastNow;
@@ -138,7 +137,7 @@ void Listener::handleOffButton2Pressed()
 void Listener::turnOff()
 {
   logger->write("Turning sensor listener off.");
-  on = false;
+  isListening = false;
 
   digitalWrite(pinOn, LOW);
   digitalWrite(pinOff, HIGH);
@@ -148,46 +147,54 @@ void Listener::turnOff()
 
 void Listener::handleDoorSensorTriggered()
 {
-  if (lastNow - lastDoorSensorTime <= 2000)
+  if (lastNow - lastDoorSensorTime <= secondValueDelay)
     return;
 
   lastDoorSensorTime = lastNow;
 
-  if (on == false)
-  {
-    logger->write("Not triggered because sensor listener is off.");
+  if(allowToTriggerSensor() == false)
     return;
-  }
 
-  unsigned long timeFromLastStart = lastNow - lastStartTime;
-  if (timeFromLastStart <= startDelay)
-  {
-    logger->write("Not triggered because of start delay.");
-    return;
-  }
+  triggerDoorSensor();
+}
 
+void Listener::triggerDoorSensor()
+{
   alarm->trigger("door");
 }
 
 void Listener::handleMotionSensorTriggered()
 {
-  if (lastNow - lastMotionSensorTime <= 2000)
+  if (lastNow - lastMotionSensorTime <= secondValueDelay)
     return;
 
   lastMotionSensorTime = lastNow;
 
-  if (on == false)
+  if(allowToTriggerSensor() == false)
+    return;
+
+  triggerMotionSensor();
+}
+
+boolean Listener::allowToTriggerSensor()
+{
+  if (isListening == false)
   {
     logger->write("Not triggered because sensor listener is off.");
-    return;
+    return false;
   }
 
   unsigned long timeFromLastStart = lastNow - lastStartTime;
   if (timeFromLastStart <= startDelay)
   {
     logger->write("Not triggered because of start delay.");
-    return;
+    return false;
   }
 
-  alarm->trigger("motion");
+  return true;
+}
+
+void Listener::triggerMotionSensor()
+{
+  alarm->trigger("door");
 }
