@@ -21,6 +21,7 @@
 
 #include <RCSwitch.h>
 #include "Alarm.h"
+#include "SensorIds.h"
 
 class Listener
 {
@@ -49,12 +50,12 @@ class Listener
     unsigned long lastDoorSensorTime = 0;
     unsigned long lastMotionSensorTime = 0;
 
-    unsigned long onId1 = ***REMOVED***;
-    unsigned long offId1 = ***REMOVED***;
-    unsigned long onId2 = ***REMOVED***;
-    unsigned long offId2 = ***REMOVED***;
-    unsigned long doorSensorId = ***REMOVED***;
-    unsigned long motionSensorId = ***REMOVED***;
+    unsigned long onId1 = BUTTON_ON_1;
+    unsigned long offId1 = BUTTON_OFF_1;
+    unsigned long onId2 = BUTTON_ON_2;
+    unsigned long offId2 = BUTTON_OFF_2;
+    unsigned long doorSensorId = DOOR_SENSOR;
+    unsigned long motionSensorId = MOTION_SENSOR;
 
     unsigned long sensorValue;
 
