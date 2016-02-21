@@ -50,6 +50,13 @@ Logger* Logger::append(String text)
   return this;
 }
 
+Logger* Logger::append(unsigned long value)
+{
+  String message(value);
+  buffer += message;
+  return this;
+}
+
 void Logger::debug()
 {
   write(buffer, LOG_DEBUG);

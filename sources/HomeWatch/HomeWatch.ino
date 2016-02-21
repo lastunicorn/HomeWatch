@@ -23,7 +23,7 @@
 #include "Sounds.h"
 #include "Listener.h"
 
-Logger logger = Logger(LOG_DEBUG);
+Logger logger = Logger(LOG_INFO);
 Sounds sounds;
 SmsSender smsSender = SmsSender(&logger, &sounds, false);
 

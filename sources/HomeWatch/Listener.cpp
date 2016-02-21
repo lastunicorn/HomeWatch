@@ -79,27 +79,25 @@ void Listener::refresh()
 
 void Listener::logSensorValue()
 {
-  String s;
-
-  s += "Value received: ";
-  s += sensorValue;
+  logger->append("Listener - Value received: ");
+  logger->append(sensorValue);
 
   if (sensorValue == doorSensorId)
-    s += " - door sensor";
+    logger->append(" - door sensor");
   else if (sensorValue == motionSensorId)
-    s += " - motion sensor";
+    logger->append(" - motion sensor");
   else if (sensorValue == onId1)
-    s += " - remote 1 on";
+    logger->append(" - remote 1 on");
   else if (sensorValue == offId1)
-    s += " - remote 1 off";
+    logger->append(" - remote 1 off");
   else if (sensorValue == onId2)
-    s += " - remote 2 on";
+    logger->append(" - remote 2 on");
   else if (sensorValue == offId2)
-    s += " - remote 2 off";
+    logger->append(" - remote 2 off");
   else
-    s += " - unknown";
+    logger->append(" - unknown");
 
-  logger->info(s);
+  logger->trace();
 }
 
 void Listener::handleOnButton1Pressed()
@@ -122,7 +120,7 @@ void Listener::handleOnButton2Pressed()
 
 void Listener::turnOn()
 {
-  logger->info("Turning sensor listener on.");
+  logger->info("Listener - Turning on.");
 
   isListening = true;
   lastStartTime = lastNow;
@@ -153,7 +151,7 @@ void Listener::handleOffButton2Pressed()
 
 void Listener::turnOff()
 {
-  logger->info("Turning sensor listener off.");
+  logger->info("Listener - Turning off.");
   isListening = false;
 
   digitalWrite(pinOn, LOW);
@@ -172,6 +170,7 @@ void Listener::handleDoorSensorTriggered()
   if (allowToTriggerSensor() == false)
     return;
 
+  logger->info("Listener - Door sensor triggered.");
   triggerDoorSensor();
 }
 
@@ -190,6 +189,7 @@ void Listener::handleMotionSensorTriggered()
   if (allowToTriggerSensor() == false)
     return;
 
+  logger->info("Listener - Motion sensor triggered.");
   triggerMotionSensor();
 }
 
@@ -197,14 +197,14 @@ boolean Listener::allowToTriggerSensor()
 {
   if (isListening == false)
   {
-    logger->info("Not triggered because sensor listener is off.");
+    logger->trace("Listener - Alarm not triggered because listener is off.");
     return false;
   }
 
   unsigned long timeFromLastStart = lastNow - lastStartTime;
   if (timeFromLastStart <= startDelay)
   {
-    logger->info("Not triggered because of start delay.");
+    logger->trace("Listener - Alarm not triggered because of start delay.");
     return false;
   }
 

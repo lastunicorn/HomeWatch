@@ -29,7 +29,7 @@
 
 /**
    This class is logging both to Serial and to a SD card.
-   It uses the SD.h library and neede the Serial to be already started.
+   It uses the SD.h library and expects the Serial to be already started.
 */
 class Logger
 {
@@ -42,6 +42,7 @@ class Logger
     Logger() : Logger(LOG_INFO) {};
     Logger(unsigned short logLevel);
     Logger* append(String text);
+    Logger* append(unsigned long value);
     void debug();
     void trace();
     void info();

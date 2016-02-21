@@ -42,7 +42,7 @@ void SmsSender::connect()
   }
   else
   {
-    logger->info("GSM - Fakeing the GSM module...");
+    logger->info("GSM - Fake: Starting the GSM module...");
     sounds->makeFakeSound();
   }
 
@@ -52,9 +52,9 @@ void SmsSender::connect()
 
     int gsmConnectCode = tryToConnectGsm();
 
-    String s = "GSM - Connect code: ";
-    s += gsmConnectCode;
-    logger->info(s);
+    logger->append("GSM - Connect code: ");
+    logger->append(gsmConnectCode);
+    logger->trace();
 
     if (gsmConnectCode == GSM_READY)
     {
@@ -95,14 +95,14 @@ int SmsSender::tryToConnectGsm()
 
   if (simPin == NULL || strlen(simPin) == 0)
   {
-    logger->info("GSM - Try to connect without pin.");
+    logger->trace("GSM - Try to connect without pin.");
     return gsmAccess.begin();
   }
   else
   {
     logger->append("GSM - Try to connect using pin = ");
     logger->append(simPin);
-    logger->info();
+    logger->trace();
 
     return gsmAccess.begin(simPin);
   }
@@ -110,28 +110,26 @@ int SmsSender::tryToConnectGsm()
 
 void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
 {
-  if (isReal == false)
-  {
-    logger->append("GSM - Fake send sms to number 1: ");
-    logger->append(remoteNumber);
-    logger->info();
-
-    return;
-  }
-
-  logger->append("GSM - Sending message to mobile number: ");
+  logger->append("GSM - Sending sms message to mobile number: ");
   logger->append(remoteNumber);
   logger->info();
 
   // sms text
   logger->append("GSM - Message:");
   logger->append(txtMsg);
-  logger->info();
+  logger->trace();
 
-  // send the message
-  sms.beginSMS(remoteNumber);
-  sms.print(txtMsg);
-  sms.endSMS();
+  if (isReal)
+  {
+    // send the message
+    sms.beginSMS(remoteNumber);
+    sms.print(txtMsg);
+    sms.endSMS();
 
-  logger->info("GSM - SMS successfully sent");
+    logger->info("GSM - SMS successfully sent");
+  }
+  else
+  {
+    logger->info("GSM - Fake: SMS successfully sent");
+  }
 }
