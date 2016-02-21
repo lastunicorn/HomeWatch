@@ -21,6 +21,12 @@
 
 #include "Arduino.h"
 
+#define LOG_DEBUG 0
+#define LOG_TRACE 1
+#define LOG_INFO 2
+#define LOG_WARNING 3
+#define LOG_ERROR 4
+
 /**
    This class is logging both to Serial and to a SD card.
    It uses the SD.h library and neede the Serial to be already started.
@@ -30,18 +36,36 @@ class Logger
   private:
     String buffer;
     bool sdCardAvailable = false;
+    unsigned short logLevel = LOG_INFO;
 
   public:
-    Logger();
-    void add(String text);
-    void flush();
-    void write(String message);
-    void write(unsigned long value);
+    Logger() : Logger(LOG_INFO) {};
+    Logger(unsigned short logLevel);
+    Logger* append(String text);
+    void debug();
+    void trace();
+    void info();
+    void warning();
+    void error();
+    
+    void debug(String message);
+    void debug(unsigned long value);    
+    void trace(String message);
+    void trace(unsigned long value);
+    void info(String message);
+    void info(unsigned long value);
+    void warning(String message);
+    void warning(unsigned long value);
+    void error(String message);
+    void error(unsigned long value);
 
   private:
     void initializeSdCard();
-    void logToSerial(String text);
-    void logToSdCard(String text);
+    void write(String message, unsigned short logLevel);
+    String formatTime(unsigned long milliseconds);
+    String formatLogLevel(unsigned short logLevel);
+    void writeToSerial(String text);
+    void writeToSdCard(String text);
 };
 
 #endif

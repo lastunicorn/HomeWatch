@@ -44,13 +44,13 @@ void Alarm::trigger(String sensorName)
 
   if (lastAlarmTime != 0 && now - lastAlarmTime <= repeatDelay)
   {
-    logger->write("Not triggered because of alarm repeat interval.");
+    logger->info("Not triggered because of alarm repeat interval.");
     return;
   }
 
   lastAlarmTime = now;
 
-  logger->write("!!! alarm, alarm, alarm !!! - Alarm triggered by " + sensorName + " sensor.");
+  logger->info("!!! alarm, alarm, alarm !!! - Alarm triggered by " + sensorName + " sensor.");
 
   // led on
   digitalWrite(pinAlarm, HIGH);

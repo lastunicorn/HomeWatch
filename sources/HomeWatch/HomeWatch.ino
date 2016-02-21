@@ -23,9 +23,9 @@
 #include "Sounds.h"
 #include "Listener.h"
 
-Logger logger;
+Logger logger = Logger(LOG_DEBUG);
 Sounds sounds;
-SmsSender smsSender = SmsSender(&logger, &sounds, true);
+SmsSender smsSender = SmsSender(&logger, &sounds, false);
 
 Alarm alarm = Alarm(&logger, &sounds, &smsSender);
 Listener listener = Listener(&logger, &sounds, &alarm);
@@ -33,14 +33,14 @@ Listener listener = Listener(&logger, &sounds, &alarm);
 void setup() {
   Serial.begin(9600);
 
-  logger.write("=======================================================");
-  logger.write("=== Home Watch - Powered by Arduino");
-  logger.write("=== Copyright © 2016 Dust in the Wind");
-  logger.write("=======================================================");
+  logger.info("=======================================================");
+  logger.info("=== Home Watch - Powered by Arduino");
+  logger.info("=== Copyright © 2016 Dust in the Wind");
+  logger.info("=======================================================");
 
   alarm.init();
 
-  logger.write("Arduino started");
+  logger.info("Arduino started");
 }
 
 void loop() {

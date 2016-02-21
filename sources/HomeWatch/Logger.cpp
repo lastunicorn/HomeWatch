@@ -22,8 +22,9 @@
 
 String formatTimeAsString(unsigned long milliseconds);
 
-Logger::Logger()
+Logger::Logger(unsigned short logLevel)
 {
+  this->logLevel = logLevel;
   //initializeSdCard();
 }
 
@@ -43,40 +44,116 @@ void Logger::initializeSdCard()
   }
 }
 
-void Logger::add(String text)
+Logger* Logger::append(String text)
 {
   buffer += text;
+  return this;
 }
 
-void Logger::flush()
+void Logger::debug()
 {
-  write(buffer);
+  write(buffer, LOG_DEBUG);
   buffer = String();
 }
 
-void Logger::write(String message)
+void Logger::trace()
 {
-  String timeFormated = formatTimeAsString(millis());
-
-  String text = timeFormated + " - " + message;
-
-  logToSerial(text);
-  logToSdCard(text);
-
+  write(buffer, LOG_TRACE);
+  buffer = String();
 }
 
-void Logger::write(unsigned long value)
+void Logger::info()
 {
-  String str(value);
-  write(str);
+  write(buffer, LOG_INFO);
+  buffer = String();
 }
 
-void Logger::logToSerial(String text)
+void Logger::warning()
+{
+  write(buffer, LOG_WARNING);
+  buffer = String();
+}
+
+void Logger::error()
+{
+  write(buffer, LOG_ERROR);
+  buffer = String();
+}
+
+void Logger::debug(String message)
+{
+  write(message, LOG_DEBUG);
+}
+
+void Logger::debug(unsigned long value)
+{
+  String message(value);
+  write(message, LOG_DEBUG);
+}
+
+void Logger::trace(String message)
+{
+  write(message, LOG_TRACE);
+}
+
+void Logger::trace(unsigned long value)
+{
+  String message(value);
+  write(message, LOG_TRACE);
+}
+
+void Logger::info(String message)
+{
+  write(message, LOG_INFO);
+}
+
+void Logger::info(unsigned long value)
+{
+  String message(value);
+  write(message, LOG_INFO);
+}
+
+void Logger::warning(String message)
+{
+  write(message, LOG_WARNING);
+}
+
+void Logger::warning(unsigned long value)
+{
+  String message(value);
+  write(message, LOG_WARNING);
+}
+
+void Logger::error(String message)
+{
+  write(message, LOG_ERROR);
+}
+
+void Logger::error(unsigned long value)
+{
+  String message(value);
+  write(message, LOG_ERROR);
+}
+
+void Logger::write(String message, unsigned short logLevel)
+{
+  if (logLevel < this->logLevel)
+    return;
+
+  String timeStampAsString = formatTime(millis());
+  String logLevelAsString = formatLogLevel(logLevel);
+  String text = timeStampAsString + " [" + logLevelAsString + "]" + " - " + message;
+
+  writeToSerial(text);
+  writeToSdCard(text);
+}
+
+void Logger::writeToSerial(String text)
 {
   Serial.println(text);
 }
 
-void Logger::logToSdCard(String text)
+void Logger::writeToSdCard(String text)
 {
   if (!sdCardAvailable)
     return;
@@ -95,3 +172,78 @@ void Logger::logToSdCard(String text)
     Serial.println("Could not write in log file.");
   }
 }
+
+String Logger::formatTime(unsigned long milliseconds)
+{
+  unsigned long value = milliseconds;
+
+  unsigned long hours = value / 3600000;
+  value = value % 3600000;
+
+  unsigned long minutes = value / 60000;
+  value = value % 60000;
+
+  unsigned long seconds = value / 1000;
+  value = value % 1000;
+
+  String s;
+
+  if (hours < 10)
+    s += "0";
+  s += hours;
+  s += ":";
+
+  if (minutes < 10)
+    s += "0";
+  s += minutes;
+  s += ":";
+
+  if (seconds < 10)
+    s += "0";
+  s += seconds;
+  s += ".";
+
+  if (value < 10)
+    s += "00";
+  else if (value < 100)
+    s += "0";
+  s += value;
+
+  s += " (";
+  s += milliseconds;
+  s += ")";
+
+  return s;
+}
+
+//// Is not working corectly, but I don't know why.
+//char* formatTimeAsCharArray(unsigned long milliseconds)
+//{
+//  String timeFormated;
+//  timeFormated += formatTimeAsString(milliseconds);
+//
+//  char str[timeFormated.length() + 1];
+//  timeFormated.toCharArray(str, timeFormated.length() + 1);
+//
+//  return str;
+//}
+
+String Logger::formatLogLevel(unsigned short logLevel)
+{
+  switch (logLevel)
+  {
+    case LOG_DEBUG:
+      return "DBG";
+    case LOG_TRACE:
+      return "TRC";
+    case LOG_INFO:
+      return "INF";
+    case LOG_WARNING:
+      return "WRN";
+    case LOG_ERROR:
+      return "ERR";
+    default:
+      return String(logLevel);
+  }
+}
+

@@ -99,7 +99,7 @@ void Listener::logSensorValue()
   else
     s += " - unknown";
 
-  logger->write(s);
+  logger->info(s);
 }
 
 void Listener::handleOnButton1Pressed()
@@ -122,7 +122,7 @@ void Listener::handleOnButton2Pressed()
 
 void Listener::turnOn()
 {
-  logger->write("Turning sensor listener on.");
+  logger->info("Turning sensor listener on.");
 
   isListening = true;
   lastStartTime = lastNow;
@@ -153,7 +153,7 @@ void Listener::handleOffButton2Pressed()
 
 void Listener::turnOff()
 {
-  logger->write("Turning sensor listener off.");
+  logger->info("Turning sensor listener off.");
   isListening = false;
 
   digitalWrite(pinOn, LOW);
@@ -197,14 +197,14 @@ boolean Listener::allowToTriggerSensor()
 {
   if (isListening == false)
   {
-    logger->write("Not triggered because sensor listener is off.");
+    logger->info("Not triggered because sensor listener is off.");
     return false;
   }
 
   unsigned long timeFromLastStart = lastNow - lastStartTime;
   if (timeFromLastStart <= startDelay)
   {
-    logger->write("Not triggered because of start delay.");
+    logger->info("Not triggered because of start delay.");
     return false;
   }
 

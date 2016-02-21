@@ -38,11 +38,11 @@ void SmsSender::connect()
 {
   if (isReal)
   {
-    logger->write("GSM - Starting the GSM module...");
+    logger->info("GSM - Starting the GSM module...");
   }
   else
   {
-    logger->write("GSM - Fakeing the GSM module...");
+    logger->info("GSM - Fakeing the GSM module...");
     sounds->makeFakeSound();
   }
 
@@ -54,7 +54,7 @@ void SmsSender::connect()
 
     String s = "GSM - Connect code: ";
     s += gsmConnectCode;
-    logger->write(s);
+    logger->info(s);
 
     if (gsmConnectCode == GSM_READY)
     {
@@ -70,7 +70,7 @@ void SmsSender::connect()
 
 void SmsSender::changeStateToConnecting()
 {
-  logger->write("GSM - Connecting...");
+  logger->info("GSM - Connecting...");
   digitalWrite(pinError, LOW);
   digitalWrite(pinReady, LOW);
 }
@@ -78,14 +78,14 @@ void SmsSender::changeStateToConnecting()
 void SmsSender::changeStateToConnected()
 {
   digitalWrite(pinReady, HIGH);
-  logger->write("GSM - Connected");
+  logger->info("GSM - Connected");
   isConnected = true;
 }
 
 void SmsSender::changeStateToNotConnected()
 {
   digitalWrite(pinError, HIGH);
-  logger->write("GSM - Not connected");
+  logger->info("GSM - Not connected");
 }
 
 int SmsSender::tryToConnectGsm()
@@ -95,14 +95,14 @@ int SmsSender::tryToConnectGsm()
 
   if (simPin == NULL || strlen(simPin) == 0)
   {
-    logger->write("GSM - Try to connect without pin.");
+    logger->info("GSM - Try to connect without pin.");
     return gsmAccess.begin();
   }
   else
   {
-    String s = "GSM - Try to connect using pin = ";
-    s += simPin;
-    logger->write(s);
+    logger->append("GSM - Try to connect using pin = ");
+    logger->append(simPin);
+    logger->info();
 
     return gsmAccess.begin(simPin);
   }
@@ -112,25 +112,26 @@ void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
 {
   if (isReal == false)
   {
-    String s = "GSM - Fake send sms to number: ";
-    s += remoteNumber;
-    logger->write(s);
+    logger->append("GSM - Fake send sms to number 1: ");
+    logger->append(remoteNumber);
+    logger->info();
 
     return;
   }
 
-  String s = "GSM - Sending message to mobile number: ";
-  s += remoteNumber;
-  logger->write(s);
+  logger->append("GSM - Sending message to mobile number: ");
+  logger->append(remoteNumber);
+  logger->info();
 
   // sms text
-  logger->write("GSM - Message:");
-  logger->write(txtMsg);
+  logger->append("GSM - Message:");
+  logger->append(txtMsg);
+  logger->info();
 
   // send the message
   sms.beginSMS(remoteNumber);
   sms.print(txtMsg);
   sms.endSMS();
 
-  logger->write("GSM - SMS successfully sent");
+  logger->info("GSM - SMS successfully sent");
 }
