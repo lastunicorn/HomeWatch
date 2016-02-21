@@ -25,7 +25,7 @@
 
 Logger logger = Logger(LOG_INFO);
 Sounds sounds;
-SmsSender smsSender = SmsSender(&logger, &sounds, false);
+SmsSender smsSender = SmsSender(&logger, &sounds, true);
 
 Alarm alarm = Alarm(&logger, &sounds, &smsSender);
 Listener listener = Listener(&logger, &sounds, &alarm);

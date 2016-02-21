@@ -41,7 +41,7 @@ void Listener::refresh()
   unsigned long timeFromLastStart = lastNow - lastStartTime;
 
   if (isListening == true && timeFromLastStart <= startDelay)
-    sounds->makeStartingSound();
+    sounds->makeListenerStartingSound();
 
   if (mySwitch.available())
   {

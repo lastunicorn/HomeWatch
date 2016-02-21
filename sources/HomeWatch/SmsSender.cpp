@@ -43,7 +43,7 @@ void SmsSender::connect()
   else
   {
     logger->info("GSM - Fake: Starting the GSM module...");
-    sounds->makeFakeSound();
+    sounds->makeSmsSenderFakeSound();
   }
 
   while (!isConnected)

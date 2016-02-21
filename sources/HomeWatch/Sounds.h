@@ -33,8 +33,8 @@ class Sounds
   public:
     Sounds();
     void makeAlarmSound();
-    void makeStartingSound();
-    void makeFakeSound();
+    void makeListenerStartingSound();
+    void makeSmsSenderFakeSound();
     void makeOffSound();
 };
 

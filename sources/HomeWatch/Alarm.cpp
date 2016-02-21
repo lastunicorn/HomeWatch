@@ -55,20 +55,20 @@ void Alarm::trigger(String sensorName)
   // led on
   digitalWrite(pinAlarm, HIGH);
 
-  // make sound
   sounds->makeAlarmSound();
+  sensSms(sensorName);
 
-  // send sms
-  String message;
-  message += "alarm acasa - ";
+  // led off
+  digitalWrite(pinAlarm, LOW);
+}
+
+void Alarm::sensSms(String sensorName)
+{
+  String message = "alarm acasa - ";
   message += sensorName;
 
   char str[message.length() + 1];
   message.toCharArray(str, message.length() + 1);
 
   smsSender->sendSMS("0723002252", str);
-
-  // led off
-  digitalWrite(pinAlarm, LOW);
 }
-

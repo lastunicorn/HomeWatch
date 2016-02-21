@@ -45,6 +45,9 @@ class Alarm
     Alarm(Logger *logger, Sounds *sounds, SmsSender *smsSender);
     void init();
     void trigger(String sensorName);
+
+  private:
+    void sensSms(String sensorName);
 };
 
 #endif

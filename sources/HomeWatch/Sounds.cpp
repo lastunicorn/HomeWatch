@@ -36,7 +36,7 @@ void Sounds::makeAlarmSound()
   delay(500);
 }
 
-void Sounds::makeStartingSound()
+void Sounds::makeListenerStartingSound()
 {
   tone(piezoPin, 200, 150);
   delay(150);
@@ -44,7 +44,7 @@ void Sounds::makeStartingSound()
   delay(500);
 }
 
-void Sounds::makeFakeSound()
+void Sounds::makeSmsSenderFakeSound()
 {
   tone(piezoPin, 50, 1000);
   delay(1000);
