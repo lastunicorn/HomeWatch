@@ -17,6 +17,7 @@
 */
 
 #include "Alarm.h"
+#include "Phones.h"
 
 Alarm::Alarm(Logger *logger, Sounds *sounds, SmsSender *smsSender)
 {
@@ -70,6 +71,6 @@ void Alarm::sensSms(String sensorName)
   char str[message.length() + 1];
   message.toCharArray(str, message.length() + 1);
 
-  for(int i = 0; i < PHONE_COUNT; i++)
-    smsSender->sendSMS(phones[i], str);
+  smsSender->sendSMS(PHONE_1, str);
+  smsSender->sendSMS(PHONE_2, str);
 }

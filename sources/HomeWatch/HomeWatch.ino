@@ -21,7 +21,6 @@
 #include "SmsSender.h"
 #include "Sounds.h"
 #include "Listener.h"
-#include "Phones.cpp"
 
 Logger logger = Logger(LOG_INFO);
 Sounds sounds;
