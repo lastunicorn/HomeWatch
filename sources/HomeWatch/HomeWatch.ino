@@ -16,12 +16,12 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <GSM.h>
 #include "Alarm.h"
 #include "Logger.h"
 #include "SmsSender.h"
 #include "Sounds.h"
 #include "Listener.h"
+#include "Phones.cpp"
 
 Logger logger = Logger(LOG_INFO);
 Sounds sounds;

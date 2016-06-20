@@ -70,5 +70,6 @@ void Alarm::sensSms(String sensorName)
   char str[message.length() + 1];
   message.toCharArray(str, message.length() + 1);
 
-  smsSender->sendSMS("0723002252", str);
+  for(int i = 0; i < PHONE_COUNT; i++)
+    smsSender->sendSMS(phones[i], str);
 }
