@@ -16,41 +16,37 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef SmsSender_h
-#define SmsSender_h
+#ifndef CustomGsm_h
+#define CustomGsm_h
 
-//#include <GSM.h>
+#include "Arduino.h"
 #include "Logger.h";
-#include "Sounds.h";
-#include "CustomGsm.h";
 
-class SmsSender
+#define ERROR 0
+#define IDLE 1
+#define CONNECTING 2
+#define GSM_READY 3
+#define GPRS_READY 4
+#define TRANSPARENT_CONNECTED 5
+
+class CustomGsm
 {
-  public:
-    int pinError = 5;
-    int pinReady = 6;
-    char* simPin;
-
   private:
+    String atResponse;
     Logger *logger;
-    Sounds *sounds;
-    boolean isReal = false;
-    boolean isConnected = false;
-    //GSM gsmAccess = GSM(true); // include a 'true' parameter for debug enabled
-    //GSM_SMS sms;
-    CustomGsm *gsm;
 
   public:
-    SmsSender(Logger *logger, Sounds *sounds, CustomGsm *gsm, boolean isReal);
-    SmsSender(Logger *logger, Sounds *sounds, CustomGsm *gsm) : SmsSender(logger, sounds, gsm, true) {};
-    void connect();
-    void sendSMS(char remoteNumber[20], char txtMsg[200]);
+    CustomGsm(Logger *logger);
+    int connect();
+    int connect(String simPin);
+    void sendSms(char remoteNumber[20], char txtMsg[200]);
 
   private:
-    void changeStateToConnecting();
-    void changeStateToConnected();
-    void changeStateToNotConnected();
-    int tryToConnectGsm();
+    void request(char command[]);
+    void transmit(String command);
+    void receive();
+    void ping();
+    void setSmsModeText();
 };
 
 #endif

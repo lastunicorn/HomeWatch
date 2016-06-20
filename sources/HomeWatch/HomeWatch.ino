@@ -21,10 +21,12 @@
 #include "SmsSender.h"
 #include "Sounds.h"
 #include "Listener.h"
+#include "CustomGsm.h"
 
-Logger logger = Logger(LOG_INFO);
+Logger logger = Logger(LOG_DEBUG);
 Sounds sounds;
-SmsSender smsSender = SmsSender(&logger, &sounds, true);
+CustomGsm gsm = CustomGsm(&logger);
+SmsSender smsSender = SmsSender(&logger, &sounds, &gsm, true);
 
 Alarm alarm = Alarm(&logger, &sounds, &smsSender);
 Listener listener = Listener(&logger, &sounds, &alarm);

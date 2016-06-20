@@ -16,15 +16,17 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+//#include <GSM.h>
 #include "Arduino.h"
 #include "SmsSender.h"
 #include "Logger.h"
 #include "Sounds.h"
 
-SmsSender::SmsSender(Logger *logger, Sounds *sounds, boolean isReal)
+SmsSender::SmsSender(Logger *logger, Sounds *sounds, CustomGsm *gsm, boolean isReal)
 {
   this->logger = logger;
   this->sounds = sounds;
+  this->gsm = gsm;
   this->isReal = isReal;
 
   pinMode(pinError, OUTPUT);
@@ -96,7 +98,8 @@ int SmsSender::tryToConnectGsm()
   if (simPin == NULL || strlen(simPin) == 0)
   {
     logger->trace("GSM - Try to connect without pin.");
-    return gsmAccess.begin();
+    //return gsmAccess.begin();
+    return gsm->connect();
   }
   else
   {
@@ -104,7 +107,8 @@ int SmsSender::tryToConnectGsm()
     logger->append(simPin);
     logger->trace();
 
-    return gsmAccess.begin(simPin);
+    //return gsmAccess.begin(simPin);
+    return gsm->connect(simPin);
   }
 }
 
@@ -122,9 +126,10 @@ void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
   if (isReal)
   {
     // send the message
-    sms.beginSMS(remoteNumber);
-    sms.print(txtMsg);
-    sms.endSMS();
+    //sms.beginSMS(remoteNumber);
+    //sms.print(txtMsg);
+    //sms.endSMS();
+    gsm->sendSms(remoteNumber, txtMsg);
 
     logger->info("GSM - SMS successfully sent");
   }
@@ -133,3 +138,49 @@ void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
     logger->info("GSM - Fake: SMS successfully sent");
   }
 }
+
+//int SmsSender::tryToConnectGsm()
+//{
+//  if (isReal == false)
+//    return GSM_READY;
+//
+//  if (simPin == NULL || strlen(simPin) == 0)
+//  {
+//    logger->trace("GSM - Try to connect without pin.");
+//    return gsmAccess.begin();
+//  }
+//  else
+//  {
+//    logger->append("GSM - Try to connect using pin = ");
+//    logger->append(simPin);
+//    logger->trace();
+//
+//    return gsmAccess.begin(simPin);
+//  }
+//}
+//
+//void SmsSender::sendSMS(char remoteNumber[20], char txtMsg[200])
+//{
+//  logger->append("GSM - Sending sms message to mobile number: ");
+//  logger->append(remoteNumber);
+//  logger->info();
+//
+//  // sms text
+//  logger->append("GSM - Message:");
+//  logger->append(txtMsg);
+//  logger->trace();
+//
+//  if (isReal)
+//  {
+//    // send the message
+//    sms.beginSMS(remoteNumber);
+//    sms.print(txtMsg);
+//    sms.endSMS();
+//
+//    logger->info("GSM - SMS successfully sent");
+//  }
+//  else
+//  {
+//    logger->info("GSM - Fake: SMS successfully sent");
+//  }
+//}
