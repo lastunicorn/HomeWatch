@@ -29,8 +29,6 @@
 class Alarm
 {
   public:
-    int pinOn = 12;
-    int pinOff = 11;
     int pinAlarm = 8;
 
   private:

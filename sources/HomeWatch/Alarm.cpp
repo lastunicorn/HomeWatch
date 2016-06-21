@@ -25,12 +25,8 @@ Alarm::Alarm(Logger *logger, Sounds *sounds, SmsSender *smsSender)
   this->sounds = sounds;
   this->smsSender = smsSender;
 
-  pinMode(pinOn, OUTPUT);
-  pinMode(pinOff, OUTPUT);
   pinMode(pinAlarm, OUTPUT);
 
-  digitalWrite(pinOn, LOW);
-  digitalWrite(pinOff, HIGH);
   digitalWrite(pinAlarm, LOW);
 }
 

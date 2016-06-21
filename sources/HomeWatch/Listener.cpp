@@ -26,7 +26,7 @@ Listener::Listener(Logger *logger, Sounds *sounds, Alarm *alarm)
   this->sounds = sounds;
   this->alarm = alarm;
 
-  mySwitch.enableReceive(0);
+  mySwitch.enableReceive(5);
 
   pinMode(pinOn, OUTPUT);
   pinMode(pinOff, OUTPUT);

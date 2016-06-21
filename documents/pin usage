@@ -2,8 +2,8 @@
 
 arduino gsm shield 2
 
-2 TX - software serial communication with the M10
-3 RX - software serial communication with the M10
+14 TX - software serial communication with the M10
+15 RX - software serial communication with the M10
 7 PWRKEY - Modem Reset
 
 --------------------------------------------------------------------------------
@@ -26,8 +26,12 @@ deselect w5500 card:
  
 --------------------------------------------------------------------------------
 
-A0 - INPUT - pir sensor
+
  8 - OUTPUT - alarm led
  9 - OUTPUT - alarm piezo
-10 - OUTPUT - gsm error
-11 - OUTPUT - gsm ready
+
+22 - OUTPUT - gsm ready 
+23 - OUTPUT - gsm error
+
+26 - OUTPUT - arm on
+27 - OUTPUT - arm off

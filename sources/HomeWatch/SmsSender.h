@@ -27,8 +27,8 @@
 class SmsSender
 {
   public:
-    int pinError = 5;
-    int pinReady = 6;
+    int pinReady = 22;
+    int pinError = 23;
     char* simPin;
 
   private:

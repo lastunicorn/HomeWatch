@@ -16,7 +16,6 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-//#include <GSM.h>
 #include "Arduino.h"
 #include "CustomGsm.h"
 

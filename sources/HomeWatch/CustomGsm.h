@@ -29,6 +29,10 @@
 #define GPRS_READY 4
 #define TRANSPARENT_CONNECTED 5
 
+/**
+   This class is a interface for the GSM Shield.
+   It uses the Serial3 (pins 14 and 15) for communicating with the GSM Shield.
+*/
 class CustomGsm
 {
   private:

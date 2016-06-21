@@ -28,8 +28,8 @@ class Listener
   public:
     unsigned long startDelay = 10000;
 
-    int pinOn = 12;
-    int pinOff = 11;
+    int pinOn = 26;
+    int pinOff = 27;
 
   private:
     Logger *logger;

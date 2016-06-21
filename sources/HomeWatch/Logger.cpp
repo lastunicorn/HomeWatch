@@ -25,7 +25,7 @@ String formatTimeAsString(unsigned long milliseconds);
 Logger::Logger(unsigned short logLevel)
 {
   this->logLevel = logLevel;
-  //initializeSdCard();
+  initializeSdCard();
 }
 
 void Logger::initializeSdCard()
@@ -170,7 +170,8 @@ void Logger::writeToSdCard(String text)
   // Open the file
   myFile = SD.open("Home.log", FILE_WRITE);
 
-  if (myFile) {
+  if (myFile)
+  {
     myFile.println(text);
     myFile.close();
   }
