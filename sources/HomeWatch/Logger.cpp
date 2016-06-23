@@ -18,6 +18,7 @@
 
 #include "Arduino.h"
 #include "Logger.h"
+#include "LogReader.h"
 #include <SD.h>
 
 String formatTimeAsString(unsigned long milliseconds);
@@ -252,6 +253,22 @@ String Logger::formatLogLevel(unsigned short logLevel)
       return "ERR";
     default:
       return String(logLevel);
+  }
+}
+
+LogReader Logger::getLogReader()
+{
+  // Open the file
+  logFile = SD.open("Home.log");
+
+  if (logFile)
+  {
+    return LogReader(&logFile);
+  }
+  else
+  {
+    Serial.println("Could not write in log file.");
+    return NULL;
   }
 }
 

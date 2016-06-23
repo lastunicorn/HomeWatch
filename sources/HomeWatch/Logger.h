@@ -20,6 +20,7 @@
 #define Logger_h
 
 #include "Arduino.h"
+#include "LogReader.h"
 
 #define LOG_DEBUG 0
 #define LOG_TRACE 1
@@ -37,6 +38,7 @@ class Logger
     String buffer;
     bool sdCardAvailable = false;
     unsigned short logLevel = LOG_INFO;
+    File logFile;
 
   public:
     Logger() : Logger(LOG_INFO) {};
@@ -48,9 +50,9 @@ class Logger
     void info();
     void warning();
     void error();
-    
+
     void debug(String message);
-    void debug(unsigned long value);    
+    void debug(unsigned long value);
     void trace(String message);
     void trace(unsigned long value);
     void info(String message);
@@ -59,6 +61,8 @@ class Logger
     void warning(unsigned long value);
     void error(String message);
     void error(unsigned long value);
+
+    LogReader getLogReader();
 
   private:
     void initializeSdCard();

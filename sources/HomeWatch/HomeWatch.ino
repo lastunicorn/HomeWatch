@@ -22,16 +22,19 @@
 #include "Sounds.h"
 #include "Listener.h"
 #include "CustomGsm.h"
+#include "UI.h"
 
 Logger logger = Logger(LOG_DEBUG);
 Sounds sounds;
 CustomGsm gsm = CustomGsm(&logger);
-SmsSender smsSender = SmsSender(&logger, &sounds, &gsm, true);
+SmsSender smsSender = SmsSender(&logger, &sounds, &gsm, false);
 
 Alarm alarm = Alarm(&logger, &sounds, &smsSender);
 Listener listener = Listener(&logger, &sounds, &alarm);
+UI ui = UI(&logger);
 
-void setup() {
+void setup()
+{
   Serial.begin(9600);
 
   logger.info("=======================================================");
@@ -40,12 +43,15 @@ void setup() {
   logger.info("=======================================================");
 
   alarm.init();
+  ui.initializeEthernet();
 
   logger.info("Arduino started");
 }
 
-void loop() {
+void loop()
+{
   listener.refresh();
+  ui.checkEthernetRequest();
   delay(100);
 }
 
